@@ -3,7 +3,18 @@ import React, { useState, useEffect } from 'react';
 import Homepage from './views/Homepage';
 import Header from './components/global/Header'
 import Footer from './components/global/Footer'
-import NotreLabo from './views/NotreLabo';
+import Produits from './views/Produits';
+import Articulation from './views/Articulation';
+import AntiStress from './views/AntiStress';
+import Capillaire from './views/Capillaire';
+import Detox from './views/Detox';
+import Energie from './views/Energie';
+import JetLag from './views/JetLag';
+import MultivitaminesEtMineraux from './views/MultivitaminesEtMineraux';
+import Immunite from './views/Immunite';
+import Circulation from './views/Circulation';
+import VoiesRespiratoires from './views/VoiesRespiratoires';
+import Sommeil from './views/Produits/Sommeil';
 
 import TransitionPage from './components/global/TransitionPage';
 
