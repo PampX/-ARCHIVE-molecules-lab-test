@@ -14,7 +14,7 @@ import MultivitaminesEtMineraux from './views/MultivitaminesEtMineraux';
 import Immunite from './views/Immunite';
 import Circulation from './views/Circulation';
 import VoiesRespiratoires from './views/VoiesRespiratoires';
-import Sommeil from './views/Produits/Sommeil';
+import Sommeil from './views/Sommeil';
 
 import TransitionPage from './components/global/TransitionPage';
 
