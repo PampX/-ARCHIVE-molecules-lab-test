@@ -48,7 +48,7 @@ function App() {
         <Route path="produits/capillaire" element={<Capillaire pageName="Capillaire" />} />
         <Route path="produits/detox" element={<Detox pageName="Détox" />} />
         <Route path="produits/energie" element={<Energie pageName="Énergie" />} />
-        <Route path="produits/minceur" element={<JetLag pageName="Minceur" />} />
+        <Route path="produits/minceur" element={<Minceur pageName="Minceur" />} />
         <Route path="produits/jet-lag" element={<JetLag pageName="Jet Lag" />} />
         <Route path="produits/multivitamines-et-mineraux" element={<MultivitaminesEtMineraux pageName="Multivitamines & Minéraux" />} />
         <Route path="produits/immunite" element={<Immunite pageName="Immunité" />} />
