@@ -7,7 +7,7 @@ function Homepage(props) {
 
   return (
     <div>
-      <p>accueil</p>
+      <p>Accueil</p>
     </div>
   )
 }

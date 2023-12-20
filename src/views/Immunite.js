@@ -7,7 +7,7 @@ function Immunite(props) {
 
   return (
     <div>
-      <p>qdfqdf</p>
+      <p>Immunite</p>
     </div>
   )
 }

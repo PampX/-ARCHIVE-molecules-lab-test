@@ -6,7 +6,7 @@ const TransitionPage = () => {
 
   return (
     <div className="transition-page">
-      <p>chrgement</p>
+      <p>chargement</p>
     </div>
   );
 }

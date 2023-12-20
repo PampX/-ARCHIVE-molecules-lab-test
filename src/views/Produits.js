@@ -7,7 +7,7 @@ function Produits(props) {
 
   return (
     <div>
-      <p>qdfqdfq</p>
+      <p>Les produits</p>
     </div>
   )
 }

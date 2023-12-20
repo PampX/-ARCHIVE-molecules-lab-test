@@ -15,6 +15,7 @@ import Immunite from './views/Immunite';
 import Circulation from './views/Circulation';
 import VoiesRespiratoires from './views/VoiesRespiratoires';
 import Sommeil from './views/Sommeil';
+import Minceur from './views/Minceur';
 
 import TransitionPage from './components/global/TransitionPage';
 
@@ -47,13 +48,13 @@ function App() {
         <Route path="produits/capillaire" element={<Capillaire pageName="Capillaire" />} />
         <Route path="produits/detox" element={<Detox pageName="Détox" />} />
         <Route path="produits/energie" element={<Energie pageName="Énergie" />} />
-        <Route path="produits/minceur" element={<JetLag pageName="Jet Lag" />} />
+        <Route path="produits/minceur" element={<JetLag pageName="Minceur" />} />
         <Route path="produits/jet-lag" element={<JetLag pageName="Jet Lag" />} />
         <Route path="produits/multivitamines-et-mineraux" element={<MultivitaminesEtMineraux pageName="Multivitamines & Minéraux" />} />
         <Route path="produits/immunite" element={<Immunite pageName="Immunité" />} />
         <Route path="produits/circulation" element={<Circulation pageName="Circulation" />} />
         <Route path="produits/voies-respiratoires" element={<VoiesRespiratoires pageName="Voies Respiratoires" />} />
-        <Route path="produits/sommeil" element={<Sommeil pageName="sommeil" />} />
+        <Route path="produits/sommeil" element={<Sommeil pageName="Sommeil" />} />
       </Routes>
       <Footer />
     </div>

@@ -2,13 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 
 
 
-function JetLag(props) {
+function Minceur(props) {
 
 
   return (
     <div>
-      <p>Jet Lag</p>
+      <p>Minceur</p>
     </div>
   )
 }
-export default JetLag;
+export default Minceur;

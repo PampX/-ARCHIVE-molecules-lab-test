@@ -7,7 +7,7 @@ function Articulation(props) {
 
   return (
     <div>
-      <p>artizfr</p>
+      <p>Articulation</p>
     </div>
   )
 }

@@ -6,7 +6,7 @@ function VoiesRespiratoires(props) {
 
   return (
     <div>
-      <p>qdfqdfq</p>
+      <p>Voies respiratoires</p>
     </div>
   )
 }

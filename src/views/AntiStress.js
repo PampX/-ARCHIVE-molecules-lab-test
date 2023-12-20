@@ -6,7 +6,7 @@ function AntiStress(props) {
 
   return (
     <div>
-      <p>AntiStress</p>
+      <p>Anti Stress</p>
     </div>
   )
 }

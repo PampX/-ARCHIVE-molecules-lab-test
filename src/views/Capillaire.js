@@ -7,7 +7,7 @@ function Capillaire(props) {
 
   return (
     <div>
-      <p>qdfqdfqd</p>
+      <p>Capillaire</p>
     </div>
   )
 }

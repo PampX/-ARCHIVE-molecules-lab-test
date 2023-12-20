@@ -7,7 +7,7 @@ function MultivitamesEtMineraux(props) {
 
   return (
     <div>
-      <p>iqdfqdfq</p>
+      <p>MultivitamesEtMineraux</p>
     </div>
   )
 }

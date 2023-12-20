@@ -7,7 +7,7 @@ function Energie(props) {
 
   return (
     <div>
-      <p>qdfqdf</p>
+      <p>Energie</p>
     </div>
   )
 }

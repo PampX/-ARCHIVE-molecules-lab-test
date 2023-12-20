@@ -7,7 +7,7 @@ function Detox(props) {
 
   return (
     <div>
-      <p>qfqfd</p>
+      <p>Detox</p>
     </div>
   )
 }

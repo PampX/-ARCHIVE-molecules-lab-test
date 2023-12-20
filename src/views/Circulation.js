@@ -7,7 +7,7 @@ function Circulation(props) {
 
   return (
     <div>
-      <p>qdfqdfqdf</p>
+      <p>Circulation</p>
     </div>
   )
 }
