@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    image: devpharmanature/molecule-lab:latest
+    container_name: dockermt
+    restart: always
+    ports:
+      - "80:3000"
+    environment:
+      NODE_ENV: production
