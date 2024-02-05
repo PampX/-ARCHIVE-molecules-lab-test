@@ -6,7 +6,7 @@ function AntiStress(props) {
 
   return (
     <div>
-      <p>Anti Stress</p>
+      <p>Anti Stress, c'est bcp de stress</p>
     </div>
   )
 }
