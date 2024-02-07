@@ -1,179 +1,53 @@
-.footer {
+.div-footer-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 15%;
-    background-color: #F7F7F7;
-    bottom: 0; 
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.logo-footer {
-    height: auto; 
-}
-
-.logo-menu {
-    width: 280px;
-}
-
-.menu-list {
-    list-style-type: none;
-    line-height: 2;
-    padding: 0;
-    margin: 0;
-}
-.menu-list a {
-    text-decoration: none;
-    line-height: 10px;
-    font-size: 17px;
-    font-family: 'Montserrat';
-    color: #6D6869;
-}
-
-.form-group {
-    display: grid;
-    width: auto;
-    margin-bottom: 2%;
-}
-.form {
-    width: 39.667%; 
-}
- 
- .required-label {
-    color: red;
-  }
-
-
-.option {
-    text-align: center;
-}
-
-.contact-form {
-    height: 700px;
-}
-.contact-info {
-    width: 55%;
-    height: 215px;
+.div-footer-menuLogo{
+    width: 100%;
     display: flex;
-    margin: 3% 0 0 0;
-    flex-direction: row;
-    justify-content: center;
-    gap: 7%;
-    white-space: nowrap;
+    flex-direction:row ;
+    justify-content: space-around;
+    margin-bottom: 50px;
 }
 
-.logoFooterIMG {
-    width: 170px;
-}
-
-hr.separator-footer {
-    height: 124px;
-    border-left: 2px solid #000;
-}
-
-.address {
-    font-size: 13px; 
-    font-weight: 600;
-    font-family: 'Montserrat';
+.p-footer-navigation{
+    font-family: 'Poppins', sans-serif;
     color: #111426;
-    width: 228px;
+    font-size: 24px;
 }
 
-.address p {
-    margin-bottom: 5%;
-    margin-top: 4px;
-
-}
-
-.contactUs {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 33px;
-    margin-top: 0;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    background-color: #ECECEC;
-    border: none;
-    height: 25px;
-}
-
-.form-group select {
-    height: 30px;
-}
-
-.form-group textarea {
-    height: 100px;
-    margin-bottom: 60px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group input:valid,
-.form-group select:valid,
-.form-group textarea:valid {
-    background-color: white;
-    outline: none;
-}
-
-.label-form {
-    margin-bottom: 1%;
-}
-
-form {
-    position: relative;
-}
-
-.button-send {
-    margin-top: 1.8vh;
-    height: 40px; 
-    width: 35%; 
-    background-color: #ECECEC;
-    border: none;
-    transition: 0.3s ease-in-out;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    color: #484848;
-    position: absolute;
-    right: 0%;
-    bottom: 0;
-}
-
-.button-send:hover {
+.p-footer-menu{
+    font-family: 'Poppins', sans-serif;
+    color: #6D6869;
+    font-size: 16px;
     cursor: pointer;
 }
-
-@media screen and (max-width: 790px) {
-    hr.separator-footer {
-        transform: rotate(90deg);
-    }
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5%;
-        height: auto;
-    }
-
-    .logo-footer {
-        margin-bottom: 15%;
-    }
-
-    .menu {
-        text-align: center;
-    }
-
-    .logo-menu {
-        margin-bottom: 15%;
-    }
-
-    .address {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .footer{
-        height: 760px;
-    }
+.div-footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.img-footer-logo{
+    height: 42px;
+}
+.p-footer-logo{
+    font-family: 'Poppins', sans-serif;
+    color: #111426;
+    font-size: 30px;
+    margin: 0;
 }
 
+.p-footer-legal{
+    font-size: 16px;
+    color: #ADB5BD;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}

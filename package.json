@@ -1,22 +1,15 @@
 {
-  "name": "web_app_lin",
+  "name": "molecules",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
-    "@googlemaps/react-wrapper": "^1.1.35",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "countries-list": "^3.0.6",
-    "country-list": "^2.3.0",
-    "dotenv": "^16.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-flickity-component": "^4.0.6",
-    "react-router-dom": "^6.16.0",
+    "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
-    "react-swipeable": "^7.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,8 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "file-loader": "^6.2.0"
   }
 }

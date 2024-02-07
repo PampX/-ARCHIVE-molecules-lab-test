@@ -1,0 +1,263 @@
+
+.div-fp-container1{
+    display: flex;
+    justify-content: center;
+}
+.img-fp-boite{
+    height: 500px;
+}
+
+.h2-fp-nom{
+    font-family: 'Poppins', sans-serif;
+    color: #1B1C3C;
+    margin-bottom: 5px;
+}
+
+.p-fp-motcle{
+    font-family: 'Poppins', sans-serif;
+    color: #99CFE2;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.div-fp-gelluleCalendrier{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.img-fp-gellule{
+    width: 35px;
+    height: 35px;
+    transform: rotate(90deg);
+}
+.img-fp-calendrier{
+    width: 35px;
+    height: 35px;
+}
+
+.p-fp-infos1{
+    font-family: 'Poppins', sans-serif;
+    margin: 2px;
+    color: #1B1C3C;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.img-fp-partage{
+    height: 24px;
+    margin-left: 50px;
+}
+
+.div-fp-twothings{
+    display: flex;
+    width: 530px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E8E6E5;
+}
+
+.p-fp-description{
+    font-family: 'Poppins', sans-serif;
+    color: #474748;
+    font-size: 16px;
+    width: 530px;
+}
+.div-fp-allbienfait{
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    width: fit-content;
+
+}
+.div-fp-bienfait{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 5px;
+}
+.p-fp-checkmark{
+    color: #99CFE2;
+    margin: 0;
+    margin-right: 5px;
+    font-weight: bold
+}
+
+.p-fp-bienfait{
+    font-family: 'Poppins', sans-serif;
+    color: #474748;
+    margin: 0;
+}
+
+.p-fp-ensavoirplus{
+    color: #99CFE2;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.a-fp-ensavoirplus{
+    text-decoration: none;
+    color: #99CFE2;
+
+}
+
+.sup-fp-exposantbienfait{
+    color: #99CFE2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.div-fp-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.div-fp-probienfait{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 860px;
+    border-bottom: 1px solid #E8E6E5;
+
+}
+.div-fp-iconep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+}
+
+.img-fp-icones{
+    width: 30px;
+}
+
+.h2-fp-probienfait{
+    font-family: 'Poppins', sans-serif;
+    color: #1B1C3C;
+    margin: 0;
+    font-size: 28px;
+}
+
+.div-fp-div3icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-fp-textIcone{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #1B1C3C;
+    margin: 0;
+}
+
+.div-fp-3p{
+    display: flex;
+    flex-direction: column;
+}
+.div-fp-2p{
+    display: flex;;
+}
+
+.blue{
+    color: #99CFE2;
+    margin-right: 5px;
+}
+
+.div-fp-listeLiposome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F9F9F9;
+    width: 350px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-right: 20px;
+
+}
+.h3-fp-listeLiposome{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.p-fp-listeLiposome{
+    font-family: 'Poppins', sans-serif;
+    color: #474748;
+    font-size: 14px;
+}
+
+
+.div-fp-technologieLiposome{
+    margin-left: 20px;
+    width: 430px;
+}
+.h3-fp-technologieLiposome{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+
+}
+.p-fp-technologieLiposome{
+    color: #474748;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.div-fp-moreLiposome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h3-fp-moreLiposome{
+    color: #121628;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+.line-fp-moreLiposome{
+    width: 60%;
+    border-top: #121628 2px solid;
+}
+
+.div-fp-explicationLiposome{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-fp-listeactif{
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 860px;
+}
+.img-fp-liposome3d{
+    width: 265px;
+    height: 200px;
+}
+
+.div-fp-schema{
+margin-top: 50px;
+}
+.h2-fp-schema{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #99CFE2;
+    margin-bottom: 0;
+}
+.img-fp-schema{
+    width: 900px;
+}
