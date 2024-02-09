@@ -1,0 +1,34 @@
+.faq-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    padding: 16px;
+    color: #121628;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.faq-answer {
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #474748;
+    display: none;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}

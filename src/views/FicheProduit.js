@@ -1,12 +1,12 @@
 import '../utils/css/ficheProduit.css'
 
-import gellule from '../images/general/gellule.svg'
+import gelule from '../images/general/gelule.svg'
 import calendrier from '../images/general/calendrier.png'
 import partage from '../images/general/partage.png'
 
 import pharmacie from '../images/general/pharmacie.svg'
 import france from '../images/general/france.svg'
-import gelluleplante from '../images/general/gelluleplante.svg'
+import geluleplante from '../images/general/geluleplante.svg'
 import liposome from '../images/general/liposome.svg'
 import liposome3d from '../images/general/liposome3d.png'
 import ListeIngredients from '../composants/ListeIngredients'
@@ -21,10 +21,10 @@ export default function FicheProduit({ data }) {
                     <h2 className='h2-fp-nom'>{data.nom}</h2>
                     <p className='p-fp-motcle'>{data.motCle}</p>
                     <div className='div-fp-twothings'>
-                        <div className='div-fp-gelluleCalendrier'>
-                            <img className='img-fp-gellule' src={gellule} alt="Icone d'une géllule" />
-                            <p className='p-fp-infos1 bold'>{data.nbGellule[0]}</p>
-                            <p className='p-fp-infos1'>{data.nbGellule[1]}</p>
+                        <div className='div-fp-geluleCalendrier'>
+                            <img className='img-fp-gelule' src={gelule} alt="Icone d'une géllule" />
+                            <p className='p-fp-infos1 bold'>{data.nbGelule[0]}</p>
+                            <p className='p-fp-infos1'>{data.nbGelule[1]}</p>
                             <img className='img-fp-calendrier' src={calendrier} alt="Icone d'un calendrier" />
                             <p className='p-fp-infos1 bold'>{data.nbJour[0]}</p>
                             <p className='p-fp-infos1'>{data.nbJour[1]}</p>
@@ -58,7 +58,7 @@ export default function FicheProduit({ data }) {
                             <p className='p-fp-textIcone'>MADE IN FRANCE</p>
                         </div>
                         <div className='div-fp-iconep'>
-                            <img className='img-fp-icones' src={gelluleplante} alt="Icone d'une gellule et d'une plante" />
+                            <img className='img-fp-icones' src={geluleplante} alt="Icone d'une gelule et d'une plante" />
                             <p className='p-fp-textIcone'>COMPLÉMENTS ALIMENTAIRE</p>
                         </div>
                         <div className='div-fp-iconep'>
@@ -90,20 +90,20 @@ export default function FicheProduit({ data }) {
                         <h3 className='h3-fp-technologieLiposome'>TECHNOLOGIE LIPOSOMALE®</h3>
                         <p className='p-fp-technologieLiposome'>Molecules développe ses formules grâce à la nouvelle technologie exclusive de liposomes pour encapsuler 100% de ses actifs. Ce procédé innovant garantit une assimilation optimale des nutriments par l’organisme et la stabilité des actifs pour une action rapide.</p>
                         <div className='div-fp-moreLiposome'>
-                            <h3 className='h3-fp-moreLiposome'>DÉCOUVREZ LA COMPOSITION COMPLÈTE</h3>
+                            <h3 id='actifs' className='h3-fp-moreLiposome' ><a className='a-fp-moreLiposome'  href='#composition'>DÉCOUVREZ LA COMPOSITION COMPLÈTE</a></h3>
                             <div className='line-fp-moreLiposome'></div>
                         </div>
                     </div>
                 </div>
-                <div id='actifs' className='div-fp-listeactif'>
-                    <ListeIngredients  ingredients={data.listeActif} num={data.listeActifNum} />
+                <div  className='div-fp-listeactif'>
+                    <ListeIngredients  ingredients={data.listeActif} num={data.listeActifNum} description={data.listeActifDescription} />
                     <img className='img-fp-liposome3d' src={liposome3d} alt="un liposome" />
                 </div>
                 <div className='div-fp-schema'>
                     <h2 className='h2-fp-schema'>SON ACTION</h2>
-                    <img className='img-fp-schema' alt='schema' src={data.schema}/>
+                    <img id='composition' className='img-fp-schema' alt='schema' src={data.schema}/>
                 </div>
-                <MenuInfos/>
+                <MenuInfos data={data}/>
             </div>
         </div>
     )

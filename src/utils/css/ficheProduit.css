@@ -20,13 +20,13 @@
     margin-bottom: 10px;
 }
 
-.div-fp-gelluleCalendrier{
+.div-fp-geluleCalendrier{
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.img-fp-gellule{
+.img-fp-gelule{
     width: 35px;
     height: 35px;
     transform: rotate(90deg);
@@ -224,8 +224,13 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin-bottom: 0;
-
 }
+
+.a-fp-moreLiposome{
+    text-decoration: none;
+    color: #121628;
+}
+
 .line-fp-moreLiposome{
     width: 60%;
     border-top: #121628 2px solid;

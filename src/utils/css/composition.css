@@ -1,0 +1,32 @@
+.composition-container {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.tableau-composition {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.5em;
+}
+
+.quantite{
+    width: 120px;
+    text-align: right;
+}
+.ar{
+    width: 60px;
+    text-align: right;
+}
+
+.ingredient{
+    width: 320px;
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.tableau-composition td {
+    line-height: 2;
+}
