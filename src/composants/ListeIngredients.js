@@ -6,7 +6,7 @@ export default function ListeIngredients({ ingredients, num, description }) {
     console.log(description);
     const [actif, setActif] = useState(-1);
     const [ingreOuBF, setIngreOuBF] = useState(true)
-    
+
     const handle = (index) => {
         if (actif === index) {
             setActif(-1);
@@ -37,23 +37,40 @@ export default function ListeIngredients({ ingredients, num, description }) {
                             </div>
                         }
                     </div>
-                    {actif === index && (ingreOuBF ? (
-                        <p className='p-ingredient-explication'>
-                            {description[index]['description']}
-                        </p>
-                    ) :
-                        <p className='p-ingredient-explication'>
-                            {description[index]['bienfait'].map((bienfait,index2)=>(
-                                <div>
-                                    <p className='bienfait-titre'>{bienfait.titre}</p>
-                                    {bienfait.description.map((bfDescription,index3)=>(
-                                        <p className='bienfait-description'>
-                                            {"• "+bfDescription}
-                                        </p>
+                    {actif === index && (
+                        description[index]['description'] && description[index]['bienfait'] ? (
+                            // Si l'ingrédient a une description ET des bienfaits
+                            ingreOuBF ? (
+                                <p className='p-ingredient-explication'>{description[index]['description']}</p>
+                            ) : (
+                                <p className='p-ingredient-explication'>
+                                    {description[index]['bienfait'].map((bienfait, index2) => (
+                                        <div key={index2}>
+                                            <p className='bienfait-titre'>{bienfait.titre}</p>
+                                            {bienfait.description.map((bfDescription, index3) => (
+                                                <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
+                                            ))}
+                                        </div>
                                     ))}
-                                </div>
-                            ))}
-                        </p>
+                                </p>
+                            )
+                        ) : (
+                            // Si l'ingrédient a seulement une description ou des bienfaits
+                            description[index]['description'] ? (
+                                <p className='p-ingredient-explication'>{description[index]['description']}</p>
+                            ) : (
+                                <p className='p-ingredient-explication'>
+                                    {description[index]['bienfait'].map((bienfait, index2) => (
+                                        <div key={index2}>
+                                            <p className='bienfait-titre'>{bienfait.titre}</p>
+                                            {bienfait.description.map((bfDescription, index3) => (
+                                                <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </p>
+                            )
+                        )
                     )}
                 </div>
             ))}

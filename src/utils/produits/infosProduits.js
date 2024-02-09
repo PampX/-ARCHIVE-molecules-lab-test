@@ -681,7 +681,7 @@ const infosActifs = {
         ]
     },
     "Camomille": {
-        description: `La camomille 2 est une plante médicinale appréciée depuis des siècles pour ses propriétés
+        description: `La camomille est une plante médicinale appréciée depuis des siècles pour ses propriétés
         apaisantes et relaxantes en particulier sur le système nerveux. Connue scientifiquement sous
         les noms de Matricaria recutita, cette herbe douce est utilisée pour aider à gérer le stress,
         l'anxiété et favoriser un sommeil réparateur.`,
