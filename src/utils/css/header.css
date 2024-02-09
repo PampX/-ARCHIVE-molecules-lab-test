@@ -2,14 +2,12 @@ body{
     margin:0;
 }
 
-
 .header-div-container{
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 /* PHONE */
 .header-div-phone{
@@ -28,21 +26,52 @@ body{
 
 .header-p-phone{
     color: #fff;
+    font-size: 12px;
 }
 /* MENU */
 .header-div-menu{
-    width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 85px;
+    width: 100%;
+}
+
+.header-p-menu{
+    color: #111426;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .header-img-menu{
     height: 42px;
 }
 
-.header-p-menu{
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
+/* version mobile header */
+@media screen and (max-width: 450px) {
+    .header-p-menu{
+        display: none;
+    }
+
+    .header-img-menu{
+        width: 175px;
+        height: 28px;
+    }
+
+    .header-div-menu{
+        height: 50px;
+    }
+
+    .header-img-phone{
+        height: 13px;
+        width: 13px;
+        margin-bottom: 2px;
+    }
 }

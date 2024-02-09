@@ -4,10 +4,14 @@ import precaution from '../images/general/guyshocked.svg'
 import detail from '../images/general/infopaper.svg'
 import faq from '../images/general/chats.svg'
 
+import FAQ from '../composants/FAQ.js'
+import Precaution from '../composants/Precaution.js'
+import Composition from '../composants/Composition.js'
+import Conseil from '../composants/Conseil.js'
 import '../utils/css/menuInfos.css'
 import React, { useState } from 'react';
 
-export default function MenuInfos() {
+export default function MenuInfos({data}) {
 
     const menu = [
         { nom: 'Composition complète', image: composition },
@@ -17,10 +21,10 @@ export default function MenuInfos() {
         { nom: 'FAQ', image: faq }
     ]
     const dataToDo = [
-        "Tableau de composition",
-        "Conseils d'utilisation",
-        "Précaution",
-        "Liste des ingrédients",
+        "Composition",
+        "Conseils",
+        "Precaution",
+        data.listeIngredient,
         "FAQ"
     ]
     const [active, setActive] = useState(0)
@@ -40,7 +44,14 @@ export default function MenuInfos() {
             <div>
                 {dataToDo.map((item, index) => (
                     active === index ?
-                        <div className='div-mi-content'>{item}</div>
+                        <div className='div-mi-content'>
+                            {item === "FAQ" ? <FAQ faq={data.faq} />
+                                : item === 'Precaution' ? <Precaution precautions={data.precaution} />
+                                : item === 'Composition' ? <Composition ingredients={data.composition} gelules={data.compositionGelule} />
+                                : item === 'Conseils' ? <Conseil conseils={data.conseilUtilisation} />
+                                : item
+                            }
+                        </div>
                         : null
                 ))}
             </div>

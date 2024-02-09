@@ -2,11 +2,11 @@ import arrow from '../images/general/arrow.png'
 import '../utils/css/listeIngredient.css'
 import React, { useState } from 'react';
 
-export default function ListeIngredients({ ingredients, num }) {
-
+export default function ListeIngredients({ ingredients, num, description }) {
+    console.log(description);
     const [actif, setActif] = useState(-1);
     const [ingreOuBF, setIngreOuBF] = useState(true)
-
+    
     const handle = (index) => {
         if (actif === index) {
             setActif(-1);
@@ -15,11 +15,9 @@ export default function ListeIngredients({ ingredients, num }) {
         setIngreOuBF(true)
         setActif(index);
     }
-
     const handleIngreBF = (what) => {
         setIngreOuBF(what)
     }
-
     return (
         <div className='div-ingredient-container'>
             {ingredients.map((ingredient, index) => (
@@ -32,7 +30,7 @@ export default function ListeIngredients({ ingredients, num }) {
                             </div>
                             <img src={arrow} className={'img-ingredient-arrow ' + (actif === index ? 'rotated' : '')} alt='fleche' />
                         </div>
-                        {actif === index &&
+                        {actif === index && description[index]['description'] && description[index]['bienfait'] &&
                             <div className='div-2boutons-ingre'>
                                 <p className={'p-ingredient-bouton ' + (ingreOuBF ? 'actif-ingredient' : '')} onClick={() => handleIngreBF(true)}>L'ingrédient</p>
                                 <p className={'p-ingredient-bouton ' + (!ingreOuBF ? 'actif-ingredient' : '')} onClick={() => handleIngreBF(false)}>Ses bienfaits</p>
@@ -41,17 +39,20 @@ export default function ListeIngredients({ ingredients, num }) {
                     </div>
                     {actif === index && (ingreOuBF ? (
                         <p className='p-ingredient-explication'>
-                            L'Ashwagandha1, connue scientifiquement sous le nom de Withania somnifera, est une plante adaptogène puissante originaire d'Inde.
-                            Utilisée depuis des millénaires en médecine ayurvédique, elle est réputée pour ses nombreux bienfaits sur la santé physique et mentale.
-                            Elle aide le corps à gérer le stress efficacement. Elle agit en modulant les réponses du système nerveux, contribuant ainsi à réduire
-                            l'anxiété et à améliorer la résistance au stress. Elle aide à améliorer la concentration, réduit les symptômes de dépression et d'anxiété,
-                            et favorise un meilleur sommeil, contribuant ainsi à une meilleure qualité de vie.
+                            {description[index]['description']}
                         </p>
                     ) :
                         <p className='p-ingredient-explication'>
-                            Antioxydant
-                            Aide à protéger les tissus des blessures.
-                            Aide à un effet rajeunissant général et à protéger la santé générale.
+                            {description[index]['bienfait'].map((bienfait,index2)=>(
+                                <div>
+                                    <p className='bienfait-titre'>{bienfait.titre}</p>
+                                    {bienfait.description.map((bfDescription,index3)=>(
+                                        <p className='bienfait-description'>
+                                            {"• "+bfDescription}
+                                        </p>
+                                    ))}
+                                </div>
+                            ))}
                         </p>
                     )}
                 </div>

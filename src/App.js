@@ -24,7 +24,7 @@ export default function App() {
         <Route path="produits/energie" element={<FicheProduit data={infosProduits['energie']} />} />
         <Route path="produits/minceur" element={<FicheProduit data={infosProduits['minceur']} />} />
         <Route path="produits/jet-lag" element={<FicheProduit data={infosProduits['jet-lag']} />} />
-        <Route path="produits/multivitamines-et-mineraux" element={<FicheProduit data={infosProduits['multivitamines']} />} />
+        <Route path="produits/multivitamines-et-mineraux" element={<FicheProduit data={infosProduits['multivitamines-mineraux']} />} />
         <Route path="produits/immunite" element={<FicheProduit data={infosProduits['immunite']} />} />
         <Route path="produits/circulation" element={<FicheProduit data={infosProduits['circulation']} />} />
         <Route path="produits/voies-respiratoires" element={<FicheProduit data={infosProduits['voies-respiratoires']} />} />
