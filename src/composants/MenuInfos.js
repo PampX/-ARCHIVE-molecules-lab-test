@@ -11,7 +11,7 @@ import Conseil from '../composants/Conseil.js'
 import '../utils/css/menuInfos.css'
 import React, { useState } from 'react';
 
-export default function MenuInfos({data}) {
+export default function MenuInfos({data, isPhone}) {
 
     const menu = [
         { nom: 'Composition complète', image: composition },
@@ -31,30 +31,48 @@ export default function MenuInfos({data}) {
     const handleChange = (index) => {
         setActive(index)
     }
+    const renderContent = (item, index,isPhone) => {
+        return (
+            active === index ?
+                <div className={isPhone ? 'div-mi-content-phone' : 'div-mi-content'}>
+                    {item === "FAQ" ? <FAQ faq={data.faq} />
+                        : item === 'Precaution' ? <Precaution precautions={data.precaution} />
+                        : item === 'Composition' ? <Composition ingredients={data.composition} gelules={data.compositionGelule} />
+                        : item === 'Conseils' ? <Conseil conseils={data.conseilUtilisation} />
+                        : item
+                    }
+                </div>
+                : null
+        );
+    };
+
     return (
-        <div className='div-mi-containt'>
-            <div>
-                {menu.map((item, index) => (
-                    <div className={'div-mi-menu ' + (active === index ? 'div-actif' : '')} onClick={() => handleChange(index)}>
-                        <img src={item.image} className='img-mi-iconMenu' alt={item.nom} />
-                        <p className={'p-mi-menu ' + (active === index ? 'p-actif' : '')}>{item.nom}</p>
-                    </div>
-                ))}
-            </div>
-            <div>
-                {dataToDo.map((item, index) => (
-                    active === index ?
-                        <div className='div-mi-content'>
-                            {item === "FAQ" ? <FAQ faq={data.faq} />
-                                : item === 'Precaution' ? <Precaution precautions={data.precaution} />
-                                : item === 'Composition' ? <Composition ingredients={data.composition} gelules={data.compositionGelule} />
-                                : item === 'Conseils' ? <Conseil conseils={data.conseilUtilisation} />
-                                : item
-                            }
+        <div>
+            {isPhone ? (
+                menu.map((item, index) => (
+                    <div className='div-mi-containt-phone' key={index}>
+                        <div className={'div-mi-menu ' + (active === index ? 'div-actif' : '')} onClick={() => handleChange(index)}>
+                            <img src={item.image} className='img-mi-iconMenu' alt={item.nom} />
+                            <p className={'p-mi-menu ' + (active === index ? 'p-actif' : '')}>{item.nom}</p>
                         </div>
-                        : null
-                ))}
-            </div>
+                        {renderContent(dataToDo[index], index,isPhone)}
+                    </div>
+                ))
+            ) : (
+                <div className='div-mi-containt'>
+                    <div >
+                        {menu.map((item, index) => (
+                            <div key={index} className={'div-mi-menu ' + (active === index ? 'div-actif' : '')} onClick={() => handleChange(index)}>
+                                <img src={item.image} className='img-mi-iconMenu' alt={item.nom} />
+                                <p className={'p-mi-menu ' + (active === index ? 'p-actif' : '')}>{item.nom}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div>
+                        {dataToDo.map((item, index) => renderContent(item, index,isPhone))}
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

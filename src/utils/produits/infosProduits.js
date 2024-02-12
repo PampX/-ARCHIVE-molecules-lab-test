@@ -1,50 +1,63 @@
 // anti-stress
 import antiStress from '../../images/general/molecules-anti-stress.png'
 import stressSchema from '../../images/schema/stress-schema.png'
+import stressSchemaPhone from '../../images/schemaPhone/stress-schema-phone.png'
 
 // articulation
 import articulation from '../../images/general/molecules-articulation.png'
 import articulationSchema from '../../images/schema/articulation-schema.png'
+import articulationSchemaPhone from '../../images/schemaPhone/articulation-schema-phone.png'
+
 // capillaire
 import capillaire from '../../images/general/molecules-capillaire.png'
 import capillaireSchema from '../../images/schema/capillaire-schema.png'
+import capillaireSchemaPhone from '../../images/schemaPhone/capillaire-schema-phone.png'
 
 // detox
 import detox from '../../images/general/molecules-detox.png'
 import detoxSchema from '../../images/schema/detox-schema.png'
+import detoxSchemaPhone from '../../images/schemaPhone/detox-schema-phone.png'
 
 // energie
 import energie from '../../images/general/molecules-energie.png'
 import energieSchema from '../../images/schema/energie-schema.png'
+import energieSchemaPhone from '../../images/schemaPhone/energie-schema-phone.png'
 
 // minceur
 import minceur from '../../images/general/molecules-minceur.png'
 import minceurSchema from '../../images/schema/minceur-schema.png'
+import minceurSchemaPhone from '../../images/schemaPhone/minceur-schema-phone.png'
 
 // jet-lag
 import jetLag from '../../images/general/molecules-jet-lag.png'
 import jetLagSchema from '../../images/schema/jetlag-schema.png'
+import jetLagSchemaPhone from '../../images/schemaPhone/jetlag-schema-phone.png'
 
 // multivitamines
 import multivitamines from '../../images/general/molecules-multivit-mineraux.png'
 import multivitaminesSchema from '../../images/schema/multivitamines-schema.png'
+import multivitaminesSchemaPhone from '../../images/schemaPhone/multivitamines-schema-phone.png'
 
 // immunite
 import immunite from '../../images/general/molecules-immunite.png'
 import immuniteSchema from '../../images/schema/immunite-schema.png'
+import immuniteSchemaPhone from '../../images/schemaPhone/immunite-schema-phone.png'
 
 // circulation
 import circulation from '../../images/general/molecules-circulation.png'
 import circulationSchema from '../../images/schema/circulation-schema.png'
+import circulationSchemaPhone from '../../images/schemaPhone/circulation-schema-phone.png'
 
 
 // voies-respiratoires
 import voiesRespiratoires from '../../images/general/molecules-voies-respiratoires.png'
 import voiesRespiratoiresSchema from '../../images/schema/voies-respiratoires-schema.png'
+import voiesRespiratoiresSchemaPhone from '../../images/schemaPhone/voies-respiratoires-schema-phone.png'
 
 // sommeil
 import sommeil from '../../images/general/molecules-sommeil.png'
 import sommeilSchema from '../../images/schema/sommeil-schema.png'
+import sommeilSchemaPhone from '../../images/schemaPhone/sommeil-schema-phone.png'
 
 const composition = {
     "anti-stress": [
@@ -546,9 +559,7 @@ const infosActifs = {
     },
     "Coenzyme Q10": {
         description: `Le Co-Q10 est présent dans chaque cellule de notre corps, il joue un rôle majeur dans la
-        production d'énergie et agit comme un puissant antioxydant. Les antioxydants ont le pouvoir
-        de protéger les cellules du stress oxydatif et de booster le système immunitaire. C’est un
-        élément crucial pour la protection contre les effets du vieillissement.`
+        production d'énergie au niveau des mitochondries.`
     },
     "Vitamines & Minéraux": {
         bienfait: [
@@ -569,30 +580,20 @@ const infosActifs = {
             `La vitamine D contribue à une calcémie normale et au maintien d'une fonction musculaire normale.`
         ]},
             { titre: "Vitalité", description: [`La vitamine C contribue à réduire la fatigue.`] },
-            {
-                titre: "Système cardiovasculaire", description: [`La vitamine C est bénéfique pour l'entretien du cœur et la santé cardiovasculaire. Elle aide à
-            améliorer le système cardio-vasculaire, le processus de vieillissement général, des
-            problèmes immunologiques et la protection contre les stress environnementaux.`]},
         ]
     },
     "Glutathion": {
-        description: `Le glutathion, souvent qualifié de &quot;super antioxydant&quot; par les scientifiques, est un composé
-        crucial pour maintenir une bonne santé et prévenir le vieillissement cellulaire. Les
-        antioxydants ont le pouvoir de protéger les cellules du stress oxydatif contre les dommages
-        
-        causés par les radicaux libres, les toxines environnementales, le stress et donc de booster le
-        système immunitaire.
-        Cette molécule, naturellement produite par le corps, est composée de trois acides aminés :
-        la cystéine, la glutamine et la glycine.`,
+        description: `Cette molécule, naturellement produite par le corps, est composée de trois acides aminés :
+        la cystéine, la glutamine et la glycine. C’est un composé crucial pour l’organisme car il
+        participe à de nombreuses réactions métaboliques permettant le bon fonctionnement du
+        système immunitaire et la lutte contre le stress oxydatif causé par les radicaux libres.`,
     },
     "Curcuma": {
         description: `Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice
-        renommée pour ses propriétés antioxydantes. L&#39;ingrédient actif du curcuma, la curcumine,
-        possède des propriétés qui peuvent aider à protéger les voies respiratoires. Cela est
-        particulièrement bénéfique pour les personnes ayant des troubles respiratoires.`,
+        renommée pour ses propriétés antioxydantes. L';ingrédient actif du curcuma, la curcumine,
+        possède des propriétés qui peuvent aider à protéger les voies respiratoires.`,
         bienfait: [
             { titre: "Voies respiratoires", description: ["Aide à maintenir la santé des poumons et des voies respiratoires supérieures."] },
-            { titre: "Antioxydant", description: ["Aide à réduire le stress oxydatif."] },
             { titre: "Système immunitaire", description: ["Aide à maintenir l'efficacité du système immunitaire."] },
         ],
     },
@@ -617,18 +618,17 @@ const infosActifs = {
     },
     "Kératine": {
         description: `La kératine, une protéine fibreuse naturelle, composant principal des cheveux et des ongles
-        qui est connue pour ses propriétés fortifiantes et réparatrices. Elle est essentielle pour la
-        santé et la vitalité des cheveux, de la peau et des ongles. Elle est reconnue pour agir comme
-        un élément structurant et protecteur, donnant force et élasticité ce qui se traduit par des
-        cheveux plus lisses, plus brillants et moins susceptibles de frisottis.`
+        qui est connue pour ses propriétés fortifiantes. Elle est essentielle pour la vitalité des
+        cheveux, de la peau et des ongles. Elle est reconnue pour agir comme un élément
+        structurant donnant force et élasticité ce qui se traduit par des cheveux plus lisses, plus
+        brillants et moins susceptibles de frisottis.`
     },
     "Prèle": {
-        description: `La prêle des champs 1 , connue scientifiquement sous le nom d'Equisetum arvense, est une
-        plante médicinale ancienne célèbre pour ses nombreuses vertus pour la santé capillaire.
+        description: `La prêle des champs, connue scientifiquement sous le nom d&#39;Equisetum arvense, est une
+        plante pour ses nombreuses vertus pour la santé capillaire.
         Cette plante est une source naturelle de silice, un minéral vital pour la force et la vitalité des
         cheveux. La silice aide à renforcer les follicules capillaires, à améliorer la texture des cheveux
-        et leur croissance. La prêle est également riche en antioxydants, en sélénium et en
-        potassium, qui contribuent à la santé globale du cuir chevelu et des cheveux.`,
+        et leur croissance.`,
         bienfait: [
             { titre: "Santé de la peau & des ongles", description: ["Bénéfique pour la santé de la peau.","Améliore l'état de la peau, des cheveux et des ongles."] },
             { titre: "Croissance & Force", description: ["Favorise la croissance des cheveux et le renforcement."] },
@@ -641,7 +641,7 @@ const infosActifs = {
     },
     "Vitamines 2": {
         bienfait: [
-            { titre: "Energie", description: ["Les vitamines C, B2, B5, B6, B9 et B12 2 contribuent à réduire la fatigue."] },
+            { titre: "Energie", description: ["Les vitamines C, B2, B5, B6, B9 et B12 contribuent à réduire la fatigue."] },
             {
                 titre: "Antioxydant et système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et
             après un exercice physique intense.
@@ -649,7 +649,7 @@ const infosActifs = {
             La vitamine E contribue à protéger les cellules contre le stress oxydatif.`]
             },
             {
-                titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 3 contribuent à un métabolisme énergétique normal.
+                titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 contribuent à un métabolisme énergétique normal.
             Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales.
             La vitamine B2 contribue au métabolisme normal du fer.
             La vitamine D contribue au maintien d'une fonction musculaire et à une calcémie, une
@@ -702,16 +702,18 @@ const infosActifs = {
             { titre: "", description: [`Contribue à atténuer les effets du décalage horaire.`] },
         ]
     },
+    "GABA 2": {
+        description: `Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement présent
+        dans le cerveau, jouant un rôle crucial dans la régulation de l'activité neuronale.`,
+    },
     "PEA": {
         description: `Le palmitoylethanolamide, communément appelé PEA, est un composé organique
         naturellement présent dans le corps humain, ainsi que dans certains aliments.
-        
-        Le PEA est étudié pour son potentiel à soutenir la santé neuronale en interagissant avec les
-        cellules du système immunitaire et nerveux.`,
+        `,
     },
     "Thé vert": {
         description: `Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
-        bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale à la perte de poids.
+        bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
         Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
         particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`,
         bienfait: [
@@ -753,7 +755,7 @@ const infosActifs = {
         bienfait: [
             { titre: "Antioxydant", description: ["Aide à réduire le stress oxydatif."] },
             { titre: "Système immunitaire", description: ["Aide à maintenir l'efficacité du système immunitaire."] },
-            { titre: "Articulations", description: ["Aide à protéger les articulations et à maintenir la flexibilité des articulations."] },
+            { titre: "Articulations", description: ["Aide à maintenir ma santé des articulations et des os"] },
         ]
     },
     "Boswellia Serrata": {
@@ -761,19 +763,18 @@ const infosActifs = {
         tirée de la famille des arbres Boswellia utilisée depuis des siècles dans diverses traditions
         médicinales, notamment l'Ayurveda.`,
         bienfait: [
-            { titre: "Souplesse", description: ["Aide à maintenir la santé et la souplesse des articulations."] },
-            { titre: "Effort", description: ["Peut jouer un rôle bénéfique dans l'appareil locomoteur, les os et les articulations, et être utile pour améliorer l'effort osseux, articulaire et musculaire."] },
+            { titre: "Confort", description: ["Aide à maintenir le confort articulaire."] },
         ]
     },
     "Scutellaire": {
-        description: `Appartenant à la famille des Lamiacées, le Scutellaire, ou Scutellaria, est une plante
-        médicinale reconnue pour son action bénéfique sur les articulations. Utilisée depuis
+        description: `Appartenant à la famille des Lamiacées, le Scutellaire, ou Scutellaria baicalensis, est une
+        plante médicinale reconnue pour son action bénéfique sur les articulations. Utilisée depuis
         longtemps en médecine traditionnelle, elle est aujourd'hui prisée pour la gestion des
         douleurs articulaires.`,
         bienfait: [
             { titre: "Antioxydant", description: [
                 "Agit comme un antioxydant naturel.", 
-                "Réduit les dommages du stress oxydatif sur le collagène."
+                "Réduit les dommages du stress oxydatif."
             ]},
             { titre: "Flexibilité & mobilité", description: [
                 "Maintient la flexibilité des articulations, améliore la mobilité et protège les tendons.", 
@@ -783,16 +784,14 @@ const infosActifs = {
     "PEA 2": {
         description: `
         Le palmitoylethanolamide, appelé PEA, est un composé organique naturellement présent
-dans le corps humain, ainsi que dans certains aliments. Il est reconnu pour son action sur la
-gestion de la douleur chronique.
+dans le corps humain, ainsi que dans certains aliments. Il a un rôle important dans la régulation du système
+endocannabinoïde.
         `,
     },
     "Resvératrol": {
         description: `Le resvératrol, un puissant polyphénol trouvé naturellement dans le vin rouge, les baies, les
-        arachides et d'autres plantes. Célèbre pour ses propriétés antioxydantes, le resvératrol est
-        de plus en plus recherché pour ses nombreux bénéfices potentiels sur la santé, notamment
-        dans la lutte contre le vieillissement, la santé cardiovasculaire, et même dans la gestion du
-        poids.`,
+        arachides et d'autres plantes. Il est de plus en plus recherché pour ses nombreux bénéfices
+        potentiels sur la santé, notamment dans la préservation de la santé cardiovasculaire.`,
     },
     "Vitamine C": {
         description: `
@@ -806,12 +805,15 @@ normale des os et du cartilage.
         plante médicinale célèbre pour ses vertus protectrices et régénératrices sur le foie.
         `,
         bienfait: [
-            { titre: "Purification & digestion", description: ["Contribue au potentiel détoxifiant, à la santé et à la protection du foie.", "Favorise la digestion et la purification de l’organisme.", "Aide à l'équilibre des sucres physiologiques."] },
+            { titre: "Purification & digestion", description: [
+                "Contribue au potentiel détoxifiant, à la santé et à la protection du foie.",
+                "Favorise la digestion et la purification de l’organisme.",
+            ] },
         ]
     },
     "NADH 2": {
         description: `
-        Le Nicotinamide Adénine Dinucléotide Hydrogène (NADH), connu sous le nom de coenzyme
+        Le Nicotinamide Adénine Dinucléotide (NADH), connu sous le nom de coenzyme
         Q1, est un composant vital présent dans toutes les cellules et indispensable à notre corps. Il
         joue un rôle clé dans le fonctionnement optimal de plus de 300 enzymes appartenant à la
         catégorie des oxydoréductases. En tant qu'élément central de la production d'énergie
@@ -824,23 +826,28 @@ normale des os et du cartilage.
     "Berbéris Aristata": {
         description: `La berbérine est un alcaloïde extrait de diverses plantes utilisées dans la médecine
         traditionnelle chinoise et ayurvédique. Ces dernières années, elle a gagné en popularité en
-        Occident grâce à ses nombreux bienfaits pour la santé, notamment dans la régulation de la
-        glycémie et la gestion du cholestérol.`,
+        Occident grâce à ses nombreux bienfaits pour la santé et la protection du foie.`,
         bienfait: [
-            { titre: "Foie & Métabolisme", description: ["Contribue à un régime hypocholestérolémiant.", "Soutient la santé du foie.", "Aide à améliorer le contrôle de la glycémie."] },
+            { titre: "Foie & Métabolisme", description: [
+                "Soutient la santé du foie.",
+            ] },
         ]
     },
     "Thé vert 2": {
-        description: `Le thé vert 1 est riche en antioxydants, vitamines et minéraux, il offre une multitude de
-        bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale à la perte de poids.
+        description: `Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
+        bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
         Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
         particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`
         ,
         bienfait: [
-            { titre: "Métabolisme & brûle graisses", description: ["Facilite la perte de poids en plus des mesures diététiques, aide à maintenir l’IMC sain et augmente le métabolisme en améliorant la dépense énergétique.", "Stimule l'oxydation des graisses pour réduire la graisse corporelle.", "Aide à prévenir l’accumulation des triglycérides et prévenir l'absorption du cholestérol."] },
-            { titre: "Glycémie", description: ["Aide à maintenir les niveaux de glucose sanguin en bonne santé.", "Aide à protéger la glande produisant de l'insuline."] },
-            { titre: "Cholestérol", description: ["Aide à maintenir les lipides sanguins normaux à un niveau sain."] },
-            { titre: "Digestion", description: ["Maintient le système digestif en bonne santé et la flore intestinale saine."] },
+            { titre: "Métabolisme & brûle graisses", description: [
+                "Augmente le métabolisme en améliorant la dépense énergétique.",
+                "Stimule l'oxydation des graisses pour réduire la graisse corporelle.",
+                "Contribue à maintenir un taux de cholestérol normal et contribue à la santé vasculaire."
+            ] },
+            { titre: "Glycémie", description: [
+                "Aide pour maintenir les niveaux de glucose sanguin normal.",
+                "Aide à protéger les glandes productrices d’insuline."] },
         ]
     },
     "Chrome": {
@@ -888,6 +895,7 @@ const infosProduits = {
             infosActifs['Vitamines']
         ],
         'schema': stressSchema,
+        'schemaPhone': stressSchemaPhone,
         'composition': composition["anti-stress"],
         'compositionGelule': "2",
         'conseilUtilisation': "Prendre 1 à 2 gélules par jour avec un grand verre d’eau.",
@@ -913,6 +921,7 @@ const infosProduits = {
     "circulation": {
         "nom": "CIRCULATION",
         "schema": circulationSchema,
+        "schemaPhone": circulationSchemaPhone,
         "image": circulation,
         'nbGelule': ['30', 'GÉLULES'],
         'nbJour': ['15', 'à', '30', 'JOURS'],
@@ -958,6 +967,7 @@ const infosProduits = {
     "immunite": {
         "nom": "IMMUNITÉ",
         "schema": immuniteSchema,
+        "schemaPhone": immuniteSchemaPhone,
         "image": immunite,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
@@ -992,7 +1002,7 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent, aux enfants de moins de 12 ans et aux personnes sous traitement anticoagulant. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d&#39;acacia • Gélule d&#39;origine végétale :
+        'listeIngredient': `Agent de charge : Gomme d';acacia • Gélule d';origine végétale :
         Hydroxypropylméthylcellulose • Vitamine C (Acide L-asccorbique) liposomée • Stabilisant :
         Phospholipides • Glutathion liposomé • Anti-agglomérant : Talc • Zinc (Picolinate) liposomé
         • Cuivre (Bisglycinate) liposomé • Sélénium (L-sélénomethionine) liposomé • Vitamine D3
@@ -1002,6 +1012,7 @@ const infosProduits = {
     "voies-respiratoires": {
         "nom": "VOIES RESPIRATOIRES",
         "schema": voiesRespiratoiresSchema,
+        "schemaPhone": voiesRespiratoiresSchemaPhone,
         "image": voiesRespiratoires,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
@@ -1011,6 +1022,7 @@ const infosProduits = {
         renforcer le système immunitaire et les voies respiratoires. Elle va permettre de booster la
         vitalité.`,
         "listeBienfait": [
+            "Respiration facilitée",
             "Renforcement du système immunitaire",
             "Protection des poumons et voies respiratoires",
             "Réduction de la fatigue",
@@ -1048,11 +1060,12 @@ const infosProduits = {
     "capillaire": {
         "nom": "CAPILLAIRE",
         "schema": capillaireSchema,
+        "schemaPhone": capillaireSchemaPhone,
         "image": capillaire,
         "nbGelule": ['105', 'GÉLULES'],
         "nbJour": ['90', 'JOURS'],
         "motCle": "Beauté & croissance des cheveux · Anti-chute · Pigmentation",
-        "description": "CAPILLAIRE de Molecules est une formule concentrée en kératine, extraits de plantes, vitamines, minéraux, développée afin de renforcer la structure des cheveux et du cuir chevelu pour améliorer la brillance, la croissance et la pigmentation des cheveux. Elle va permettre de limiter la chute et augmenter la densité capillaire.",
+        "description": "CAPILLAIRE de Molecules est une formule concentrée en kératine, extraits de plantes, vitamines, minéraux, développée afin de renforcer la structure des cheveux et du cuir chevelu pour améliorer la brillance, la croissance et la pigmentation des cheveux. Elle va permettre d'augmenter la densité capillaire.",
         "listeBienfait": [
             "Croissance & Force des cheveux et des ongles",
             "Diminution de la chute",
@@ -1089,6 +1102,7 @@ const infosProduits = {
     "multivitamines-mineraux": {
         "nom": "MULTIVITAMINES & MINÉRAUX",
         "schema": multivitaminesSchema,
+        "schemaPhone": multivitaminesSchemaPhone,
         "image": multivitamines,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
@@ -1136,6 +1150,7 @@ const infosProduits = {
     "sommeil": {
         "nom": "SOMMEIL",
         "schema": sommeilSchema,
+        "schemaPhone": sommeilSchemaPhone,
         "image": sommeil,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
@@ -1158,7 +1173,7 @@ const infosProduits = {
         'listeActifDescription': [
             infosActifs["Camomille"],
             infosActifs["Mélatonine"], 
-            infosActifs["GABA"], 
+            infosActifs["GABA 2"], 
             infosActifs["PEA"], 
         ],
         'composition': composition["sommeil"],
@@ -1184,6 +1199,7 @@ const infosProduits = {
     "energie": {
         "nom": "ÉNERGIE",
         "schema": energieSchema,
+        "schemaPhone": energieSchemaPhone,
         "image": energie,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
@@ -1237,6 +1253,7 @@ const infosProduits = {
     "articulation": {
         "nom": "ARTICULATION",
         "schema": articulationSchema,
+        "schemaPhone": articulationSchemaPhone,
         "image": articulation,
         "nbGelule": ['90', 'GÉLULES'],
         "nbJour": ['30', 'JOURS'],
@@ -1286,6 +1303,7 @@ const infosProduits = {
     "detox": {
         "nom": "DÉTOX",
         "schema": detoxSchema,
+        "schemaPhone": detoxSchemaPhone,
         "image": detox,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
@@ -1295,9 +1313,8 @@ const infosProduits = {
             "Détox et protection du foie",
             "Amélioration de la digestion",
             "Purification du corps",
-            "Equilibre de la glycémie",
         ],
-        "listeBienfaitNum": [1, 1, 1, 1],
+        "listeBienfaitNum": [1, 1, 1],
         "listeActif": [
             "Chardon Marie",
             "Glutathion",
@@ -1326,6 +1343,7 @@ const infosProduits = {
     "jet-lag": {
         "nom": "JET LAG",
         "schema": jetLagSchema,
+        "schemaPhone": jetLagSchemaPhone,
         "image": jetLag,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'JOURS'],
@@ -1371,6 +1389,7 @@ const infosProduits = {
     "minceur": {
         "nom": "MINCEUR",
         "schema": minceurSchema,
+        "schemaPhone": minceurSchemaPhone,
         "image": minceur,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
@@ -1378,7 +1397,7 @@ const infosProduits = {
         "description": "MINCEUR de Molecules est une formule concentrée en extraits de plantes et en minéraux développée afin de booster la perte de poids avec son action brûle-graisses. Elle va permettre de stimuler le métabolisme, de réguler la glycémie et le cholestérol, et faciliter la digestion.",
         "listeBienfait": [
             "Métabolisme et oxydation des graisses",
-            "Perte et contrôle du poids",
+            "Contrôle du poids",
             "Equilibre glycémie & fringales",
             "Purification de l’organisme",
         ],
