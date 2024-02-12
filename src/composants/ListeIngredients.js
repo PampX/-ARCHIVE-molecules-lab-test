@@ -2,8 +2,7 @@ import arrow from '../images/general/arrow.png'
 import '../utils/css/listeIngredient.css'
 import React, { useState } from 'react';
 
-export default function ListeIngredients({ ingredients, num, description }) {
-    console.log(description);
+export default function ListeIngredients({ ingredients, num, description, isPhone }) {
     const [actif, setActif] = useState(-1);
     const [ingreOuBF, setIngreOuBF] = useState(true)
 
@@ -22,7 +21,7 @@ export default function ListeIngredients({ ingredients, num, description }) {
         <div className='div-ingredient-container'>
             {ingredients.map((ingredient, index) => (
                 <div>
-                    <div className='div-ingredient-actif' key={index}>
+                    <div className={(isPhone ? ' phone-div-ingredient-actif' : 'div-ingredient-actif')} key={index}>
                         <div className='div-nomIngre' onClick={() => handle(index)} >
                             <div style={{ display: 'flex' }}>
                                 <h2 className='h2-ingredient-nomactif'>{ingredient}</h2>
@@ -41,9 +40,9 @@ export default function ListeIngredients({ ingredients, num, description }) {
                         description[index]['description'] && description[index]['bienfait'] ? (
                             // Si l'ingrédient a une description ET des bienfaits
                             ingreOuBF ? (
-                                <p className='p-ingredient-explication'>{description[index]['description']}</p>
+                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{description[index]['description']}</p>
                             ) : (
-                                <p className='p-ingredient-explication'>
+                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
                                         <div key={index2}>
                                             <p className='bienfait-titre'>{bienfait.titre}</p>
@@ -57,9 +56,9 @@ export default function ListeIngredients({ ingredients, num, description }) {
                         ) : (
                             // Si l'ingrédient a seulement une description ou des bienfaits
                             description[index]['description'] ? (
-                                <p className='p-ingredient-explication'>{description[index]['description']}</p>
+                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{description[index]['description']}</p>
                             ) : (
-                                <p className='p-ingredient-explication'>
+                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
                                         <div key={index2}>
                                             <p className='bienfait-titre'>{bienfait.titre}</p>

@@ -1,4 +1,6 @@
-
+body {
+    overflow-x: hidden; /* Empêche le défilement vertical */
+}
 .div-fp-container1{
     display: flex;
     justify-content: center;
@@ -265,4 +267,132 @@ margin-top: 50px;
 }
 .img-fp-schema{
     width: 900px;
+}
+
+
+
+
+/* CSS FOR THE PHONE VERSION */
+.div-fp-container1-phone{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.img-fp-boite-phone{
+    width: 280px;
+}
+.div-3icones-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+}
+.img-fp-icones-phone{
+    width: 32px;
+}
+.margin-icone {
+    margin-left: 5px;
+}
+.margin-left{
+    margin-left: 10px;
+
+}
+.div-fp-container2-phone{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.h2-fp-nom-phone{
+    font-family: 'Poppins', sans-serif;
+    color: #1B1C3C;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.img-fp-partage-phone{
+    height: 24px;
+    margin-left: 10px;
+}
+
+.p-fp-motcle-phone{
+    font-family: 'Poppins', sans-serif;
+    text-align: start ;
+    color: #99CFE2;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.div-fp-container3-phone,.div-fp-container2-phone{
+    margin-left: 10px;
+}
+
+.div-fp-container3-phone{
+    border-bottom: 1px solid #E8E6E5;
+}
+
+.p-fp-description-phone{
+    font-family: 'Poppins', sans-serif;
+    color: #474748;
+    font-size: 16px;
+}
+
+.div-fp-bienfait-phone{
+    display: flex;
+    justify-content: start;
+    align-items:flex-start;
+    margin: 5px;
+}
+
+.div-fp-div3icon-phone{
+    display: flex;
+    border-bottom: 1px solid #E8E6E5;
+
+}
+
+.div-fp-technologieLiposome-phone{
+    margin-left: 10px;
+    width: 90%;
+}
+.div-fp-liposomeListeIngredient-phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-fp-liposome3d-phone{
+    margin: 60px;
+    width: 265px;
+    height: 200px;
+}
+
+.div-fp-schema-phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.img-fp-schema-phone{
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.div-fp-clickDetail-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fp-handClick-phone{
+    width: 25px;
+    height: 25px;
+}
+
+.h2-fp-schema-phone{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #121628;
 }

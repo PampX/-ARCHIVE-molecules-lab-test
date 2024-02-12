@@ -41,9 +41,8 @@ export default function Composition({ ingredients, gelules }) {
 function doesItGotAR(ingredients) {
     for (let i = 0; i < ingredients.length; i++) {
         if (ingredients[i].AR) {
-            console.log("AR found");
-            return true; // Retourne vrai dès qu'un AR est trouvé
+            return true; 
         }
     }
-    return false; // Retourne faux si aucun AR n'est trouvé après la boucle
+    return false;
 }

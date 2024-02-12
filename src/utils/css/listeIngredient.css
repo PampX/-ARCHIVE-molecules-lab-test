@@ -11,6 +11,14 @@
     width: 474px;
 }
 
+.phone-div-ingredient-actif{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
 .h2-ingredient-nomactif {
     font-family: "Poppins", sans-serif;
     color: #474748;
@@ -30,6 +38,12 @@
 .p-ingredient-explication{
     font-family: "Poppins", sans-serif;
     width: 470px;
+    color: #474748;
+}
+
+.p-ingredient-explication-phone{
+    font-family: "Poppins", sans-serif;
+    width: 350px;
     color: #474748;
 }
 
