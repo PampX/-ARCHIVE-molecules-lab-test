@@ -239,7 +239,7 @@ const faq = {
     ,
     "immunite": [
         {
-            "question": "IMMUNITE est-il compatible avec la grossesse / allaitement ?",
+            "question": "IMMUNITÉ est-il compatible avec la grossesse / allaitement ?",
             "reponse": "Cette formule est déconseillée aux femmes enceintes et allaitantes, nous vous invitons à consulter votre médecin traitant ou gynécologue avant de commencer le programme."
         },
         {
@@ -354,7 +354,7 @@ const faq = {
     ,
     "energie": [
         {
-            "question": "ENERGIE est-il compatible avec la grossesse / allaitement ?",
+            "question": "ÉNERGIE est-il compatible avec la grossesse / allaitement ?",
             "reponse": "Cette formule est déconseillée aux femmes enceintes et allaitantes, nous vous invitons à consulter votre médecin traitant ou gynécologue avant de commencer le programme."
         },
         {
@@ -479,8 +479,8 @@ const infosActifs = {
     `,`Elle aide à améliorer la concentration, réduit les symptômes de dépression et d'anxiété, et
     favorise un meilleur sommeil, contribuant ainsi à une meilleure qualité de vie.`],
         bienfait: [
-            { titre: 'Anti-stress & Equilibre', description: ["Prise en charge dans les périodes de tension mentale, nerveuse et d'anxiété.", "Contribue à l'équilibre émotionnel, le bien-être physique, mental et à une détente optimale.", "Aide l'organisme à faire face au stress et à récupérer des événements stressants."] },
-            { titre: 'Energie & Performance', description: ["Contribue à maintenir les capacités physiques et mentales dans les cas de faiblesse, d'épuisement, de fatigue et de perte de concentration.", "Aide à vous faire sentir plus énergique et à maintenir une endurance optimale.", "Aide à prendre du poids et de la masse musculaire."] },
+            { titre: 'Anti-stress & Équilibre', description: ["Prise en charge dans les périodes de tension mentale, nerveuse et d'anxiété.", "Contribue à l'équilibre émotionnel, le bien-être physique, mental et à une détente optimale.", "Aide l'organisme à faire face au stress et à récupérer des événements stressants."] },
+            { titre: 'Énergie & Performance', description: ["Contribue à maintenir les capacités physiques et mentales dans les cas de faiblesse, d'épuisement, de fatigue et de perte de concentration.", "Aide à vous faire sentir plus énergique et à maintenir une endurance optimale.", "Aide à prendre du poids et de la masse musculaire."] },
             { titre: 'Antioxydant', description: ["Aide à protéger les tissus des blessures.", "Aide à un effet rajeunissant général et à protéger la santé générale."] }
         ]
     },
@@ -552,7 +552,7 @@ const infosActifs = {
         bienfait: [
             {
                 titre: "Système cardiovasculaire & Sanguin", 
-                // before: "L'Extrait de pépins de raisin est une excellente source de Oligoremic Proanthocyanidines (OPC), antioxydants naturels qui ont été associés :",
+                before: "L'Extrait de pépins de raisin est une excellente source de Oligoremic Proanthocyanidines (OPC), antioxydants naturels qui ont été associés :",
                 description: ["À la réduction du stress oxydatif.", "Le renforcement du cœur et des vaisseaux pour la santé du système circulatoire.", "A un effet de renforcement sur le tissu conjonctif."]
             },
         ]
@@ -641,7 +641,7 @@ const infosActifs = {
     },
     "Vitamines 2": {
         bienfait: [
-            { titre: "Energie", description: ["Les vitamines C, B2, B5, B6, B9 et B12 contribuent à réduire la fatigue."] },
+            { titre: "Énergie", description: ["Les vitamines C, B2, B5, B6, B9 et B12 contribuent à réduire la fatigue."] },
             {
                 titre: "Antioxydant et système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et
             après un exercice physique intense.`,`
@@ -657,14 +657,14 @@ const infosActifs = {
             `,`La vitamine B6 contribue à réguler l'activité hormonale.`]
             },
             {
-                titre: "Equilibre nerveux et mental", description: [`Les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux.
+                titre: "Équilibre nerveux et mental", description: [`Les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux.
                 `,`Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`]
             },
         ]
     },
     "Minéraux": {
         bienfait: [
-            { titre: "Energie", description: [`Le fer et le magnésium contribuent à réduire la fatigue.`] },
+            { titre: "Énergie", description: [`Le fer et le magnésium contribuent à réduire la fatigue.`] },
             {
                 titre: "Antioxydant & système immunitaire", description: [`Le zinc et le cuivre contribuent à protéger les cellules contre le stress oxydatif.
                 `,`Le sélénium contribue à la protection de l'ADN, des protéines et des lipides des dommages
@@ -677,7 +677,7 @@ const infosActifs = {
                 `,`Le chrome maintient une glycémie normale et un métabolisme normal des
             macronutriments.`]
             },
-            { titre: "Equilibre nerveux et mental", description: [`Le magnésium et le cuivre contribuent au fonctionnement normal du système nerveux.`] },
+            { titre: "Équilibre nerveux et mental", description: [`Le magnésium et le cuivre contribuent au fonctionnement normal du système nerveux.`] },
         ]
     },
     "Camomille": {
@@ -739,10 +739,10 @@ const infosActifs = {
     },
     "Vitamines & Minéraux 4": {
         bienfait: [
-            { titre: "Energie", description: ["Les vitamines B2, B3, B5, B6, B9, B12, le fer et le magnésium contribuent à réduire la fatigue."] },
+            { titre: "Énergie", description: ["Les vitamines B2, B3, B5, B6, B9, B12, le fer et le magnésium contribuent à réduire la fatigue."] },
             { titre: "Système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et après un exercice physique intense. `,` Les vitamines B9 et B12 contribuent au fonctionnement normal du système immunitaire.`] },
             { titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 et la magnésium contribuent à un métabolisme énergétique normal. `,` Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales. `,`La vitamine B2 contribue au métabolisme normal du fer.`] },
-            { titre: "Equilibre nerveux et mental", description: [`Le magnésium et les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux. `,` Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`] },
+            { titre: "Équilibre nerveux et mental", description: [`Le magnésium et les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux. `,` Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`] },
         ]
     },
     "Curcuma 2": {
@@ -868,7 +868,7 @@ const infosProduits = {
     "anti-stress": {
         'nom': 'ANTI-STRESS',
         'image': antiStress,
-        'motCle': 'Sérénité · Détente · Energie · Performance',
+        'motCle': 'Sérénité · Détente · Énergie · Performance',
         'nbGelule': ['30', 'GÉLULES'],
         'nbJour': ['15', 'à', '30', 'JOURS'],
         'description': `Anti-Stress de Molecules est une formule concentrée en Ashwagandha et en Rhodiola Rosea, des plantes adaptogènes, 
@@ -973,7 +973,7 @@ const infosProduits = {
         "nbJour": ['15', 'à', '30', 'JOURS'],
         "motCle": "Système immunitaire · Protection stress oxydatif · Métabolisme · Vitalité",
         "description": `
-        IMMUNITE de Molecules est une formule concentrée en vitamines, minéraux et en glutathion, un antioxydant reconnu, qui a été développée 
+        IMMUNITÉ de Molecules est une formule concentrée en vitamines, minéraux et en glutathion, un antioxydant reconnu, qui a été développée 
         afin de renforcer le système immunitaire et le métabolisme en le protégeant des 
         radicaux libres qui peuvent créer des dommages sur l’organisme. Elle va permettre de booster les fonctions musculaires et la vitalité.`,
         "listeBienfait": [
@@ -1111,7 +1111,7 @@ const infosProduits = {
         "listeBienfait": [
             "Renforcement du système immunitaire",
             "Réduction de la fatigue",
-            "Equilibre du métabolisme et du système hormonal",
+            "Équilibre du métabolisme et du système hormonal",
         ],
         "listeBienfaitNum": [1, 2, 3],
         "listeActif": [
@@ -1203,8 +1203,8 @@ const infosProduits = {
         "image": energie,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
-        "motCle": "Dynamisant · Equilibre énergétique · Système nerveux",
-        "description": "Energie de Molecules est une formule concentrée en caféine, vitamines, minéraux et en extrait de plante développée afin d’apporter de l’énergie à l’organisme. Elle va permettre d’améliorer l’équilibre nerveux et psychologique, augmenter vos performances et agir comme stimulant.",
+        "motCle": "Dynamisant · Équilibre énergétique · Système nerveux",
+        "description": "Énergie de Molecules est une formule concentrée en caféine, vitamines, minéraux et en extrait de plante développée afin d’apporter de l’énergie à l’organisme. Elle va permettre d’améliorer l’équilibre nerveux et psychologique, augmenter vos performances et agir comme stimulant.",
         "listeBienfait": [
             "Réduction de la fatigue et du stress oxydatif",
             "Renforcement des fonctions cérébrales et physiques",

@@ -50,6 +50,8 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                                     {description[index]['bienfait'].map((bienfait, index2) => (
                                         <div key={index2}>
                                             <p className='bienfait-titre'>{bienfait.titre}</p>
+                                            {/* Ne concerne que Pépin de raisins pour Circulation */}
+                                            <p>{bienfait.before}</p>
                                             {bienfait.description.map((bfDescription, index3) => (
                                                 <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
                                             ))}
@@ -60,7 +62,11 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                         ) : (
                             // Si l'ingrédient a seulement une description ou des bienfaits
                             description[index]['description'] ? (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{description[index]['description']}</p>
+                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                    {description[index]['description'].map((desc,index6)=>(
+                                        <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                    ))}
+                                </p>
                             ) : (
                                 <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
