@@ -5,6 +5,7 @@
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 50px
 }
 
 .div-footer-menuLogo{
@@ -50,4 +51,34 @@
     font-style: italic;
     width: 100%;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .div-footer-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .div-footer-menuLogo{
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p-footer-logo{
+        font-size: 20px;
+    }
+
+    .img-footer-logo{
+        height: 35px;
+    }
+
+    .p-footer-legal{
+        margin: 0;
+    }
+
+    .div-footer-container{
+        padding-top: 0 
+   }
 }

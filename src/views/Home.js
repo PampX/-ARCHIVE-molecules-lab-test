@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ListProduct from '../composants/ListProduct';
 import '../utils/css/home.css';
 import imgArticulation from '../images/home/molecules-articulation.png';
 import imgSommeil from '../images/home/molecules-sommeil.png';
@@ -10,7 +11,6 @@ import imgAvantages from '../images/home/avantage-img.png';
 import imgAvantages2 from '../images/home/avantage-img2.png';
 import imgPhopholipide from '../images/home/phospholipide-img.png';
 import imgPhopholipide2 from '../images/home/phospholipide-img2.png';
-import imgPhopholipide3 from '../images/home/phospholipide-img3.png';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -18,7 +18,6 @@ export default function Home() {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
-    
 
     const jsonProduct = [
         { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
@@ -59,6 +58,9 @@ export default function Home() {
                         <p className='text-liposome-advantage'>Les suppléments liposomaux et les ingrédients alimentaires peuvent avoir un plus grand impact que les suppléments non liposomaux. Les liposomes peuvent être considérés comme des véhicules porteurs qui contiennent et protègent les substances actives. Lorsqu'il est administré oralement, les liposomes peuvent délivrer sélectivement les principes actifs au site intestinal d'absorption conduisant à une meilleure biodisponibilité. L'administration orale liposomale peut aussi indirectement améliorer la distribution corporelle après absorption intestinale. Cela soulève la probabilité qu'une substance active administrée par voie orale puisse mieux atteindre partie du corps où il doit agir.</p>
                         <img className='img-schema-avantage' src={imgAvantages2} />
                     </div>
+                </div>
+                <div className='container-shema-Vtab'>
+                    <img className='img-schema-avantage-mobile' src={imgAvantages2} />
                 </div>
                 {/* VIDEO */}
                 <div className='container-process'>
@@ -106,15 +108,7 @@ export default function Home() {
                 <div className='container-engagment'>
                     <p className='text-engagment'>Notre équipe s'engage pour l'excellence scientifique</p>
                 </div>
-                <div className='container-products-global'>
-                    {jsonProduct.map((product, index) => (
-                        <div className='container-product' key={index}>
-                            <img className='img-product' src={product.url} alt={product.name} />
-                            <h2 className='title-product'>{product.name}</h2>
-                            <p className='text-product'>{product.description}</p>
-                        </div>
-                    ))}
-                </div>
+                <ListProduct json={jsonProduct}/>
                 <div className='button-view-product '>
                     <Link to='/produits' className='button-expert-content-bis'>
                         Voir nos produits

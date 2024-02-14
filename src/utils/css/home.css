@@ -8,9 +8,30 @@ Link {
     text-decoration: none;
 }
 
+/* body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }  
+
+.container-shema-Vtab{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-schema-avantage-mobile{
+    height: auto;
+    display: none;
+    width: 50vw;
+}
+
 .container-home {
-    max-width: 1920px;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -23,7 +44,7 @@ Link {
 }
 
 .img-intro-home {
-    width: 50vw;
+    width: 50%;
     height: auto;
 }
 
@@ -62,7 +83,6 @@ Link {
     background-color: #121628;
     color: white;
     flex-direction: column;
-    max-width: 1920px;
     width: 100vw;
     height: 165px;
     font-size: 22px;
@@ -173,7 +193,7 @@ Link {
 }
 
 .img-liposome-advantag {
-    width: 45vw;
+    width: 35vw;
     height: auto;
     margin-right: 80px;
     max-width: 941px;
@@ -225,7 +245,7 @@ Link {
 }
 
 .img-liposome-content{
-    width: 35vw;
+    width: 55%;
     height: auto;
     padding-left: 60px;
     max-width: 1030px;
@@ -343,7 +363,7 @@ Link {
     text-transform: uppercase;
     text-decoration: none;
     text-decoration-color: #121628;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -364,6 +384,10 @@ Link {
 
 /* version ecran normal */
 @media (max-width: 1366px) {
+    .container-home{
+        max-width: 1366px;
+    }
+
     .container-liposome-advantage{
         width: 100vw;
     }
@@ -496,14 +520,319 @@ Link {
         margin-top: 0;
         padding: 20px 30px 0 30px;
     }
+}
 
-    .img-expert{
-        width: auto;
-        height: 370px;
+@media (max-width: 1005px){
+    .container-products-global{
+        flex-direction: column;
+    }
+
+    .container-product{
+        margin-top: 15px;
+    }
+
+    .button-view-product{
+        margin-top: 30px;
     }
 }
 
-/* version petit ecran */
-@media (max-width: 1024px) {
-    
+/* version tablette */
+@media (max-width: 768px) {
+    .img-intro-home{
+        display: none;
+    }
+
+    .container-intro-title-text{
+        height: 65vh;
+        margin-left: 0px;
+        justify-content: start;
+        margin-left: 20px;
+        background-image: url('../../images/home/intro_Vtab.png');
+        background-position: 360px bottom;
+        background-repeat: no-repeat;
+    }
+
+    .title-intro-home{
+        margin-top: 10%;
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .text-intro-home{
+        line-height: 30px;
+    }
+
+    .rectangle{
+        margin-top: 20px;
+    }
+
+    .container-expert-content{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .img-schema-avantage{
+        height: auto;
+        display: none;
+        width: 65vw;
+    }
+
+    .img-schema-avantage-mobile{
+        height: auto;
+        display: block;
+        width: 65vw;
+    }
+
+    .img-expert{
+        height: auto;
+        width: 55vw;
+        margin-top: 30px;
+    }
+
+    .container-content-liposome-advantag{
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container-liposome-advantage{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container-phospholipide{
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    .container-products-global{
+        flex-direction: column;
+    }
+
+    .container-engagment{
+        margin-top: 30px;
+    }
+
+    .container-product{
+        margin-top: 30px;
+    }
+
+    .container-process{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .container-text-intro-background{
+        margin-bottom: 30px;
+    }
+
+    .img-liposome-advantag{
+        height: auto;
+        width: 65vw;
+        margin-left: 0;
+    }
+
+    .img-liposome-content{
+        height: auto;
+        width: 80vw;
+        padding-left: 0;
+    }
+
+    .img-phospholipide{
+        height: auto;
+        width: 65vw;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .text-expert-content{
+        padding-right: 0;
+    }
+
+    .text-engagment{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 426px) {
+    .title-intro-home{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .text-intro-home{
+        font-size: 20px;
+    }
+
+    .container-intro-title-text{
+        height: 65vh;
+        margin-left: 0px;
+        justify-content: start;
+        margin-left: 20px;
+        background-image: url('../../images/home/intro_Vtab.png');
+        background-position: 50px bottom;
+        background-repeat: no-repeat;
+    }
+
+    .text-intro-background{
+        font-size: 16px;
+    }
+
+    .title-intro-background{
+        font-size: 16px;
+    }
+
+    .title-expert-content{
+        font-size: 22px;
+    }
+
+    .title-liposome-advantag{
+        font-size: 22px;
+    }
+
+    .container-content-liposome-advantag{
+        margin-bottom: 30px;
+    }
+
+    .title-liposome-content{
+        font-size: 22px;
+    }
+
+    .title-phospholipide{
+        font-size: 16px;
+    }
+
+    .text-engagment{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 376px) {
+    .title-intro-home{
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .text-intro-home{
+        font-size: 18px;
+    }
+
+    .container-intro-title-text{
+        height: 65vh;
+        margin-left: 0px;
+        justify-content: start;
+        margin-left: 20px;
+        background-image: url('../../images/home/intro_Vtab.png');
+        background-position: 10px bottom;
+        background-repeat: no-repeat;
+    }
+
+    .text-intro-background{
+        font-size: 14px;
+    }
+
+    .title-intro-background{
+        font-size: 14px;
+    }
+
+    .title-expert-content{
+        font-size: 18px;
+    }
+
+    .title-liposome-advantag{
+        font-size: 18px;
+    }
+
+    .container-content-liposome-advantag{
+        margin-bottom: 30px;
+    }
+
+    .title-liposome-content{
+        font-size: 18px;
+    }
+
+    .title-phospholipide{
+        font-size: 14px;
+    }
+
+    .text-engagment{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 321px) {
+    .title-intro-home{
+        font-size: 32px;
+        margin-top: 60px;
+    }
+
+    .text-intro-home{
+        font-size: 18px;
+    }
+
+    .container-intro-title-text{
+        height: 65vh;
+        margin-left: 0px;
+        justify-content: start;
+        margin-left: 20px;
+        background-image: url('../../images/home/intro_Vtab.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .text-liposome-content{
+        margin-top: 0px
+    }
+
+    .text-intro-background{
+        font-size: 14px;
+    }
+
+    .title-intro-background{
+        font-size: 14px;
+    }
+
+    .title-expert-content{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .title-liposome-advantag{
+        font-size: 15px;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .container-content-liposome-advantag{
+        margin-bottom: 30px;
+        margin-top: 0px
+    }
+
+    .title-liposome-content{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .title-phospholipide{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .text-engagment{
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    .button-expert-content{
+        font-size: 14px;
+    }
+
+    .button-expert-content::after{
+        width: 182px;
+    }
 }

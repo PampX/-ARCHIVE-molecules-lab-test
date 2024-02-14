@@ -54,6 +54,7 @@ export default function Produits() {
                         <img className='img-product-pres' src={images[product.key]} alt={product.name} />
                         <p className='text-product-product'>{product.name}</p>
                         <p className='extra-text'>{product.desc}</p>
+                        <div className='underline'></div>
                     </div>
                 ))}
             </div>
