@@ -907,14 +907,14 @@ const infosProduits = {
             "Déconseillé aux femmes enceintes ou qui allaitent, et aux enfants de moins de 12 ans.",
             "À conserver à l'abri de la chaleur, de la lumière et de l’humidité.",
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellullose • Extrait d’Ashwagandha (Withania somnifera) liposomée •
         Extrait de Rhodiola rosea liposomée • GABA (Acide gamma-aminobutyrique) liposomé •
         Stabilisant : Phospholipides • Anti-agglomérant : Talc ; Vitamine B3 (Niacine) liposomée •
         Vitamine B5 (Pantothénate de calcium) liposomée • Vitamine B2 (Riboflavine) liposomée •
         Vitamine B6 (Pyridoxine HCl) liposomée • Vitamine B1 (Thiamine) liposomée • Vitamine B9
         (Acide folique) liposomée • Vitamine B8 (Biotine) liposomée • Vitamine B12
-        (Méthylcobalamine) liposomée.`,
+        (Méthylcobalamine) liposomée.`],
         'faq' : faq["anti-stress"]
 
     },
@@ -957,11 +957,11 @@ const infosProduits = {
             `Demandez conseil à votre pharmacien avant de consommer ce produit.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia ; Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia ; Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Diosmine liposomée • Rutine liposomée • Quercétine
         liposomée • Extrait de Pépins de raisins (Vitis vinifera) liposomés • Extrait de Vigne rouge
         (Vitis vinifera) liposomée • Stabilisant : Phospholipides • Anti-agglomérant : Talc •
-        Resvératrol liposomé • Coenzyme Q10 (Ubiquinone) liposomée.`,
+        Resvératrol liposomé • Coenzyme Q10 (Ubiquinone) liposomée.`],
         'faq' : faq["circulation"]
     },
     "immunite": {
@@ -1002,11 +1002,11 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent, aux enfants de moins de 12 ans et aux personnes sous traitement anticoagulant. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d';acacia • Gélule d';origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d'acacia • Gélule d';origine végétale :
         Hydroxypropylméthylcellulose • Vitamine C (Acide L-asccorbique) liposomée • Stabilisant :
         Phospholipides • Glutathion liposomé • Anti-agglomérant : Talc • Zinc (Picolinate) liposomé
         • Cuivre (Bisglycinate) liposomé • Sélénium (L-sélénomethionine) liposomé • Vitamine D3
-        (Cholécalciférol) liposomée.`,
+        (Cholécalciférol) liposomée.`],
         'faq': faq["immunite"]
     },
     "voies-respiratoires": {
@@ -1050,11 +1050,11 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent, aux enfants de moins de 12 ans et aux personnes sous traitement anticoagulant. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellullose • Quercétine liposomée • Extrait de Curcuma longa liposomé
         • Stabilisant : Phospholipides • Vitamine C (Acide L-ascorbique) liposomée • Glutathion
         liposomé • Anti-agglomérant : Talc • Zinc (Picolinate) liposomé • Sélénium (L-
-        sélénomethionine) liposomé • Vitamine D3 (Cholécalciférol) liposomée.`,
+        sélénomethionine) liposomé • Vitamine D3 (Cholécalciférol) liposomée.`],
         'faq': faq["voies-respiratoires"]
     },
     "capillaire": {
@@ -1092,11 +1092,11 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent et aux enfants de moins de 12 ans. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Kératine liposomée • Stabilisant : Phospholipides • Extrait
         de Prêle (Equisetum arvense) liposomée • Antiagglomérant : Talc • Zinc (Picolinate) liposomé
         • Vitamine B3 (Niacine) liposomée • Vitamine B6 (Pyridoxine HCl) liposomée • Vitamine B8
-        (Biotine) liposomée • Cuivre (Bisglycinate) liposomé.`,
+        (Biotine) liposomée • Cuivre (Bisglycinate) liposomé.`],
         'faq': faq["capillaire"]
     },
     "multivitamines-mineraux": {
@@ -1134,7 +1134,7 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent et aux enfants de moins de 12 ans.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité. `,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme <i>d’acacia</i> • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Vitamine C (Acide L-ascorbique) liposomée • Magnésium
         (Oxyde) liposomé ; Stabilisant : Phospholipides • Anti-agglomérant : Talc • Vitamine B3
         (Niacine) liposomée • Vitamine E (D-alpha tocophérol) liposomée • Zinc (Picolinate)
@@ -1143,7 +1143,7 @@ const infosProduits = {
         B12 (Thiamine) liposomée • Cuivre (Bisglycinate) liposomé • Vitamine B9 (Acide folique)
         liposomée • Vitamine B8 (Biotine) liposomée • Sélénium (L-sélénométhionine) liposomé •
         Chrome (Picolinate) liposomé • Vitamine D3 (Cholécalciférol) liposomée • Vitamine B12
-        (Méthylcobalamine) liposomée.`,
+        (Méthylcobalamine) liposomée.`],
         'faq': faq["multivitamines-mineraux"]
 
     },
@@ -1189,10 +1189,10 @@ const infosProduits = {
             `Demandez conseil à votre médecin si vous souffrez d’épilepsie, d’asthme, ou de troubles du comportement. Ne pas consommer ce produit avant une activité nécessitant une vigilance soutenue. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellullose • Extrait de Camomille (Matricaria recutita) liposomé • GABA
         (Acide gamma-aminobutyrique) liposomé • PEA (Palmitoyléthanolamide) liposomé •
-        Stabilisant : Phospholipides • Antiagglomérant : Talc • Mélatonine liposomée.`,
+        Stabilisant : Phospholipides • Antiagglomérant : Talc • Mélatonine liposomée.`],
         'faq': faq["sommeil"]
 
     },
@@ -1238,7 +1238,7 @@ const infosProduits = {
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.
             `,
         ],
-        'listeIngredient': `
+        'listeIngredient': [`
             Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
             Hydroxypropylméthylcellullose • Caféine liposomée • Vitamine C (Acide L-ascorbique)
             liposomée • Magnésium (Oxyde) liposomé • Extrait de Thé vert (Camellia sinensis) liposomé
@@ -1247,7 +1247,7 @@ const infosProduits = {
             (Pentothénate de calcium) liposomée • Vitamine B2 (Riboflavine) liposomée • Vitamine B6
             (Pyridoxine HCl) liposomée • Vitamine B1 (Thiamine) liposomée • Vitamine B9 (Acide folique)
             liposomée • Vitamine B8 (Biotine) liposomée • Vitamine B12 (Méthylcobalamine) liposomée.
-        `,
+        `],
         'faq': faq["energie"]
     },
     "articulation": {
@@ -1293,11 +1293,11 @@ const infosProduits = {
             `Demandez conseil à votre pharmacien avant de consommer ce produit.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Gélule d’origine végétale : Hydroxypropylméthylcellulose • Agent de charge : Gomme
+        'listeIngredient': [`Gélule d’origine végétale : Hydroxypropylméthylcellulose • Agent de charge : Gomme
         d’acacia • Extrait de Boswelllia serrata liposomé • Extrait de Curcuma longa liposomé •
         Vitamine C liposomée • PEA liposomé (Palmitoyléthanolamide) • Extrait de Scutellaria
         baicalensis liposomée • Stabilisant : Phospholipides • Resvératrol liposomé • Anti-
-        agglomérant : Talc.`,
+        agglomérant : Talc.`],
         'faq': faq["articulation"]
     },
     "detox": {
@@ -1335,9 +1335,9 @@ const infosProduits = {
             `Déconseillé aux femmes enceinte ou qui allaitent, aux adolescents de moins de 18 ans et en cas d’allergie aux astéracées.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Extrait de fruits de Chardon marie (Silybum marianum)
-        liposomé • Glutathion liposomé ; Stabilisant : Phospholipides • Anti-agglomérant : Talc.`,
+        liposomé • Glutathion liposomé ; Stabilisant : Phospholipides • Anti-agglomérant : Talc.`],
         'faq': faq["detox"]
     },
     "jet-lag": {
@@ -1427,10 +1427,10 @@ const infosProduits = {
             `Ne doit pas être consommer si vous prenez d’autres produits contenant du thé vert le même jour.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Extrait de Berberis aristata liposomé • Extrait de Chardon
         marie (Silybum marianum) liposomé • Extrait de Thé vert (Camellia sinensis) liposomé •
-        Stabilisant : Phospholipides ; Anti-agglomérant : Talc • Chrome (Picolinate) liposomé.`,
+        Stabilisant : Phospholipides ; Anti-agglomérant : Talc • Chrome (Picolinate) liposomé.`],
         'faq': faq["minceur"]
 
     },

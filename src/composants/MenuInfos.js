@@ -42,7 +42,9 @@ export default function MenuInfos({data, isPhone}) {
                         : item === 'Ingrédients' ? 
                             <div>
                                 <p className='p-mi-ingre'>Ingrédients </p>
-                                {data.listeIngredient}
+                                {data.listeIngredient.map((ingre,index1)=>(
+                                    <p key={index1}>{ingre}</p>
+                                ))}
                             </div>
                         : null
                     }

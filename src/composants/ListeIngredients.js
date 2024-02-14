@@ -40,13 +40,13 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                         description[index]['description'] && description[index]['bienfait'] ? (
                             // Si l'ingrédient a une description ET des bienfaits
                             ingreOuBF ? (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['description'].map((desc,index6)=>(
-                                        <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                        <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
                                     ))}
-                                </p>
+                                </div>
                             ) : (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
                                         <div key={index2}>
                                             <p className='bienfait-titre'>{bienfait.titre}</p>
@@ -57,18 +57,18 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                                             ))}
                                         </div>
                                     ))}
-                                </p>
+                                </div>
                             )
                         ) : (
                             // Si l'ingrédient a seulement une description ou des bienfaits
                             description[index]['description'] ? (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['description'].map((desc,index6)=>(
-                                        <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                        <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
                                     ))}
-                                </p>
+                                </div>
                             ) : (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
                                         <div key={index2}>
                                             <p className='bienfait-titre'>{bienfait.titre}</p>
@@ -77,7 +77,7 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                                             ))}
                                         </div>
                                     ))}
-                                </p>
+                                </div>
                             )
                         )
                     )}

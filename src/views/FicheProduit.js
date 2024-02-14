@@ -14,8 +14,16 @@ import liposome from '../images/general/liposome.svg'
 import liposome3d from '../images/general/liposome3d.png'
 // import handClick from '../images/general/handClick.png'
 
+
+import imgArticulation from '../images/home/molecules-articulation.png';
+import imgSommeil from '../images/home/molecules-sommeil.png';
+import imgRespiratoires from '../images/home/molecules-voies-respiratoires.png';
+import imgStress from '../images/home/molecules-anti-stress.png';
+
 import ListeIngredients from '../composants/ListeIngredients'
 import MenuInfos from '../composants/MenuInfos'
+import ListProduct from '../composants/ListProduct';
+
 
 export default function FicheProduit({ data }) {
 
@@ -26,6 +34,12 @@ export default function FicheProduit({ data }) {
         console.log(openModal);
         setOpenModal(true);
     }
+    const jsonProduct = [
+        { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
+        { name: "SOMMEIL", description: "Relaxation", url: imgSommeil },
+        { name: "VOIES RESPIRATOIRES", description: "Respiration & système immunitaire", url: imgRespiratoires },
+        { name: "ANTI-STRESS", description: "Résistance physique & mentale", url: imgStress }
+    ];
 
     return (
         <div>
@@ -217,6 +231,7 @@ export default function FicheProduit({ data }) {
                             <img id='composition' className='img-fp-schema' alt='schema' src={data.schema} />
                         </div>
                         <MenuInfos data={data} />
+                        <ListProduct json={jsonProduct}/>
                     </div>
                 </div>
             }
