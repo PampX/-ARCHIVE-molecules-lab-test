@@ -471,13 +471,13 @@ const faq = {
 
 const infosActifs = {
     "Ashwagandha": {
-        description: `L'Ashwagandha, connue scientifiquement sous le nom de Withania somnifera, est une
+        description: [`L'Ashwagandha, connue scientifiquement sous le nom de Withania somnifera, est une
     plante adaptogène puissante originaire d'Inde. Utilisée depuis des millénaires en médecine
     ayurvédique, elle est réputée pour ses nombreux bienfaits sur la santé physique et mentale.
-    Elle aide le corps à gérer le stress efficacement. Elle agit en modulant les réponses du
+    Elle aide le corps à gérer le stress efficacement.`,` Elle agit en modulant les réponses du
     système nerveux, contribuant ainsi à réduire l'anxiété et à améliorer la résistance au stress.
     Elle aide à améliorer la concentration, réduit les symptômes de dépression et d'anxiété, et
-    favorise un meilleur sommeil, contribuant ainsi à une meilleure qualité de vie.`,
+    favorise un meilleur sommeil, contribuant ainsi à une meilleure qualité de vie.`],
         bienfait: [
             { titre: 'Anti-stress & Equilibre', description: ["Prise en charge dans les périodes de tension mentale, nerveuse et d'anxiété.", "Contribue à l'équilibre émotionnel, le bien-être physique, mental et à une détente optimale.", "Aide l'organisme à faire face au stress et à récupérer des événements stressants."] },
             { titre: 'Energie & Performance', description: ["Contribue à maintenir les capacités physiques et mentales dans les cas de faiblesse, d'épuisement, de fatigue et de perte de concentration.", "Aide à vous faire sentir plus énergique et à maintenir une endurance optimale.", "Aide à prendre du poids et de la masse musculaire."] },
@@ -485,7 +485,7 @@ const infosActifs = {
         ]
     },
     "Rhodiola Rosea": {
-        description: `La Rhodiola rosea , souvent appelée « racine d’or », est une plante adaptogène prisée pour
+        description: [`La Rhodiola rosea , souvent appelée « racine d’or », est une plante adaptogène prisée pour
         sa capacité à aider le corps à s'adapter au stress physique et mental. Originaire des régions
         froides de l'Europe et de l'Asie, elle est utilisée depuis des siècles dans les médecines
         traditionnelles pour renforcer la résistance globale de l'organisme. Elle agit en équilibrant les
@@ -493,7 +493,7 @@ const infosActifs = {
         tension et de fatigue. Cette plante est particulièrement appréciée pour son impact positif sur
         la santé mentale. Elle aide à combattre la fatigue, améliore la concentration et peut avoir un
         effet bénéfique sur l'humeur, aidant ainsi à réduire les symptômes de l'anxiété et de la
-        dépression.`,
+        dépression.`],
         bienfait: [
             { titre: "Anti-stress & antioxydant", description: [
                 "Aide l'organisme à s'adapter au stress émotionnel.", 
@@ -512,9 +512,9 @@ const infosActifs = {
         ]
     },
     "GABA": {
-        description: `Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement
+        description: [`Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement
             présent dans le cerveau, jouant un rôle crucial dans la régulation de l'activité neuronale
-            de la relaxation et du calme.`,
+            de la relaxation et du calme.`],
     },
     "Vitamines": {
         bienfait: [
@@ -530,9 +530,9 @@ const infosActifs = {
         ]
     },
     "Vigne Rouge, Resvératrol & Flavonoïdes": {
-        description: `La vigne rouge 1 , riche en composés bénéfiques tels que le resvératrol et les flavonoïdes, est
+        description: [`La vigne rouge 1 , riche en composés bénéfiques tels que le resvératrol et les flavonoïdes, est
         une plante médicinale prisée pour ses effets positifs sur la santé. Ces composants naturels offrent une gamme de bienfaits, de la protection cardiovasculaire à l'amélioration de la
-        santé de la peau.`,
+        santé de la peau.`],
         bienfait: [
             { titre: "Circulation & Antioxydant", description: [
                 "Contribuent à une bonne circulation sanguine dans les jambes et à réduire la sensation de jambes lourdes et fatiguées.",
@@ -544,11 +544,11 @@ const infosActifs = {
         ]
     },
     "Pépins de raisins": {
-        description: `Les pépins de raisins 2 sont particulièrement riches en antioxydants, notamment en
+        description: [`Les pépins de raisins 2 sont particulièrement riches en antioxydants, notamment en
         proanthocyanidines, qui sont connues pour leur capacité à renforcer les parois des vaisseaux
         sanguins et à améliorer la circulation. Ces composés aident à protéger les vaisseaux contre
         les dommages causés par les radicaux libres, réduisant ainsi le risque de maladies
-        cardiovasculaires.`,
+        cardiovasculaires.`],
         bienfait: [
             {
                 titre: "Système cardiovasculaire & Sanguin", 
@@ -558,8 +558,8 @@ const infosActifs = {
         ]
     },
     "Coenzyme Q10": {
-        description: `Le Co-Q10 est présent dans chaque cellule de notre corps, il joue un rôle majeur dans la
-        production d'énergie au niveau des mitochondries.`
+        description: [`Le Co-Q10 est présent dans chaque cellule de notre corps, il joue un rôle majeur dans la
+        production d'énergie au niveau des mitochondries.`]
     },
     "Vitamines & Minéraux": {
         bienfait: [
@@ -583,15 +583,15 @@ const infosActifs = {
         ]
     },
     "Glutathion": {
-        description: `Cette molécule, naturellement produite par le corps, est composée de trois acides aminés :
+        description: [`Cette molécule, naturellement produite par le corps, est composée de trois acides aminés :
         la cystéine, la glutamine et la glycine. C’est un composé crucial pour l’organisme car il
         participe à de nombreuses réactions métaboliques permettant le bon fonctionnement du
-        système immunitaire et la lutte contre le stress oxydatif causé par les radicaux libres.`,
+        système immunitaire et la lutte contre le stress oxydatif causé par les radicaux libres.`],
     },
     "Curcuma": {
-        description: `Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice
+        description: [`Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice
         renommée pour ses propriétés antioxydantes. L';ingrédient actif du curcuma, la curcumine,
-        possède des propriétés qui peuvent aider à protéger les voies respiratoires.`,
+        possède des propriétés qui peuvent aider à protéger les voies respiratoires.`],
         bienfait: [
             { titre: "Voies respiratoires", description: ["Aide à maintenir la santé des poumons et des voies respiratoires supérieures."] },
             { titre: "Système immunitaire", description: ["Aide à maintenir l'efficacité du système immunitaire."] },
@@ -610,25 +610,25 @@ const infosActifs = {
         ]
     },
     "Quercétine": {
-        description: `
+        description: [`
         La quercétine, un flavonoïde naturellement présent dans de nombreux fruits et légumes.
         Cette substance, riche en propriétés antioxydantes, est considérée comme un allié précieux
         pour le bien-être général.
-        `
+        `]
     },
     "Kératine": {
-        description: `La kératine, une protéine fibreuse naturelle, composant principal des cheveux et des ongles
+        description: [`La kératine, une protéine fibreuse naturelle, composant principal des cheveux et des ongles
         qui est connue pour ses propriétés fortifiantes. Elle est essentielle pour la vitalité des
         cheveux, de la peau et des ongles. Elle est reconnue pour agir comme un élément
         structurant donnant force et élasticité ce qui se traduit par des cheveux plus lisses, plus
-        brillants et moins susceptibles de frisottis.`
+        brillants et moins susceptibles de frisottis.`]
     },
     "Prèle": {
-        description: `La prêle des champs, connue scientifiquement sous le nom d&#39;Equisetum arvense, est une
+        description: [`La prêle des champs, connue scientifiquement sous le nom d&#39;Equisetum arvense, est une
         plante pour ses nombreuses vertus pour la santé capillaire.
         Cette plante est une source naturelle de silice, un minéral vital pour la force et la vitalité des
         cheveux. La silice aide à renforcer les follicules capillaires, à améliorer la texture des cheveux
-        et leur croissance.`,
+        et leur croissance.`],
         bienfait: [
             { titre: "Santé de la peau & des ongles", description: ["Bénéfique pour la santé de la peau.","Améliore l'état de la peau, des cheveux et des ongles."] },
             { titre: "Croissance & Force", description: ["Favorise la croissance des cheveux et le renforcement."] },
@@ -681,10 +681,10 @@ const infosActifs = {
         ]
     },
     "Camomille": {
-        description: `La camomille est une plante médicinale appréciée depuis des siècles pour ses propriétés
+        description: [`La camomille est une plante médicinale appréciée depuis des siècles pour ses propriétés
         apaisantes et relaxantes en particulier sur le système nerveux. Connue scientifiquement sous
         les noms de Matricaria recutita, cette herbe douce est utilisée pour aider à gérer le stress,
-        l'anxiété et favoriser un sommeil réparateur.`,
+        l'anxiété et favoriser un sommeil réparateur.`],
         bienfait: [
             { titre: "", description: [`Contribue à une relaxation optimale.`] },
             { titre: "", description: [`Contribue à maintenir un sommeil sain et apaisant.`] },
@@ -693,49 +693,49 @@ const infosActifs = {
         ]
     },
     "Mélatonine": {
-        description: `La mélatonine 1 , souvent surnommée l’« hormone du sommeil », joue un rôle crucial dans la
+        description: [`La mélatonine 1 , souvent surnommée l’« hormone du sommeil », joue un rôle crucial dans la
         régulation des cycles veille-sommeil de notre corps. Produite naturellement par la glande
         pinéale, elle est essentielle pour maintenir notre horloge biologique interne en harmonie
-        avec les rythmes naturels jour-nuit.`,
+        avec les rythmes naturels jour-nuit.`],
         bienfait: [
             { titre: "", description: [`Contribue à réduire le temps d'endormissement.`] },
             { titre: "", description: [`Contribue à atténuer les effets du décalage horaire.`] },
         ]
     },
     "GABA 2": {
-        description: `Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement présent
-        dans le cerveau, jouant un rôle crucial dans la régulation de l'activité neuronale.`,
+        description: [`Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement présent
+        dans le cerveau, jouant un rôle crucial dans la régulation de l'activité neuronale.`],
     },
     "PEA": {
-        description: `Le palmitoylethanolamide, communément appelé PEA, est un composé organique
+        description: [`Le palmitoylethanolamide, communément appelé PEA, est un composé organique
         naturellement présent dans le corps humain, ainsi que dans certains aliments.
-        `,
+        `],
     },
     "Thé vert": {
-        description: `Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
+        description: [`Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
         bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
         Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
-        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`,
+        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`],
         bienfait: [
             { titre: "Stimulant & Tonique", description: ["Aide à améliorer les capacités mentales et physiques.", "Aide à trouver plus d'énergie, à renforcer le corps et à se sentir plus énergique."] },
             { titre: "Système Immunitaire", description: ["Contribue à renforcer les défenses antioxydantes du corps.", "Aide à protéger notre corps en renforçant les défenses naturelles du corps contre les effets nocifs des radicaux libres.", "Diminue le vieillissement cellulaire en raison des dommages oxydatifs."] },
         ]
     },
     "Caféine": {
-        description: `La caféine est un alcaloïde appartenant à la classe des xanthines. Elle agit principalement
+        description: [`La caféine est un alcaloïde appartenant à la classe des xanthines. Elle agit principalement
         comme un stimulant du système nerveux central, réduisant la fatigue et améliorant la
-        concentration.`,
+        concentration.`],
         bienfait: [
             { titre: "Performance mentale", description: ["Contribue à la performance mentale et aide à vous sentir plus énergique et stimulé.", "Aide à améliorer la vigilance et la concentration."] },
             { titre: "Performance sportive", description: ["La caféine aide à prolonger le temps d'exercice vous permettant de vous entraîner plus longtemps. Elle peut améliorer les performances d'endurance et diminuer l'effort perçu."] }
         ]
     },
     "NADH": {
-        description: `
+        description: [`
         Le NADH (nicotinamide adénine dinucléotide hydraté) est une coenzyme dérivée de la
         vitamine B3 (niacine) et joue un rôle essentiel dans les processus métaboliques de
         production d'énergie au sein de chaque cellule de notre corps.
-        `,
+        `],
     },
     "Vitamines & Minéraux 4": {
         bienfait: [
@@ -746,12 +746,12 @@ const infosActifs = {
         ]
     },
     "Curcuma 2": {
-        description: `Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice célèbre
+        description: [`Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice célèbre
         dans le monde entier, non seulement pour sa saveur unique mais aussi pour ses nombreux
         bienfaits pour la santé. Originaire d'Asie du Sud, la racine de curcuma est riche en
         curcumine, un puissant antioxydant, l’actif responsable de la plupart de ses effets
         bénéfiques. En plus de la curcumine, le curcuma contient de nombreux autres nutriments, y
-        compris des vitamines (comme la vitamine C et E) et des minéraux.`,
+        compris des vitamines (comme la vitamine C et E) et des minéraux.`],
         bienfait: [
             { titre: "Antioxydant", description: ["Aide à réduire le stress oxydatif."] },
             { titre: "Système immunitaire", description: ["Aide à maintenir l'efficacité du système immunitaire."] },
@@ -759,18 +759,18 @@ const infosActifs = {
         ]
     },
     "Boswellia Serrata": {
-        description: `Le Boswellia , également connu sous le nom d'Encens Oliban, est une résine aromatique
+        description: [`Le Boswellia , également connu sous le nom d'Encens Oliban, est une résine aromatique
         tirée de la famille des arbres Boswellia utilisée depuis des siècles dans diverses traditions
-        médicinales, notamment l'Ayurveda.`,
+        médicinales, notamment l'Ayurveda.`],
         bienfait: [
             { titre: "Confort", description: ["Aide à maintenir le confort articulaire."] },
         ]
     },
     "Scutellaire": {
-        description: `Appartenant à la famille des Lamiacées, le Scutellaire, ou Scutellaria baicalensis, est une
+        description: [`Appartenant à la famille des Lamiacées, le Scutellaire, ou Scutellaria baicalensis, est une
         plante médicinale reconnue pour son action bénéfique sur les articulations. Utilisée depuis
         longtemps en médecine traditionnelle, elle est aujourd'hui prisée pour la gestion des
-        douleurs articulaires.`,
+        douleurs articulaires.`],
         bienfait: [
             { titre: "Antioxydant", description: [
                 "Agit comme un antioxydant naturel.", 
@@ -782,28 +782,28 @@ const infosActifs = {
         ]
     },
     "PEA 2": {
-        description: `
+        description: [`
         Le palmitoylethanolamide, appelé PEA, est un composé organique naturellement présent
 dans le corps humain, ainsi que dans certains aliments. Il a un rôle important dans la régulation du système
 endocannabinoïde.
-        `,
+        `],
     },
     "Resvératrol": {
-        description: `Le resvératrol, un puissant polyphénol trouvé naturellement dans le vin rouge, les baies, les
+        description: [`Le resvératrol, un puissant polyphénol trouvé naturellement dans le vin rouge, les baies, les
         arachides et d'autres plantes. Il est de plus en plus recherché pour ses nombreux bénéfices
-        potentiels sur la santé, notamment dans la préservation de la santé cardiovasculaire.`,
+        potentiels sur la santé, notamment dans la préservation de la santé cardiovasculaire.`],
     },
     "Vitamine C": {
-        description: `
+        description: [`
         La vitamine C contribue à la formation normale de collagène pour assurer la fonction
 normale des os et du cartilage.
-        `,
+        `],
     },
     "Chardon Marie": {
-        description: `
+        description: [`
         Le chardon marie, scientifiquement connu sous le nom de Silybum marianum, est une
         plante médicinale célèbre pour ses vertus protectrices et régénératrices sur le foie.
-        `,
+        `],
         bienfait: [
             { titre: "Purification & digestion", description: [
                 "Contribue au potentiel détoxifiant, à la santé et à la protection du foie.",
@@ -812,7 +812,7 @@ normale des os et du cartilage.
         ]
     },
     "NADH 2": {
-        description: `
+        description: [`
         Le Nicotinamide Adénine Dinucléotide (NADH), connu sous le nom de coenzyme
         Q1, est un composant vital présent dans toutes les cellules et indispensable à notre corps. Il
         joue un rôle clé dans le fonctionnement optimal de plus de 300 enzymes appartenant à la
@@ -821,12 +821,12 @@ normale des os et du cartilage.
         respiration cellulaire et, par conséquent, à la génération d'énergie au sein des
         mitochondries. De plus, il exerce une fonction cruciale dans le cerveau, où il favorise la
         biosynthèse de nombreux neurotransmetteurs.
-        `,
+        `],
     },
     "Berbéris Aristata": {
-        description: `La berbérine est un alcaloïde extrait de diverses plantes utilisées dans la médecine
+        description: [`La berbérine est un alcaloïde extrait de diverses plantes utilisées dans la médecine
         traditionnelle chinoise et ayurvédique. Ces dernières années, elle a gagné en popularité en
-        Occident grâce à ses nombreux bienfaits pour la santé et la protection du foie.`,
+        Occident grâce à ses nombreux bienfaits pour la santé et la protection du foie.`],
         bienfait: [
             { titre: "Foie & Métabolisme", description: [
                 "Soutient la santé du foie.",
@@ -834,10 +834,10 @@ normale des os et du cartilage.
         ]
     },
     "Thé vert 2": {
-        description: `Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
+        description: [`Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
         bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
         Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
-        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`
+        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`]
         ,
         bienfait: [
             { titre: "Métabolisme & brûle graisses", description: [
@@ -851,8 +851,8 @@ normale des os et du cartilage.
         ]
     },
     "Chrome": {
-        description: `Le chrome 2 , un oligo-élément essentiel, est reconnu pour son rôle crucial dans le
-        métabolisme du glucose et la gestion de l'insuline.`,
+        description: [`Le chrome 2 , un oligo-élément essentiel, est reconnu pour son rôle crucial dans le
+        métabolisme du glucose et la gestion de l'insuline.`],
         bienfait: [
             { titre: "Glycémie", description: ["Maintient une glycémie normale et un métabolisme normal des macronutriments"] }
         ]

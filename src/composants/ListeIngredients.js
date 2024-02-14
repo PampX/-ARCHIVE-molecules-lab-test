@@ -40,7 +40,11 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                         description[index]['description'] && description[index]['bienfait'] ? (
                             // Si l'ingrédient a une description ET des bienfaits
                             ingreOuBF ? (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{description[index]['description']}</p>
+                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                    {description[index]['description'].map((desc,index6)=>(
+                                        <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                    ))}
+                                </p>
                             ) : (
                                 <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
