@@ -239,7 +239,7 @@ const faq = {
     ,
     "immunite": [
         {
-            "question": "IMMUNITE est-il compatible avec la grossesse / allaitement ?",
+            "question": "IMMUNITÉ est-il compatible avec la grossesse / allaitement ?",
             "reponse": "Cette formule est déconseillée aux femmes enceintes et allaitantes, nous vous invitons à consulter votre médecin traitant ou gynécologue avant de commencer le programme."
         },
         {
@@ -354,7 +354,7 @@ const faq = {
     ,
     "energie": [
         {
-            "question": "ENERGIE est-il compatible avec la grossesse / allaitement ?",
+            "question": "ÉNERGIE est-il compatible avec la grossesse / allaitement ?",
             "reponse": "Cette formule est déconseillée aux femmes enceintes et allaitantes, nous vous invitons à consulter votre médecin traitant ou gynécologue avant de commencer le programme."
         },
         {
@@ -471,29 +471,29 @@ const faq = {
 
 const infosActifs = {
     "Ashwagandha": {
-        description: `L'Ashwagandha, connue scientifiquement sous le nom de Withania somnifera, est une
-    plante adaptogène puissante originaire d'Inde. Utilisée depuis des millénaires en médecine
+        description: [`L'Ashwagandha, connue scientifiquement sous le nom de Withania somnifera, est une
+    plante adaptogène puissante originaire d'Inde.`,` Utilisée depuis des millénaires en médecine
     ayurvédique, elle est réputée pour ses nombreux bienfaits sur la santé physique et mentale.
-    Elle aide le corps à gérer le stress efficacement. Elle agit en modulant les réponses du
+    Elle aide le corps à gérer le stress efficacement.`,` Elle agit en modulant les réponses du
     système nerveux, contribuant ainsi à réduire l'anxiété et à améliorer la résistance au stress.
-    Elle aide à améliorer la concentration, réduit les symptômes de dépression et d'anxiété, et
-    favorise un meilleur sommeil, contribuant ainsi à une meilleure qualité de vie.`,
+    `,`Elle aide à améliorer la concentration, réduit les symptômes de dépression et d'anxiété, et
+    favorise un meilleur sommeil, contribuant ainsi à une meilleure qualité de vie.`],
         bienfait: [
-            { titre: 'Anti-stress & Equilibre', description: ["Prise en charge dans les périodes de tension mentale, nerveuse et d'anxiété.", "Contribue à l'équilibre émotionnel, le bien-être physique, mental et à une détente optimale.", "Aide l'organisme à faire face au stress et à récupérer des événements stressants."] },
-            { titre: 'Energie & Performance', description: ["Contribue à maintenir les capacités physiques et mentales dans les cas de faiblesse, d'épuisement, de fatigue et de perte de concentration.", "Aide à vous faire sentir plus énergique et à maintenir une endurance optimale.", "Aide à prendre du poids et de la masse musculaire."] },
+            { titre: 'Anti-stress & Équilibre', description: ["Prise en charge dans les périodes de tension mentale, nerveuse et d'anxiété.", "Contribue à l'équilibre émotionnel, le bien-être physique, mental et à une détente optimale.", "Aide l'organisme à faire face au stress et à récupérer des événements stressants."] },
+            { titre: 'Énergie & Performance', description: ["Contribue à maintenir les capacités physiques et mentales dans les cas de faiblesse, d'épuisement, de fatigue et de perte de concentration.", "Aide à vous faire sentir plus énergique et à maintenir une endurance optimale.", "Aide à prendre du poids et de la masse musculaire."] },
             { titre: 'Antioxydant', description: ["Aide à protéger les tissus des blessures.", "Aide à un effet rajeunissant général et à protéger la santé générale."] }
         ]
     },
     "Rhodiola Rosea": {
-        description: `La Rhodiola rosea , souvent appelée « racine d’or », est une plante adaptogène prisée pour
-        sa capacité à aider le corps à s'adapter au stress physique et mental. Originaire des régions
+        description: [`La Rhodiola rosea , souvent appelée « racine d’or », est une plante adaptogène prisée pour
+        sa capacité à aider le corps à s'adapter au stress physique et mental.`,` Originaire des régions
         froides de l'Europe et de l'Asie, elle est utilisée depuis des siècles dans les médecines
-        traditionnelles pour renforcer la résistance globale de l'organisme. Elle agit en équilibrant les
+        traditionnelles pour renforcer la résistance globale de l'organisme. `,`Elle agit en équilibrant les
         niveaux de neurotransmetteurs et de cortisol, offrant ainsi un soutien naturel en périodes de
         tension et de fatigue. Cette plante est particulièrement appréciée pour son impact positif sur
-        la santé mentale. Elle aide à combattre la fatigue, améliore la concentration et peut avoir un
+        la santé mentale.`,` Elle aide à combattre la fatigue, améliore la concentration et peut avoir un
         effet bénéfique sur l'humeur, aidant ainsi à réduire les symptômes de l'anxiété et de la
-        dépression.`,
+        dépression.`],
         bienfait: [
             { titre: "Anti-stress & antioxydant", description: [
                 "Aide l'organisme à s'adapter au stress émotionnel.", 
@@ -512,9 +512,9 @@ const infosActifs = {
         ]
     },
     "GABA": {
-        description: `Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement
+        description: [`Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement
             présent dans le cerveau, jouant un rôle crucial dans la régulation de l'activité neuronale
-            de la relaxation et du calme.`,
+            de la relaxation et du calme.`],
     },
     "Vitamines": {
         bienfait: [
@@ -522,17 +522,17 @@ const infosActifs = {
                 "Les vitamines B1, B3 et B12 contribuent à des fonctions psychologiques normales et à un métabolisme énergétique normal.",
                 "Les vitamines B6, B9 et B5 contribuent à réduire la fatigue."
             ]},
-            {titre : "Anti-stress &amp; antioxydant", description: [
-                "Les vitamines B8 et B2 3 contribuent à protéger les cellules contre le stress oxydatif et au bon fonctionnement normal du système nerveux.",
+            {titre : "Anti-stress & antioxydant", description: [
+                "Les vitamines B8 et B2 contribuent à protéger les cellules contre le stress oxydatif et au bon fonctionnement normal du système nerveux.",
             ]
             }
             
         ]
     },
     "Vigne Rouge, Resvératrol & Flavonoïdes": {
-        description: `La vigne rouge 1 , riche en composés bénéfiques tels que le resvératrol et les flavonoïdes, est
-        une plante médicinale prisée pour ses effets positifs sur la santé. Ces composants naturels offrent une gamme de bienfaits, de la protection cardiovasculaire à l'amélioration de la
-        santé de la peau.`,
+        description: [`La vigne rouge , riche en composés bénéfiques tels que le resvératrol et les flavonoïdes, est
+        une plante médicinale prisée pour ses effets positifs sur la santé.`,` Ces composants naturels offrent une gamme de bienfaits, de la protection cardiovasculaire à l'amélioration de la
+        santé de la peau.`],
         bienfait: [
             { titre: "Circulation & Antioxydant", description: [
                 "Contribuent à une bonne circulation sanguine dans les jambes et à réduire la sensation de jambes lourdes et fatiguées.",
@@ -544,22 +544,22 @@ const infosActifs = {
         ]
     },
     "Pépins de raisins": {
-        description: `Les pépins de raisins 2 sont particulièrement riches en antioxydants, notamment en
+        description: [`Les pépins de raisins sont particulièrement riches en antioxydants, notamment en
         proanthocyanidines, qui sont connues pour leur capacité à renforcer les parois des vaisseaux
-        sanguins et à améliorer la circulation. Ces composés aident à protéger les vaisseaux contre
+        sanguins et à améliorer la circulation.`,` Ces composés aident à protéger les vaisseaux contre
         les dommages causés par les radicaux libres, réduisant ainsi le risque de maladies
-        cardiovasculaires.`,
+        cardiovasculaires.`],
         bienfait: [
             {
                 titre: "Système cardiovasculaire & Sanguin", 
-                // before: "L'Extrait de pépins de raisin est une excellente source de Oligoremic Proanthocyanidines (OPC), antioxydants naturels qui ont été associés :",
+                before: "L'Extrait de pépins de raisin est une excellente source de Oligoremic Proanthocyanidines (OPC), antioxydants naturels qui ont été associés :",
                 description: ["À la réduction du stress oxydatif.", "Le renforcement du cœur et des vaisseaux pour la santé du système circulatoire.", "A un effet de renforcement sur le tissu conjonctif."]
             },
         ]
     },
     "Coenzyme Q10": {
-        description: `Le Co-Q10 est présent dans chaque cellule de notre corps, il joue un rôle majeur dans la
-        production d'énergie au niveau des mitochondries.`
+        description: [`Le Co-Q10 est présent dans chaque cellule de notre corps, il joue un rôle majeur dans la
+        production d'énergie au niveau des mitochondries.`]
     },
     "Vitamines & Minéraux": {
         bienfait: [
@@ -583,15 +583,15 @@ const infosActifs = {
         ]
     },
     "Glutathion": {
-        description: `Cette molécule, naturellement produite par le corps, est composée de trois acides aminés :
+        description: [`Cette molécule, naturellement produite par le corps, est composée de trois acides aminés :
         la cystéine, la glutamine et la glycine. C’est un composé crucial pour l’organisme car il
         participe à de nombreuses réactions métaboliques permettant le bon fonctionnement du
-        système immunitaire et la lutte contre le stress oxydatif causé par les radicaux libres.`,
+        système immunitaire et la lutte contre le stress oxydatif causé par les radicaux libres.`],
     },
     "Curcuma": {
-        description: `Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice
+        description: [`Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice
         renommée pour ses propriétés antioxydantes. L';ingrédient actif du curcuma, la curcumine,
-        possède des propriétés qui peuvent aider à protéger les voies respiratoires.`,
+        possède des propriétés qui peuvent aider à protéger les voies respiratoires.`],
         bienfait: [
             { titre: "Voies respiratoires", description: ["Aide à maintenir la santé des poumons et des voies respiratoires supérieures."] },
             { titre: "Système immunitaire", description: ["Aide à maintenir l'efficacité du système immunitaire."] },
@@ -610,25 +610,25 @@ const infosActifs = {
         ]
     },
     "Quercétine": {
-        description: `
+        description: [`
         La quercétine, un flavonoïde naturellement présent dans de nombreux fruits et légumes.
         Cette substance, riche en propriétés antioxydantes, est considérée comme un allié précieux
         pour le bien-être général.
-        `
+        `]
     },
     "Kératine": {
-        description: `La kératine, une protéine fibreuse naturelle, composant principal des cheveux et des ongles
-        qui est connue pour ses propriétés fortifiantes. Elle est essentielle pour la vitalité des
-        cheveux, de la peau et des ongles. Elle est reconnue pour agir comme un élément
+        description: [`La kératine, une protéine fibreuse naturelle, composant principal des cheveux et des ongles
+        qui est connue pour ses propriétés fortifiantes.`,` Elle est essentielle pour la vitalité des
+        cheveux, de la peau et des ongles.`,` Elle est reconnue pour agir comme un élément
         structurant donnant force et élasticité ce qui se traduit par des cheveux plus lisses, plus
-        brillants et moins susceptibles de frisottis.`
+        brillants et moins susceptibles de frisottis.`]
     },
     "Prèle": {
-        description: `La prêle des champs, connue scientifiquement sous le nom d&#39;Equisetum arvense, est une
+        description: [`La prêle des champs, connue scientifiquement sous le nom d'Equisetum arvense, est une
         plante pour ses nombreuses vertus pour la santé capillaire.
-        Cette plante est une source naturelle de silice, un minéral vital pour la force et la vitalité des
+        `,`Cette plante est une source naturelle de silice, un minéral vital pour la force et la vitalité des
         cheveux. La silice aide à renforcer les follicules capillaires, à améliorer la texture des cheveux
-        et leur croissance.`,
+        et leur croissance.`],
         bienfait: [
             { titre: "Santé de la peau & des ongles", description: ["Bénéfique pour la santé de la peau.","Améliore l'état de la peau, des cheveux et des ongles."] },
             { titre: "Croissance & Force", description: ["Favorise la croissance des cheveux et le renforcement."] },
@@ -641,50 +641,50 @@ const infosActifs = {
     },
     "Vitamines 2": {
         bienfait: [
-            { titre: "Energie", description: ["Les vitamines C, B2, B5, B6, B9 et B12 contribuent à réduire la fatigue."] },
+            { titre: "Énergie", description: ["Les vitamines C, B2, B5, B6, B9 et B12 contribuent à réduire la fatigue."] },
             {
                 titre: "Antioxydant et système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et
-            après un exercice physique intense.
+            après un exercice physique intense.`,`
             Les vitamines B9 et B12 contribuent au fonctionnement normal du système immunitaire.
-            La vitamine E contribue à protéger les cellules contre le stress oxydatif.`]
+            `,`La vitamine E contribue à protéger les cellules contre le stress oxydatif.`]
             },
             {
                 titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 contribuent à un métabolisme énergétique normal.
-            Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales.
-            La vitamine B2 contribue au métabolisme normal du fer.
-            La vitamine D contribue au maintien d'une fonction musculaire et à une calcémie, une
+            `,`Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales.
+            `,`La vitamine B2 contribue au métabolisme normal du fer.
+            `,`La vitamine D contribue au maintien d'une fonction musculaire et à une calcémie, une
             dentition et une ossature normales.
-            La vitamine B6 contribue à réguler l'activité hormonale.`]
+            `,`La vitamine B6 contribue à réguler l'activité hormonale.`]
             },
             {
-                titre: "Equilibre nerveux et mental", description: [`Les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux.
-            Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`]
+                titre: "Équilibre nerveux et mental", description: [`Les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux.
+                `,`Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`]
             },
         ]
     },
     "Minéraux": {
         bienfait: [
-            { titre: "Energie", description: [`Le fer et le magnésium 2 contribuent à réduire la fatigue.`] },
+            { titre: "Énergie", description: [`Le fer et le magnésium contribuent à réduire la fatigue.`] },
             {
                 titre: "Antioxydant & système immunitaire", description: [`Le zinc et le cuivre contribuent à protéger les cellules contre le stress oxydatif.
-            Le sélénium contribue à la protection de l'ADN, des protéines et des lipides des dommages
+                `,`Le sélénium contribue à la protection de l'ADN, des protéines et des lipides des dommages
             oxydatifs.
-            Le sélénium 1 contribue au fonctionnement normal du système immunitaire.`]
+            Le sélénium contribue au fonctionnement normal du système immunitaire.`]
             },
             {
                 titre: "Métabolisme", description: [`Le magnésium contribue à un métabolisme énergétique normal.
-            Le zinc contribue à un métabolisme acidobasique normal.
-            Le chrome maintient une glycémie normale et un métabolisme normal des
+                `,`Le zinc contribue à un métabolisme acidobasique normal.
+                `,`Le chrome maintient une glycémie normale et un métabolisme normal des
             macronutriments.`]
             },
-            { titre: "Equilibre nerveux et mental", description: [`Le magnésium et le cuivre contribuent au fonctionnement normal du système nerveux.`] },
+            { titre: "Équilibre nerveux et mental", description: [`Le magnésium et le cuivre contribuent au fonctionnement normal du système nerveux.`] },
         ]
     },
     "Camomille": {
-        description: `La camomille est une plante médicinale appréciée depuis des siècles pour ses propriétés
-        apaisantes et relaxantes en particulier sur le système nerveux. Connue scientifiquement sous
+        description: [`La camomille est une plante médicinale appréciée depuis des siècles pour ses propriétés
+        apaisantes et relaxantes en particulier sur le système nerveux. `,`Connue scientifiquement sous
         les noms de Matricaria recutita, cette herbe douce est utilisée pour aider à gérer le stress,
-        l'anxiété et favoriser un sommeil réparateur.`,
+        l'anxiété et favoriser un sommeil réparateur.`],
         bienfait: [
             { titre: "", description: [`Contribue à une relaxation optimale.`] },
             { titre: "", description: [`Contribue à maintenir un sommeil sain et apaisant.`] },
@@ -693,65 +693,65 @@ const infosActifs = {
         ]
     },
     "Mélatonine": {
-        description: `La mélatonine 1 , souvent surnommée l’« hormone du sommeil », joue un rôle crucial dans la
-        régulation des cycles veille-sommeil de notre corps. Produite naturellement par la glande
+        description: [`La mélatonine , souvent surnommée l’« hormone du sommeil », joue un rôle crucial dans la
+        régulation des cycles veille-sommeil de notre corps. `,` Produite naturellement par la glande
         pinéale, elle est essentielle pour maintenir notre horloge biologique interne en harmonie
-        avec les rythmes naturels jour-nuit.`,
+        avec les rythmes naturels jour-nuit.`],
         bienfait: [
             { titre: "", description: [`Contribue à réduire le temps d'endormissement.`] },
             { titre: "", description: [`Contribue à atténuer les effets du décalage horaire.`] },
         ]
     },
     "GABA 2": {
-        description: `Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement présent
-        dans le cerveau, jouant un rôle crucial dans la régulation de l'activité neuronale.`,
+        description: [`Le GABA (acide gamma-aminobutyrique) est un neurotransmetteur naturellement présent
+        dans le cerveau, jouant un rôle crucial dans la régulation de l'activité neuronale.`],
     },
     "PEA": {
-        description: `Le palmitoylethanolamide, communément appelé PEA, est un composé organique
+        description: [`Le palmitoylethanolamide, communément appelé PEA, est un composé organique
         naturellement présent dans le corps humain, ainsi que dans certains aliments.
-        `,
+        `],
     },
     "Thé vert": {
-        description: `Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
+        description: [`Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
         bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
-        Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
-        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`,
+        `,`Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
+        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`],
         bienfait: [
             { titre: "Stimulant & Tonique", description: ["Aide à améliorer les capacités mentales et physiques.", "Aide à trouver plus d'énergie, à renforcer le corps et à se sentir plus énergique."] },
             { titre: "Système Immunitaire", description: ["Contribue à renforcer les défenses antioxydantes du corps.", "Aide à protéger notre corps en renforçant les défenses naturelles du corps contre les effets nocifs des radicaux libres.", "Diminue le vieillissement cellulaire en raison des dommages oxydatifs."] },
         ]
     },
     "Caféine": {
-        description: `La caféine est un alcaloïde appartenant à la classe des xanthines. Elle agit principalement
+        description: [`La caféine est un alcaloïde appartenant à la classe des xanthines. `,`Elle agit principalement
         comme un stimulant du système nerveux central, réduisant la fatigue et améliorant la
-        concentration.`,
+        concentration.`],
         bienfait: [
             { titre: "Performance mentale", description: ["Contribue à la performance mentale et aide à vous sentir plus énergique et stimulé.", "Aide à améliorer la vigilance et la concentration."] },
             { titre: "Performance sportive", description: ["La caféine aide à prolonger le temps d'exercice vous permettant de vous entraîner plus longtemps. Elle peut améliorer les performances d'endurance et diminuer l'effort perçu."] }
         ]
     },
     "NADH": {
-        description: `
+        description: [`
         Le NADH (nicotinamide adénine dinucléotide hydraté) est une coenzyme dérivée de la
         vitamine B3 (niacine) et joue un rôle essentiel dans les processus métaboliques de
         production d'énergie au sein de chaque cellule de notre corps.
-        `,
+        `],
     },
     "Vitamines & Minéraux 4": {
         bienfait: [
-            { titre: "Energie", description: ["Les vitamines B2, B3, B5, B6, B9 et B12 2 contribuent à réduire la fatigue."] },
-            { titre: "Système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et après un exercice physique intense. Les vitamines B9 et B12 contribuent au fonctionnement normal du système immunitaire.`] },
-            { titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 et la magnésium contribuent à un métabolisme énergétique normal. Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales. La vitamine B2 contribue au métabolisme normal du fer.`] },
-            { titre: "Equilibre nerveux et mental", description: [`Le magnésium et les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux. Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`] },
+            { titre: "Énergie", description: ["Les vitamines B2, B3, B5, B6, B9, B12, le fer et le magnésium contribuent à réduire la fatigue."] },
+            { titre: "Système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et après un exercice physique intense. `,` Les vitamines B9 et B12 contribuent au fonctionnement normal du système immunitaire.`] },
+            { titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 et la magnésium contribuent à un métabolisme énergétique normal. `,` Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales. `,`La vitamine B2 contribue au métabolisme normal du fer.`] },
+            { titre: "Équilibre nerveux et mental", description: [`Le magnésium et les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux. `,` Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`] },
         ]
     },
     "Curcuma 2": {
-        description: `Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice célèbre
+        description: [`Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice célèbre
         dans le monde entier, non seulement pour sa saveur unique mais aussi pour ses nombreux
-        bienfaits pour la santé. Originaire d'Asie du Sud, la racine de curcuma est riche en
+        bienfaits pour la santé.`,`Originaire d'Asie du Sud, la racine de curcuma est riche en
         curcumine, un puissant antioxydant, l’actif responsable de la plupart de ses effets
-        bénéfiques. En plus de la curcumine, le curcuma contient de nombreux autres nutriments, y
-        compris des vitamines (comme la vitamine C et E) et des minéraux.`,
+        bénéfiques. `,`En plus de la curcumine, le curcuma contient de nombreux autres nutriments, y
+        compris des vitamines (comme la vitamine C et E) et des minéraux.`],
         bienfait: [
             { titre: "Antioxydant", description: ["Aide à réduire le stress oxydatif."] },
             { titre: "Système immunitaire", description: ["Aide à maintenir l'efficacité du système immunitaire."] },
@@ -759,18 +759,18 @@ const infosActifs = {
         ]
     },
     "Boswellia Serrata": {
-        description: `Le Boswellia , également connu sous le nom d'Encens Oliban, est une résine aromatique
+        description: [`Le Boswellia , également connu sous le nom d'Encens Oliban, est une résine aromatique
         tirée de la famille des arbres Boswellia utilisée depuis des siècles dans diverses traditions
-        médicinales, notamment l'Ayurveda.`,
+        médicinales, notamment l'Ayurveda.`],
         bienfait: [
             { titre: "Confort", description: ["Aide à maintenir le confort articulaire."] },
         ]
     },
     "Scutellaire": {
-        description: `Appartenant à la famille des Lamiacées, le Scutellaire, ou Scutellaria baicalensis, est une
-        plante médicinale reconnue pour son action bénéfique sur les articulations. Utilisée depuis
+        description: [`Appartenant à la famille des Lamiacées, le Scutellaire, ou Scutellaria baicalensis, est une
+        plante médicinale reconnue pour son action bénéfique sur les articulations. `,`Utilisée depuis
         longtemps en médecine traditionnelle, elle est aujourd'hui prisée pour la gestion des
-        douleurs articulaires.`,
+        douleurs articulaires.`],
         bienfait: [
             { titre: "Antioxydant", description: [
                 "Agit comme un antioxydant naturel.", 
@@ -782,28 +782,28 @@ const infosActifs = {
         ]
     },
     "PEA 2": {
-        description: `
+        description: [`
         Le palmitoylethanolamide, appelé PEA, est un composé organique naturellement présent
 dans le corps humain, ainsi que dans certains aliments. Il a un rôle important dans la régulation du système
 endocannabinoïde.
-        `,
+        `],
     },
     "Resvératrol": {
-        description: `Le resvératrol, un puissant polyphénol trouvé naturellement dans le vin rouge, les baies, les
-        arachides et d'autres plantes. Il est de plus en plus recherché pour ses nombreux bénéfices
-        potentiels sur la santé, notamment dans la préservation de la santé cardiovasculaire.`,
+        description: [`Le resvératrol, un puissant polyphénol trouvé naturellement dans le vin rouge, les baies, les
+        arachides et d'autres plantes.`,` Il est de plus en plus recherché pour ses nombreux bénéfices
+        potentiels sur la santé, notamment dans la préservation de la santé cardiovasculaire.`],
     },
     "Vitamine C": {
-        description: `
+        description: [`
         La vitamine C contribue à la formation normale de collagène pour assurer la fonction
 normale des os et du cartilage.
-        `,
+        `],
     },
     "Chardon Marie": {
-        description: `
+        description: [`
         Le chardon marie, scientifiquement connu sous le nom de Silybum marianum, est une
         plante médicinale célèbre pour ses vertus protectrices et régénératrices sur le foie.
-        `,
+        `],
         bienfait: [
             { titre: "Purification & digestion", description: [
                 "Contribue au potentiel détoxifiant, à la santé et à la protection du foie.",
@@ -812,7 +812,7 @@ normale des os et du cartilage.
         ]
     },
     "NADH 2": {
-        description: `
+        description: [`
         Le Nicotinamide Adénine Dinucléotide (NADH), connu sous le nom de coenzyme
         Q1, est un composant vital présent dans toutes les cellules et indispensable à notre corps. Il
         joue un rôle clé dans le fonctionnement optimal de plus de 300 enzymes appartenant à la
@@ -821,12 +821,12 @@ normale des os et du cartilage.
         respiration cellulaire et, par conséquent, à la génération d'énergie au sein des
         mitochondries. De plus, il exerce une fonction cruciale dans le cerveau, où il favorise la
         biosynthèse de nombreux neurotransmetteurs.
-        `,
+        `],
     },
     "Berbéris Aristata": {
-        description: `La berbérine est un alcaloïde extrait de diverses plantes utilisées dans la médecine
-        traditionnelle chinoise et ayurvédique. Ces dernières années, elle a gagné en popularité en
-        Occident grâce à ses nombreux bienfaits pour la santé et la protection du foie.`,
+        description: [`La berbérine est un alcaloïde extrait de diverses plantes utilisées dans la médecine
+        traditionnelle chinoise et ayurvédique. `,` Ces dernières années, elle a gagné en popularité en
+        Occident grâce à ses nombreux bienfaits pour la santé et la protection du foie.`],
         bienfait: [
             { titre: "Foie & Métabolisme", description: [
                 "Soutient la santé du foie.",
@@ -834,10 +834,10 @@ normale des os et du cartilage.
         ]
     },
     "Thé vert 2": {
-        description: `Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
+        description: [`Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
         bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
-        Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
-        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`
+        `,`Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
+        particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`]
         ,
         bienfait: [
             { titre: "Métabolisme & brûle graisses", description: [
@@ -851,8 +851,8 @@ normale des os et du cartilage.
         ]
     },
     "Chrome": {
-        description: `Le chrome 2 , un oligo-élément essentiel, est reconnu pour son rôle crucial dans le
-        métabolisme du glucose et la gestion de l'insuline.`,
+        description: [`Le chrome, un oligo-élément essentiel, est reconnu pour son rôle crucial dans le
+        métabolisme du glucose et la gestion de l'insuline.`],
         bienfait: [
             { titre: "Glycémie", description: ["Maintient une glycémie normale et un métabolisme normal des macronutriments"] }
         ]
@@ -868,11 +868,11 @@ const infosProduits = {
     "anti-stress": {
         'nom': 'ANTI-STRESS',
         'image': antiStress,
-        'motCle': 'Sérénité · Détente · Energie · Performance',
+        'motCle': 'Sérénité · Détente · Énergie · Performance',
         'nbGelule': ['30', 'GÉLULES'],
         'nbJour': ['15', 'à', '30', 'JOURS'],
         'description': `Anti-Stress de Molecules est une formule concentrée en Ashwagandha et en Rhodiola Rosea, des plantes adaptogènes, 
-        ainsi que du GABA et des vitamines pour d’aider l’organisme à s’adapter et à améliorer sa résistance face au stress. 
+        ainsi que du GABA et des vitamines pour aider l’organisme à s’adapter et à améliorer sa résistance face au stress. 
         Il va favoriser énergie et sérénité afin de faire face au stress quotidien et de renforcer votre performance physique et mentale.`,
         'listeBienfait': [
             'Protection et stimulation du système nerveux',
@@ -907,14 +907,14 @@ const infosProduits = {
             "Déconseillé aux femmes enceintes ou qui allaitent, et aux enfants de moins de 12 ans.",
             "À conserver à l'abri de la chaleur, de la lumière et de l’humidité.",
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellullose • Extrait d’Ashwagandha (Withania somnifera) liposomée •
         Extrait de Rhodiola rosea liposomée • GABA (Acide gamma-aminobutyrique) liposomé •
         Stabilisant : Phospholipides • Anti-agglomérant : Talc ; Vitamine B3 (Niacine) liposomée •
         Vitamine B5 (Pantothénate de calcium) liposomée • Vitamine B2 (Riboflavine) liposomée •
         Vitamine B6 (Pyridoxine HCl) liposomée • Vitamine B1 (Thiamine) liposomée • Vitamine B9
         (Acide folique) liposomée • Vitamine B8 (Biotine) liposomée • Vitamine B12
-        (Méthylcobalamine) liposomée.`,
+        (Méthylcobalamine) liposomée.`],
         'faq' : faq["anti-stress"]
 
     },
@@ -957,11 +957,11 @@ const infosProduits = {
             `Demandez conseil à votre pharmacien avant de consommer ce produit.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia ; Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia ; Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Diosmine liposomée • Rutine liposomée • Quercétine
         liposomée • Extrait de Pépins de raisins (Vitis vinifera) liposomés • Extrait de Vigne rouge
         (Vitis vinifera) liposomée • Stabilisant : Phospholipides • Anti-agglomérant : Talc •
-        Resvératrol liposomé • Coenzyme Q10 (Ubiquinone) liposomée.`,
+        Resvératrol liposomé • Coenzyme Q10 (Ubiquinone) liposomée.`],
         'faq' : faq["circulation"]
     },
     "immunite": {
@@ -973,7 +973,7 @@ const infosProduits = {
         "nbJour": ['15', 'à', '30', 'JOURS'],
         "motCle": "Système immunitaire · Protection stress oxydatif · Métabolisme · Vitalité",
         "description": `
-        IMMUNITE de Molecules est une formule concentrée en vitamines, minéraux et en glutathion, un antioxydant reconnu, qui a été développée 
+        IMMUNITÉ de Molecules est une formule concentrée en vitamines, minéraux et en glutathion, un antioxydant reconnu, qui a été développée 
         afin de renforcer le système immunitaire et le métabolisme en le protégeant des 
         radicaux libres qui peuvent créer des dommages sur l’organisme. Elle va permettre de booster les fonctions musculaires et la vitalité.`,
         "listeBienfait": [
@@ -1002,11 +1002,11 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent, aux enfants de moins de 12 ans et aux personnes sous traitement anticoagulant. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d';acacia • Gélule d';origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d'acacia • Gélule d';origine végétale :
         Hydroxypropylméthylcellulose • Vitamine C (Acide L-asccorbique) liposomée • Stabilisant :
         Phospholipides • Glutathion liposomé • Anti-agglomérant : Talc • Zinc (Picolinate) liposomé
         • Cuivre (Bisglycinate) liposomé • Sélénium (L-sélénomethionine) liposomé • Vitamine D3
-        (Cholécalciférol) liposomée.`,
+        (Cholécalciférol) liposomée.`],
         'faq': faq["immunite"]
     },
     "voies-respiratoires": {
@@ -1050,11 +1050,11 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent, aux enfants de moins de 12 ans et aux personnes sous traitement anticoagulant. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellullose • Quercétine liposomée • Extrait de Curcuma longa liposomé
         • Stabilisant : Phospholipides • Vitamine C (Acide L-ascorbique) liposomée • Glutathion
         liposomé • Anti-agglomérant : Talc • Zinc (Picolinate) liposomé • Sélénium (L-
-        sélénomethionine) liposomé • Vitamine D3 (Cholécalciférol) liposomée.`,
+        sélénomethionine) liposomé • Vitamine D3 (Cholécalciférol) liposomée.`],
         'faq': faq["voies-respiratoires"]
     },
     "capillaire": {
@@ -1092,11 +1092,11 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent et aux enfants de moins de 12 ans. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Kératine liposomée • Stabilisant : Phospholipides • Extrait
         de Prêle (Equisetum arvense) liposomée • Antiagglomérant : Talc • Zinc (Picolinate) liposomé
         • Vitamine B3 (Niacine) liposomée • Vitamine B6 (Pyridoxine HCl) liposomée • Vitamine B8
-        (Biotine) liposomée • Cuivre (Bisglycinate) liposomé.`,
+        (Biotine) liposomée • Cuivre (Bisglycinate) liposomé.`],
         'faq': faq["capillaire"]
     },
     "multivitamines-mineraux": {
@@ -1111,7 +1111,7 @@ const infosProduits = {
         "listeBienfait": [
             "Renforcement du système immunitaire",
             "Réduction de la fatigue",
-            "Equilibre métabolisme et hormonal",
+            "Équilibre du métabolisme et du système hormonal",
         ],
         "listeBienfaitNum": [1, 2, 3],
         "listeActif": [
@@ -1134,7 +1134,7 @@ const infosProduits = {
             `Déconseillé aux femmes enceintes ou qui allaitent et aux enfants de moins de 12 ans.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité. `,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme <i>d’acacia</i> • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Vitamine C (Acide L-ascorbique) liposomée • Magnésium
         (Oxyde) liposomé ; Stabilisant : Phospholipides • Anti-agglomérant : Talc • Vitamine B3
         (Niacine) liposomée • Vitamine E (D-alpha tocophérol) liposomée • Zinc (Picolinate)
@@ -1143,7 +1143,7 @@ const infosProduits = {
         B12 (Thiamine) liposomée • Cuivre (Bisglycinate) liposomé • Vitamine B9 (Acide folique)
         liposomée • Vitamine B8 (Biotine) liposomée • Sélénium (L-sélénométhionine) liposomé •
         Chrome (Picolinate) liposomé • Vitamine D3 (Cholécalciférol) liposomée • Vitamine B12
-        (Méthylcobalamine) liposomée.`,
+        (Méthylcobalamine) liposomée.`],
         'faq': faq["multivitamines-mineraux"]
 
     },
@@ -1189,10 +1189,10 @@ const infosProduits = {
             `Demandez conseil à votre médecin si vous souffrez d’épilepsie, d’asthme, ou de troubles du comportement. Ne pas consommer ce produit avant une activité nécessitant une vigilance soutenue. `,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellullose • Extrait de Camomille (Matricaria recutita) liposomé • GABA
         (Acide gamma-aminobutyrique) liposomé • PEA (Palmitoyléthanolamide) liposomé •
-        Stabilisant : Phospholipides • Antiagglomérant : Talc • Mélatonine liposomée.`,
+        Stabilisant : Phospholipides • Antiagglomérant : Talc • Mélatonine liposomée.`],
         'faq': faq["sommeil"]
 
     },
@@ -1203,8 +1203,8 @@ const infosProduits = {
         "image": energie,
         "nbGelule": ['30', 'GÉLULES'],
         "nbJour": ['15', 'à', '30', 'JOURS'],
-        "motCle": "Dynamisant · Equilibre énergétique · Système nerveux",
-        "description": "Energie de Molecules est une formule concentrée en caféine, vitamines, minéraux et en extrait de plante développée afin d’apporter de l’énergie à l’organisme. Elle va permettre d’améliorer l’équilibre nerveux et psychologique, augmenter vos performances et agir comme stimulant.",
+        "motCle": "Dynamisant · Équilibre énergétique · Système nerveux",
+        "description": "Énergie de Molecules est une formule concentrée en caféine, vitamines, minéraux et en extrait de plante développée afin d’apporter de l’énergie à l’organisme. Elle va permettre d’améliorer l’équilibre nerveux et psychologique, augmenter vos performances et agir comme stimulant.",
         "listeBienfait": [
             "Réduction de la fatigue et du stress oxydatif",
             "Renforcement des fonctions cérébrales et physiques",
@@ -1238,7 +1238,7 @@ const infosProduits = {
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.
             `,
         ],
-        'listeIngredient': `
+        'listeIngredient': [`
             Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
             Hydroxypropylméthylcellullose • Caféine liposomée • Vitamine C (Acide L-ascorbique)
             liposomée • Magnésium (Oxyde) liposomé • Extrait de Thé vert (Camellia sinensis) liposomé
@@ -1247,7 +1247,7 @@ const infosProduits = {
             (Pentothénate de calcium) liposomée • Vitamine B2 (Riboflavine) liposomée • Vitamine B6
             (Pyridoxine HCl) liposomée • Vitamine B1 (Thiamine) liposomée • Vitamine B9 (Acide folique)
             liposomée • Vitamine B8 (Biotine) liposomée • Vitamine B12 (Méthylcobalamine) liposomée.
-        `,
+        `],
         'faq': faq["energie"]
     },
     "articulation": {
@@ -1264,7 +1264,7 @@ const infosProduits = {
             "Maintien de la souplesse et de la mobilité",
             "Préservation du collagène",
         ],
-        "listeBienfaitNum": [1,1,3],
+        "listeBienfaitNum": [1,1,2],
         "listeActif": [
             "Curcuma",
             "Boswellia Serrata",
@@ -1273,7 +1273,7 @@ const infosProduits = {
             "Resvératrol",
             "Vitamine C",
         ],
-        "listeActifNum": [2, 1, 0, 0, 0, 3],
+        "listeActifNum": [0, 1, 0, 0, 0, 2],
         'listeActifDescription': [
             infosActifs["Curcuma 2"],
             infosActifs["Boswellia Serrata"], 
@@ -1293,11 +1293,11 @@ const infosProduits = {
             `Demandez conseil à votre pharmacien avant de consommer ce produit.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Gélule d’origine végétale : Hydroxypropylméthylcellulose • Agent de charge : Gomme
+        'listeIngredient': [`Gélule d’origine végétale : Hydroxypropylméthylcellulose • Agent de charge : Gomme
         d’acacia • Extrait de Boswelllia serrata liposomé • Extrait de Curcuma longa liposomé •
         Vitamine C liposomée • PEA liposomé (Palmitoyléthanolamide) • Extrait de Scutellaria
         baicalensis liposomée • Stabilisant : Phospholipides • Resvératrol liposomé • Anti-
-        agglomérant : Talc.`,
+        agglomérant : Talc.`],
         'faq': faq["articulation"]
     },
     "detox": {
@@ -1335,9 +1335,9 @@ const infosProduits = {
             `Déconseillé aux femmes enceinte ou qui allaitent, aux adolescents de moins de 18 ans et en cas d’allergie aux astéracées.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Extrait de fruits de Chardon marie (Silybum marianum)
-        liposomé • Glutathion liposomé ; Stabilisant : Phospholipides • Anti-agglomérant : Talc.`,
+        liposomé • Glutathion liposomé ; Stabilisant : Phospholipides • Anti-agglomérant : Talc.`],
         'faq': faq["detox"]
     },
     "jet-lag": {
@@ -1398,7 +1398,7 @@ const infosProduits = {
         "listeBienfait": [
             "Métabolisme et oxydation des graisses",
             "Contrôle du poids",
-            "Equilibre glycémie & fringales",
+            "Équilibre de la glycémie & des fringales",
             "Purification de l’organisme",
         ],
         "listeBienfaitNum": [1, 1, 2, 3],
@@ -1427,10 +1427,10 @@ const infosProduits = {
             `Ne doit pas être consommer si vous prenez d’autres produits contenant du thé vert le même jour.`,
             `À conserver à l'abri de la chaleur, de la lumière et de l’humidité.`,
         ],
-        'listeIngredient': `Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
+        'listeIngredient': [`Agent de charge : Gomme d’acacia • Gélule d’origine végétale :
         Hydroxypropylméthylcellulose • Extrait de Berberis aristata liposomé • Extrait de Chardon
         marie (Silybum marianum) liposomé • Extrait de Thé vert (Camellia sinensis) liposomé •
-        Stabilisant : Phospholipides ; Anti-agglomérant : Talc • Chrome (Picolinate) liposomé.`,
+        Stabilisant : Phospholipides ; Anti-agglomérant : Talc • Chrome (Picolinate) liposomé.`],
         'faq': faq["minceur"]
 
     },

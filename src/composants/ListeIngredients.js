@@ -20,7 +20,7 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
     return (
         <div className='div-ingredient-container'>
             {ingredients.map((ingredient, index) => (
-                <div>
+                <div key={index}>
                     <div className={(isPhone ? ' phone-div-ingredient-actif' : 'div-ingredient-actif')} key={index}>
                         <div className='div-nomIngre' onClick={() => handle(index)} >
                             <div style={{ display: 'flex' }}>
@@ -40,25 +40,35 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                         description[index]['description'] && description[index]['bienfait'] ? (
                             // Si l'ingrédient a une description ET des bienfaits
                             ingreOuBF ? (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{description[index]['description']}</p>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                    {description[index]['description'].map((desc,index6)=>(
+                                        <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                    ))}
+                                </div>
                             ) : (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
                                         <div key={index2}>
                                             <p className='bienfait-titre'>{bienfait.titre}</p>
+                                            {/* Ne concerne que Pépin de raisins pour Circulation */}
+                                            <p>{bienfait.before}</p>
                                             {bienfait.description.map((bfDescription, index3) => (
                                                 <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
                                             ))}
                                         </div>
                                     ))}
-                                </p>
+                                </div>
                             )
                         ) : (
                             // Si l'ingrédient a seulement une description ou des bienfaits
                             description[index]['description'] ? (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{description[index]['description']}</p>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                    {description[index]['description'].map((desc,index6)=>(
+                                        <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                    ))}
+                                </div>
                             ) : (
-                                <p className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
                                     {description[index]['bienfait'].map((bienfait, index2) => (
                                         <div key={index2}>
                                             <p className='bienfait-titre'>{bienfait.titre}</p>
@@ -67,7 +77,7 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                                             ))}
                                         </div>
                                     ))}
-                                </p>
+                                </div>
                             )
                         )
                     )}

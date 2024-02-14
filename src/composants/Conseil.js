@@ -4,7 +4,7 @@ export default function Conseil({conseils}){
     return(
         <div>
         {isArray ? conseils.map((conseil,index)=>(
-            <p>{conseil}</p>
+            <p key={index}>{conseil}</p>
         )) : 
         conseils
         }

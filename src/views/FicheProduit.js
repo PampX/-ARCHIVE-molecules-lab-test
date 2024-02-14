@@ -1,7 +1,7 @@
 import '../utils/css/ficheProduit.css'
 import { useMediaQuery } from 'react-responsive'
 import React, { useState } from 'react';
-import ModalImage from 'react-modal-image';
+// import ModalImage from 'react-modal-image';
 
 import gelule from '../images/general/gelule.svg'
 import calendrier from '../images/general/calendrier.png'
@@ -12,10 +12,18 @@ import france from '../images/general/france.svg'
 import geluleplante from '../images/general/geluleplante.svg'
 import liposome from '../images/general/liposome.svg'
 import liposome3d from '../images/general/liposome3d.png'
-import handClick from '../images/general/handClick.png'
+// import handClick from '../images/general/handClick.png'
+
+
+import imgArticulation from '../images/home/molecules-articulation.png';
+import imgSommeil from '../images/home/molecules-sommeil.png';
+import imgRespiratoires from '../images/home/molecules-voies-respiratoires.png';
+import imgStress from '../images/home/molecules-anti-stress.png';
 
 import ListeIngredients from '../composants/ListeIngredients'
 import MenuInfos from '../composants/MenuInfos'
+import ListProduct from '../composants/ListProduct';
+
 
 export default function FicheProduit({ data }) {
 
@@ -26,6 +34,12 @@ export default function FicheProduit({ data }) {
         console.log(openModal);
         setOpenModal(true);
     }
+    const jsonProduct = [
+        { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
+        { name: "SOMMEIL", description: "Relaxation", url: imgSommeil },
+        { name: "VOIES RESPIRATOIRES", description: "Respiration & système immunitaire", url: imgRespiratoires },
+        { name: "ANTI-STRESS", description: "Résistance physique & mentale", url: imgStress }
+    ];
 
     return (
         <div>
@@ -94,13 +108,13 @@ export default function FicheProduit({ data }) {
                         <div className='div-fp-listeLiposome'>
                             <div>
                                 <h3 className='h3-fp-listeLiposome'>FORMULE LIPOSOMÉ UNIQUE PREMIUM</h3>
-                                <p className='p-fp-listeLiposome'>✓ Haute concentration & assimilation</p>
-                                <p className='p-fp-listeLiposome'>✓ Efficacité rapide</p>
+                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Haute concentration & assimilation</p>
+                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Efficacité rapide</p>
                             </div>
                             <div>
                                 <h3 className='h3-fp-listeLiposome'>100% PURE & CLEAN</h3>
-                                <p className='p-fp-listeLiposome'>✓ SANS : allergènes • gluten • OGM • excipients • nanoparticules</p>
-                                <p className='p-fp-listeLiposome'>✓ Non testé sur les animaux • Non irradié</p>
+                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> SANS : allergènes • gluten • OGM • excipients • nanoparticules</p>
+                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Non testé sur les animaux • Non irradié</p>
                             </div>
                         </div>
                         <div className='div-fp-moreLiposome'>
@@ -148,7 +162,7 @@ export default function FicheProduit({ data }) {
                             <p className='p-fp-description'>{data.description}</p>
                             <div className='div-fp-allbienfait'>
                                 {data.listeBienfait.map((bienfait, index) => (
-                                    <div className='div-fp-bienfait'>
+                                    <div className='div-fp-bienfait' key={index}>
                                         <p className='p-fp-checkmark'>✓</p>
                                         <p className='p-fp-bienfait'>{bienfait}</p>
                                         <sup className='sup-fp-exposantbienfait' onClick={() => window.location.href = '#actifs'}>{data.listeBienfaitNum[index]}</sup>
@@ -165,15 +179,15 @@ export default function FicheProduit({ data }) {
                                 <h2 className='h2-fp-probienfait'>PROPRIETÉS ET BIENFAITS</h2>
                             </div>
                             <div className='div-fp-div3icon'>
-                                <div className='div-fp-iconep'>
+                                <div className='div-fp-iconep widthIcone1'>
                                     <img className='img-fp-icones' src={france} alt='Icone de la France (bleu/blanc/rouge)' />
                                     <p className='p-fp-textIcone'>MADE IN FRANCE</p>
                                 </div>
-                                <div className='div-fp-iconep'>
+                                <div className='div-fp-iconep widthIcone2'>
                                     <img className='img-fp-icones' src={geluleplante} alt="Icone d'une gelule et d'une plante" />
-                                    <p className='p-fp-textIcone'>COMPLÉMENTS ALIMENTAIRE</p>
+                                    <p className='p-fp-textIcone'>COMPLÉMENT ALIMENTAIRE</p>
                                 </div>
-                                <div className='div-fp-iconep'>
+                                <div className='div-fp-iconep widthIcone3'>
                                     <img className='img-fp-icones' src={liposome} alt="Icone d'un liposome" />
                                     <div className='div-fp-3p'>
                                         <div className='div-fp-2p'>
@@ -189,18 +203,19 @@ export default function FicheProduit({ data }) {
                             <div className='div-fp-listeLiposome'>
                                 <div>
                                     <h3 className='h3-fp-listeLiposome'>FORMULE LIPOSOMÉ UNIQUE PREMIUM</h3>
-                                    <p className='p-fp-listeLiposome'>✓ Haute concentration & assimilation</p>
-                                    <p className='p-fp-listeLiposome'>✓ Efficacité rapide</p>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Haute concentration & assimilation</p>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Efficacité rapide</p>
                                 </div>
                                 <div>
                                     <h3 className='h3-fp-listeLiposome'>100% PURE & CLEAN</h3>
-                                    <p className='p-fp-listeLiposome'>✓ SANS : allergènes • gluten • OGM • excipients • nanoparticules</p>
-                                    <p className='p-fp-listeLiposome'>✓ Non testé sur les animaux • Non irradié</p>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> SANS : allergènes • gluten • OGM • excipients • nanoparticules</p>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Non testé sur les animaux • Non irradié</p>
                                 </div>
                             </div>
                             <div className='div-fp-technologieLiposome'>
                                 <h3 className='h3-fp-technologieLiposome'>TECHNOLOGIE LIPOSOMALE®</h3>
-                                <p className='p-fp-technologieLiposome'>Molecules développe ses formules grâce à la nouvelle technologie exclusive de liposomes pour encapsuler 100% de ses actifs. Ce procédé innovant garantit une assimilation optimale des nutriments par l’organisme et la stabilité des actifs pour une action rapide.</p>
+                                <p className='p-fp-technologieLiposome'>Molecules développe ses formules grâce à la nouvelle technologie exclusive de liposomes pour encapsuler 100% de ses actifs. </p>
+                                <p className='p-fp-technologieLiposome'>Ce procédé innovant garantit une assimilation optimale des nutriments par l’organisme et la stabilité des actifs pour une action rapide.</p>
                                 <div className='div-fp-moreLiposome'>
                                     <h3 id='actifs' className='h3-fp-moreLiposome' ><a className='a-fp-moreLiposome' href='#composition'>DÉCOUVREZ LA COMPOSITION COMPLÈTE</a></h3>
                                     <div className='line-fp-moreLiposome'></div>
@@ -216,6 +231,7 @@ export default function FicheProduit({ data }) {
                             <img id='composition' className='img-fp-schema' alt='schema' src={data.schema} />
                         </div>
                         <MenuInfos data={data} />
+                        <ListProduct json={jsonProduct}/>
                     </div>
                 </div>
             }
