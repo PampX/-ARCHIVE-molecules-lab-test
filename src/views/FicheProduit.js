@@ -171,7 +171,7 @@ export default function FicheProduit({ data }) {
                                 </div>
                                 <div className='div-fp-iconep widthIcone2'>
                                     <img className='img-fp-icones' src={geluleplante} alt="Icone d'une gelule et d'une plante" />
-                                    <p className='p-fp-textIcone'>COMPLÉMENTS ALIMENTAIRE</p>
+                                    <p className='p-fp-textIcone'>COMPLÉMENT ALIMENTAIRE</p>
                                 </div>
                                 <div className='div-fp-iconep widthIcone3'>
                                     <img className='img-fp-icones' src={liposome} alt="Icone d'un liposome" />
@@ -200,7 +200,8 @@ export default function FicheProduit({ data }) {
                             </div>
                             <div className='div-fp-technologieLiposome'>
                                 <h3 className='h3-fp-technologieLiposome'>TECHNOLOGIE LIPOSOMALE®</h3>
-                                <p className='p-fp-technologieLiposome'>Molecules développe ses formules grâce à la nouvelle technologie exclusive de liposomes pour encapsuler 100% de ses actifs. Ce procédé innovant garantit une assimilation optimale des nutriments par l’organisme et la stabilité des actifs pour une action rapide.</p>
+                                <p className='p-fp-technologieLiposome'>Molecules développe ses formules grâce à la nouvelle technologie exclusive de liposomes pour encapsuler 100% de ses actifs. </p>
+                                <p className='p-fp-technologieLiposome'>Ce procédé innovant garantit une assimilation optimale des nutriments par l’organisme et la stabilité des actifs pour une action rapide.</p>
                                 <div className='div-fp-moreLiposome'>
                                     <h3 id='actifs' className='h3-fp-moreLiposome' ><a className='a-fp-moreLiposome' href='#composition'>DÉCOUVREZ LA COMPOSITION COMPLÈTE</a></h3>
                                     <div className='line-fp-moreLiposome'></div>

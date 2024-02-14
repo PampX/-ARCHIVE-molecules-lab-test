@@ -152,7 +152,7 @@ html{
 
 .img-fp-icones{
     width: 30px;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
 .h2-fp-probienfait{
@@ -219,7 +219,7 @@ html{
 .h3-fp-technologieLiposome{
     color: #000000;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
 
 
 }
@@ -305,9 +305,10 @@ margin-top: 50px;
 }
 .img-fp-icones-phone{
     width: 32px;
+    margin-right: 5px;
 }
 .margin-icone {
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .margin-left{
     margin-left: 10px;

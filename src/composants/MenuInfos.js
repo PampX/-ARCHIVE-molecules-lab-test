@@ -16,7 +16,7 @@ export default function MenuInfos({data, isPhone}) {
     const menu = [
         { nom: 'Composition complète', image: composition },
         { nom: 'Conseils d\'utilisation', image: conseil },
-        { nom: 'Précaution', image: precaution },
+        { nom: 'Précautions d\'emploi', image: precaution },
         { nom: 'Liste des ingrédients', image: detail },
         { nom: 'FAQ', image: faq }
     ]
@@ -24,7 +24,7 @@ export default function MenuInfos({data, isPhone}) {
         "Composition",
         "Conseils",
         "Precaution",
-        data.listeIngredient,
+        "Ingrédients",
         "FAQ"
     ]
     const [active, setActive] = useState(0)
@@ -35,11 +35,16 @@ export default function MenuInfos({data, isPhone}) {
         return (
             active === index ?
                 <div key={index} className={isPhone ? 'div-mi-content-phone' : 'div-mi-content'}>
-                    {item === "FAQ" ? <FAQ faq={data.faq} />
+                    {     item === "FAQ" ? <FAQ faq={data.faq} />
                         : item === 'Precaution' ? <Precaution precautions={data.precaution} />
                         : item === 'Composition' ? <Composition ingredients={data.composition} gelules={data.compositionGelule} />
                         : item === 'Conseils' ? <Conseil conseils={data.conseilUtilisation} />
-                        : item
+                        : item === 'Ingrédients' ? 
+                            <div>
+                                <p className='p-mi-ingre'>Ingrédients </p>
+                                {data.listeIngredient}
+                            </div>
+                        : null
                     }
                 </div>
                 : null

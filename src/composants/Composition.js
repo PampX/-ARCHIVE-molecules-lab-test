@@ -31,7 +31,7 @@ export default function Composition({ ingredients, gelules }) {
                 </tbody>
             </table>
             {ar ? 
-            <p>*Apports de Référence</p>
+            <p className='apportRef'>*Apports de Référence</p>
             : null 
             }
         </div>

@@ -472,11 +472,11 @@ const faq = {
 const infosActifs = {
     "Ashwagandha": {
         description: [`L'Ashwagandha, connue scientifiquement sous le nom de Withania somnifera, est une
-    plante adaptogène puissante originaire d'Inde. Utilisée depuis des millénaires en médecine
+    plante adaptogène puissante originaire d'Inde.`,` Utilisée depuis des millénaires en médecine
     ayurvédique, elle est réputée pour ses nombreux bienfaits sur la santé physique et mentale.
     Elle aide le corps à gérer le stress efficacement.`,` Elle agit en modulant les réponses du
     système nerveux, contribuant ainsi à réduire l'anxiété et à améliorer la résistance au stress.
-    Elle aide à améliorer la concentration, réduit les symptômes de dépression et d'anxiété, et
+    `,`Elle aide à améliorer la concentration, réduit les symptômes de dépression et d'anxiété, et
     favorise un meilleur sommeil, contribuant ainsi à une meilleure qualité de vie.`],
         bienfait: [
             { titre: 'Anti-stress & Equilibre', description: ["Prise en charge dans les périodes de tension mentale, nerveuse et d'anxiété.", "Contribue à l'équilibre émotionnel, le bien-être physique, mental et à une détente optimale.", "Aide l'organisme à faire face au stress et à récupérer des événements stressants."] },
@@ -486,12 +486,12 @@ const infosActifs = {
     },
     "Rhodiola Rosea": {
         description: [`La Rhodiola rosea , souvent appelée « racine d’or », est une plante adaptogène prisée pour
-        sa capacité à aider le corps à s'adapter au stress physique et mental. Originaire des régions
+        sa capacité à aider le corps à s'adapter au stress physique et mental.`,` Originaire des régions
         froides de l'Europe et de l'Asie, elle est utilisée depuis des siècles dans les médecines
-        traditionnelles pour renforcer la résistance globale de l'organisme. Elle agit en équilibrant les
+        traditionnelles pour renforcer la résistance globale de l'organisme. `,`Elle agit en équilibrant les
         niveaux de neurotransmetteurs et de cortisol, offrant ainsi un soutien naturel en périodes de
         tension et de fatigue. Cette plante est particulièrement appréciée pour son impact positif sur
-        la santé mentale. Elle aide à combattre la fatigue, améliore la concentration et peut avoir un
+        la santé mentale.`,` Elle aide à combattre la fatigue, améliore la concentration et peut avoir un
         effet bénéfique sur l'humeur, aidant ainsi à réduire les symptômes de l'anxiété et de la
         dépression.`],
         bienfait: [
@@ -522,16 +522,16 @@ const infosActifs = {
                 "Les vitamines B1, B3 et B12 contribuent à des fonctions psychologiques normales et à un métabolisme énergétique normal.",
                 "Les vitamines B6, B9 et B5 contribuent à réduire la fatigue."
             ]},
-            {titre : "Anti-stress &amp; antioxydant", description: [
-                "Les vitamines B8 et B2 3 contribuent à protéger les cellules contre le stress oxydatif et au bon fonctionnement normal du système nerveux.",
+            {titre : "Anti-stress & antioxydant", description: [
+                "Les vitamines B8 et B2 contribuent à protéger les cellules contre le stress oxydatif et au bon fonctionnement normal du système nerveux.",
             ]
             }
             
         ]
     },
     "Vigne Rouge, Resvératrol & Flavonoïdes": {
-        description: [`La vigne rouge 1 , riche en composés bénéfiques tels que le resvératrol et les flavonoïdes, est
-        une plante médicinale prisée pour ses effets positifs sur la santé. Ces composants naturels offrent une gamme de bienfaits, de la protection cardiovasculaire à l'amélioration de la
+        description: [`La vigne rouge , riche en composés bénéfiques tels que le resvératrol et les flavonoïdes, est
+        une plante médicinale prisée pour ses effets positifs sur la santé.`,` Ces composants naturels offrent une gamme de bienfaits, de la protection cardiovasculaire à l'amélioration de la
         santé de la peau.`],
         bienfait: [
             { titre: "Circulation & Antioxydant", description: [
@@ -544,9 +544,9 @@ const infosActifs = {
         ]
     },
     "Pépins de raisins": {
-        description: [`Les pépins de raisins 2 sont particulièrement riches en antioxydants, notamment en
+        description: [`Les pépins de raisins sont particulièrement riches en antioxydants, notamment en
         proanthocyanidines, qui sont connues pour leur capacité à renforcer les parois des vaisseaux
-        sanguins et à améliorer la circulation. Ces composés aident à protéger les vaisseaux contre
+        sanguins et à améliorer la circulation.`,` Ces composés aident à protéger les vaisseaux contre
         les dommages causés par les radicaux libres, réduisant ainsi le risque de maladies
         cardiovasculaires.`],
         bienfait: [
@@ -618,15 +618,15 @@ const infosActifs = {
     },
     "Kératine": {
         description: [`La kératine, une protéine fibreuse naturelle, composant principal des cheveux et des ongles
-        qui est connue pour ses propriétés fortifiantes. Elle est essentielle pour la vitalité des
-        cheveux, de la peau et des ongles. Elle est reconnue pour agir comme un élément
+        qui est connue pour ses propriétés fortifiantes.`,` Elle est essentielle pour la vitalité des
+        cheveux, de la peau et des ongles.`,` Elle est reconnue pour agir comme un élément
         structurant donnant force et élasticité ce qui se traduit par des cheveux plus lisses, plus
         brillants et moins susceptibles de frisottis.`]
     },
     "Prèle": {
-        description: [`La prêle des champs, connue scientifiquement sous le nom d&#39;Equisetum arvense, est une
+        description: [`La prêle des champs, connue scientifiquement sous le nom d'Equisetum arvense, est une
         plante pour ses nombreuses vertus pour la santé capillaire.
-        Cette plante est une source naturelle de silice, un minéral vital pour la force et la vitalité des
+        `,`Cette plante est une source naturelle de silice, un minéral vital pour la force et la vitalité des
         cheveux. La silice aide à renforcer les follicules capillaires, à améliorer la texture des cheveux
         et leur croissance.`],
         bienfait: [
@@ -644,37 +644,37 @@ const infosActifs = {
             { titre: "Energie", description: ["Les vitamines C, B2, B5, B6, B9 et B12 contribuent à réduire la fatigue."] },
             {
                 titre: "Antioxydant et système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et
-            après un exercice physique intense.
+            après un exercice physique intense.`,`
             Les vitamines B9 et B12 contribuent au fonctionnement normal du système immunitaire.
-            La vitamine E contribue à protéger les cellules contre le stress oxydatif.`]
+            `,`La vitamine E contribue à protéger les cellules contre le stress oxydatif.`]
             },
             {
                 titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 contribuent à un métabolisme énergétique normal.
-            Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales.
-            La vitamine B2 contribue au métabolisme normal du fer.
-            La vitamine D contribue au maintien d'une fonction musculaire et à une calcémie, une
+            `,`Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales.
+            `,`La vitamine B2 contribue au métabolisme normal du fer.
+            `,`La vitamine D contribue au maintien d'une fonction musculaire et à une calcémie, une
             dentition et une ossature normales.
-            La vitamine B6 contribue à réguler l'activité hormonale.`]
+            `,`La vitamine B6 contribue à réguler l'activité hormonale.`]
             },
             {
                 titre: "Equilibre nerveux et mental", description: [`Les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux.
-            Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`]
+                `,`Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`]
             },
         ]
     },
     "Minéraux": {
         bienfait: [
-            { titre: "Energie", description: [`Le fer et le magnésium 2 contribuent à réduire la fatigue.`] },
+            { titre: "Energie", description: [`Le fer et le magnésium contribuent à réduire la fatigue.`] },
             {
                 titre: "Antioxydant & système immunitaire", description: [`Le zinc et le cuivre contribuent à protéger les cellules contre le stress oxydatif.
-            Le sélénium contribue à la protection de l'ADN, des protéines et des lipides des dommages
+                `,`Le sélénium contribue à la protection de l'ADN, des protéines et des lipides des dommages
             oxydatifs.
-            Le sélénium 1 contribue au fonctionnement normal du système immunitaire.`]
+            Le sélénium contribue au fonctionnement normal du système immunitaire.`]
             },
             {
                 titre: "Métabolisme", description: [`Le magnésium contribue à un métabolisme énergétique normal.
-            Le zinc contribue à un métabolisme acidobasique normal.
-            Le chrome maintient une glycémie normale et un métabolisme normal des
+                `,`Le zinc contribue à un métabolisme acidobasique normal.
+                `,`Le chrome maintient une glycémie normale et un métabolisme normal des
             macronutriments.`]
             },
             { titre: "Equilibre nerveux et mental", description: [`Le magnésium et le cuivre contribuent au fonctionnement normal du système nerveux.`] },
@@ -682,7 +682,7 @@ const infosActifs = {
     },
     "Camomille": {
         description: [`La camomille est une plante médicinale appréciée depuis des siècles pour ses propriétés
-        apaisantes et relaxantes en particulier sur le système nerveux. Connue scientifiquement sous
+        apaisantes et relaxantes en particulier sur le système nerveux. `,`Connue scientifiquement sous
         les noms de Matricaria recutita, cette herbe douce est utilisée pour aider à gérer le stress,
         l'anxiété et favoriser un sommeil réparateur.`],
         bienfait: [
@@ -693,8 +693,8 @@ const infosActifs = {
         ]
     },
     "Mélatonine": {
-        description: [`La mélatonine 1 , souvent surnommée l’« hormone du sommeil », joue un rôle crucial dans la
-        régulation des cycles veille-sommeil de notre corps. Produite naturellement par la glande
+        description: [`La mélatonine , souvent surnommée l’« hormone du sommeil », joue un rôle crucial dans la
+        régulation des cycles veille-sommeil de notre corps. `,` Produite naturellement par la glande
         pinéale, elle est essentielle pour maintenir notre horloge biologique interne en harmonie
         avec les rythmes naturels jour-nuit.`],
         bienfait: [
@@ -714,7 +714,7 @@ const infosActifs = {
     "Thé vert": {
         description: [`Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
         bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
-        Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
+        `,`Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
         particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`],
         bienfait: [
             { titre: "Stimulant & Tonique", description: ["Aide à améliorer les capacités mentales et physiques.", "Aide à trouver plus d'énergie, à renforcer le corps et à se sentir plus énergique."] },
@@ -722,7 +722,7 @@ const infosActifs = {
         ]
     },
     "Caféine": {
-        description: [`La caféine est un alcaloïde appartenant à la classe des xanthines. Elle agit principalement
+        description: [`La caféine est un alcaloïde appartenant à la classe des xanthines. `,`Elle agit principalement
         comme un stimulant du système nerveux central, réduisant la fatigue et améliorant la
         concentration.`],
         bienfait: [
@@ -739,18 +739,18 @@ const infosActifs = {
     },
     "Vitamines & Minéraux 4": {
         bienfait: [
-            { titre: "Energie", description: ["Les vitamines B2, B3, B5, B6, B9 et B12 2 contribuent à réduire la fatigue."] },
-            { titre: "Système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et après un exercice physique intense. Les vitamines B9 et B12 contribuent au fonctionnement normal du système immunitaire.`] },
-            { titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 et la magnésium contribuent à un métabolisme énergétique normal. Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales. La vitamine B2 contribue au métabolisme normal du fer.`] },
-            { titre: "Equilibre nerveux et mental", description: [`Le magnésium et les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux. Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`] },
+            { titre: "Energie", description: ["Les vitamines B2, B3, B5, B6, B9, B12, le fer et le magnésium contribuent à réduire la fatigue."] },
+            { titre: "Système immunitaire", description: [`La vitamine C contribue au fonctionnement normal du système immunitaire pendant et après un exercice physique intense. `,` Les vitamines B9 et B12 contribuent au fonctionnement normal du système immunitaire.`] },
+            { titre: "Métabolisme et équilibre hormonal", description: [`Les vitamines B1, B3, B5, B6 et B12 et la magnésium contribuent à un métabolisme énergétique normal. `,` Les vitamines B3, B6 et B12 contribuent à des fonctions psychologiques normales. `,`La vitamine B2 contribue au métabolisme normal du fer.`] },
+            { titre: "Equilibre nerveux et mental", description: [`Le magnésium et les vitamines B3 et B9 contribuent au fonctionnement normal du système nerveux. `,` Les vitamines B1, B6, B9 et B12 contribuent à des fonctions psychologiques normales.`] },
         ]
     },
     "Curcuma 2": {
         description: [`Le curcuma, connu scientifiquement sous le nom de Curcuma longa, est une épice célèbre
         dans le monde entier, non seulement pour sa saveur unique mais aussi pour ses nombreux
-        bienfaits pour la santé. Originaire d'Asie du Sud, la racine de curcuma est riche en
+        bienfaits pour la santé.`,`Originaire d'Asie du Sud, la racine de curcuma est riche en
         curcumine, un puissant antioxydant, l’actif responsable de la plupart de ses effets
-        bénéfiques. En plus de la curcumine, le curcuma contient de nombreux autres nutriments, y
+        bénéfiques. `,`En plus de la curcumine, le curcuma contient de nombreux autres nutriments, y
         compris des vitamines (comme la vitamine C et E) et des minéraux.`],
         bienfait: [
             { titre: "Antioxydant", description: ["Aide à réduire le stress oxydatif."] },
@@ -768,7 +768,7 @@ const infosActifs = {
     },
     "Scutellaire": {
         description: [`Appartenant à la famille des Lamiacées, le Scutellaire, ou Scutellaria baicalensis, est une
-        plante médicinale reconnue pour son action bénéfique sur les articulations. Utilisée depuis
+        plante médicinale reconnue pour son action bénéfique sur les articulations. `,`Utilisée depuis
         longtemps en médecine traditionnelle, elle est aujourd'hui prisée pour la gestion des
         douleurs articulaires.`],
         bienfait: [
@@ -790,7 +790,7 @@ endocannabinoïde.
     },
     "Resvératrol": {
         description: [`Le resvératrol, un puissant polyphénol trouvé naturellement dans le vin rouge, les baies, les
-        arachides et d'autres plantes. Il est de plus en plus recherché pour ses nombreux bénéfices
+        arachides et d'autres plantes.`,` Il est de plus en plus recherché pour ses nombreux bénéfices
         potentiels sur la santé, notamment dans la préservation de la santé cardiovasculaire.`],
     },
     "Vitamine C": {
@@ -825,7 +825,7 @@ normale des os et du cartilage.
     },
     "Berbéris Aristata": {
         description: [`La berbérine est un alcaloïde extrait de diverses plantes utilisées dans la médecine
-        traditionnelle chinoise et ayurvédique. Ces dernières années, elle a gagné en popularité en
+        traditionnelle chinoise et ayurvédique. `,` Ces dernières années, elle a gagné en popularité en
         Occident grâce à ses nombreux bienfaits pour la santé et la protection du foie.`],
         bienfait: [
             { titre: "Foie & Métabolisme", description: [
@@ -836,7 +836,7 @@ normale des os et du cartilage.
     "Thé vert 2": {
         description: [`Le thé vert est riche en antioxydants, vitamines et minéraux, il offre une multitude de
         bienfaits pour la santé, allant de l'amélioration de la fonction cérébrale au contrôle du poids.
-        Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
+        `,`Les bienfaits du thé vert sont principalement dus aux principes actifs, les polyphénols et en
         particulier la catéchine appelé épigallocatéchine gallate (EGCG), un antioxydant puissant.`]
         ,
         bienfait: [
@@ -851,7 +851,7 @@ normale des os et du cartilage.
         ]
     },
     "Chrome": {
-        description: [`Le chrome 2 , un oligo-élément essentiel, est reconnu pour son rôle crucial dans le
+        description: [`Le chrome, un oligo-élément essentiel, est reconnu pour son rôle crucial dans le
         métabolisme du glucose et la gestion de l'insuline.`],
         bienfait: [
             { titre: "Glycémie", description: ["Maintient une glycémie normale et un métabolisme normal des macronutriments"] }
@@ -872,7 +872,7 @@ const infosProduits = {
         'nbGelule': ['30', 'GÉLULES'],
         'nbJour': ['15', 'à', '30', 'JOURS'],
         'description': `Anti-Stress de Molecules est une formule concentrée en Ashwagandha et en Rhodiola Rosea, des plantes adaptogènes, 
-        ainsi que du GABA et des vitamines pour d’aider l’organisme à s’adapter et à améliorer sa résistance face au stress. 
+        ainsi que du GABA et des vitamines pour aider l’organisme à s’adapter et à améliorer sa résistance face au stress. 
         Il va favoriser énergie et sérénité afin de faire face au stress quotidien et de renforcer votre performance physique et mentale.`,
         'listeBienfait': [
             'Protection et stimulation du système nerveux',
@@ -1111,7 +1111,7 @@ const infosProduits = {
         "listeBienfait": [
             "Renforcement du système immunitaire",
             "Réduction de la fatigue",
-            "Equilibre métabolisme et hormonal",
+            "Equilibre du métabolisme et du système hormonal",
         ],
         "listeBienfaitNum": [1, 2, 3],
         "listeActif": [
@@ -1264,7 +1264,7 @@ const infosProduits = {
             "Maintien de la souplesse et de la mobilité",
             "Préservation du collagène",
         ],
-        "listeBienfaitNum": [1,1,3],
+        "listeBienfaitNum": [1,1,2],
         "listeActif": [
             "Curcuma",
             "Boswellia Serrata",
@@ -1273,7 +1273,7 @@ const infosProduits = {
             "Resvératrol",
             "Vitamine C",
         ],
-        "listeActifNum": [2, 1, 0, 0, 0, 3],
+        "listeActifNum": [0, 1, 0, 0, 0, 2],
         'listeActifDescription': [
             infosActifs["Curcuma 2"],
             infosActifs["Boswellia Serrata"], 
@@ -1398,7 +1398,7 @@ const infosProduits = {
         "listeBienfait": [
             "Métabolisme et oxydation des graisses",
             "Contrôle du poids",
-            "Equilibre glycémie & fringales",
+            "Équilibre de la glycémie & des fringales",
             "Purification de l’organisme",
         ],
         "listeBienfaitNum": [1, 1, 2, 3],
