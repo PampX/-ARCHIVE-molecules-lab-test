@@ -34,7 +34,7 @@ export default function MenuInfos({data, isPhone}) {
     const renderContent = (item, index,isPhone) => {
         return (
             active === index ?
-                <div className={isPhone ? 'div-mi-content-phone' : 'div-mi-content'}>
+                <div key={index} className={isPhone ? 'div-mi-content-phone' : 'div-mi-content'}>
                     {item === "FAQ" ? <FAQ faq={data.faq} />
                         : item === 'Precaution' ? <Precaution precautions={data.precaution} />
                         : item === 'Composition' ? <Composition ingredients={data.composition} gelules={data.compositionGelule} />

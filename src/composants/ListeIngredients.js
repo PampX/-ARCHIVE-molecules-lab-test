@@ -20,7 +20,7 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
     return (
         <div className='div-ingredient-container'>
             {ingredients.map((ingredient, index) => (
-                <div>
+                <div key={index}>
                     <div className={(isPhone ? ' phone-div-ingredient-actif' : 'div-ingredient-actif')} key={index}>
                         <div className='div-nomIngre' onClick={() => handle(index)} >
                             <div style={{ display: 'flex' }}>
