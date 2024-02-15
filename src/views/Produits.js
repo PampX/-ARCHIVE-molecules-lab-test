@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../utils/css/produits.css';
 import closePopUp from '../images/home/close-popUp.png';
 import { Link } from 'react-router-dom';
+import styled, { keyframes } from 'styled-components'
+import { fadeIn } from 'react-animations'
+
+const FadeIn = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
 const images = {
     articulation: require('../images/home/molecules-articulation.png'),
@@ -63,21 +67,28 @@ export default function Produits() {
             <div className='container-product-all'>
                 {productInfo.map((product, index) => (
                     <>
-                        <div 
-                            className={`container-one-product ${activeProductIndex === index ? "show-extra-text" : ""}`} 
+                        <div
+                            className={`container-one-product ${activeProductIndex === index ? "show-extra-text" : ""}`}
                             onClick={() => handleClick(index, product)}
                             key={index}
                         >
                             <img className='img-product-pres' src={images[product.key]} alt={product.name} />
                             <p className='text-product-product'>{product.name}</p>
-                            <p className='extra-text'>{product.desc}</p>
-                            <div className='underline'></div>
+                            {activeProductIndex === index && (
+                                <div>
+                                    <FadeIn><p className='extra-text'>{product.desc}</p>
+                                        <div className='underline'></div>
+                                    </FadeIn>
+                                </div>
+                            )
+                            }
+
                         </div>
                         {(index + 1) % numberOfProductsPerRow === 0 && openProduct && Math.floor(activeProductIndex / numberOfProductsPerRow) === Math.floor(index / numberOfProductsPerRow) && (
                             <div className='container-popUp-product' key={'pop-up-' + index}>
-                                <img onClick={ClickClosed} src={closePopUp} className='img-popUp' alt="Close"/>
+                                <img onClick={ClickClosed} src={closePopUp} className='img-popUp' alt="Close" />
                                 <div className='container-content-popUp'>
-                                    <img src={images[openProduct[1]]} className='img-product-popUp' alt={openProduct[0]}/>
+                                    <img src={images[openProduct[1]]} className='img-product-popUp' alt={openProduct[0]} />
                                     <div className='container-text-popUp'>
                                         <h1 className='title-popUp'>{openProduct[0]}</h1>
                                         <p className='text-popUp'>{openProduct[2]}</p>
@@ -88,19 +99,6 @@ export default function Produits() {
                         )}
                     </>
                 ))}
-                {openProduct && activeProductIndex !== null && (activeProductIndex + 1) % numberOfProductsPerRow !== 0 && (
-                    <div className='container-popUp-product'>
-                        <img onClick={ClickClosed} src={closePopUp} className='img-popUp' alt="Close"/>
-                        <div className='container-content-popUp'>
-                            <img src={images[openProduct[1]]} className='img-product-popUp' alt={openProduct[0]}/>
-                            <div className='container-text-popUp'>
-                                <h1 className='title-popUp'>{openProduct[0]}</h1>
-                                <p className='text-popUp'>{openProduct[2]}</p>
-                                <Link to="#" className='button-popUp-produit'>En savoir plus</Link>
-                            </div>
-                        </div>
-                    </div>
-                )}
             </div>
         </div>
     );
