@@ -74,11 +74,6 @@ export default function Produits() {
         setOpenProduct(null);
     };
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-    const numberOfProductsPerRow = 4;
-
     return (
         <div className='container-all'>
             <div className='container-product-all'>
