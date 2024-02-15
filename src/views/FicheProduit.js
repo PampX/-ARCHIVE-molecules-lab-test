@@ -229,7 +229,7 @@ export default function FicheProduit({ data }) {
                             <img id='composition' className='img-fp-schema' alt='schema' src={data.schema} />
                         </div>
                         <MenuInfos data={data} />
-                        <ListProduct />
+                        <ListProduct nomProduit={data.nom} />
                     </div>
                 </div>
             }

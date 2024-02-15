@@ -15,7 +15,7 @@ import voiesRespiratoires from '../images/general/molecules-voies-respiratoires.
 import sommeil from '../images/general/molecules-sommeil.png'
 import { useNavigate, useLocation } from 'react-router-dom'
 
-export default function ListProduct() {
+export default function ListProduct({nomProduit}) {
     const navigate = useNavigate()
     const location = useLocation()
     const [randomProducts, setRandomProducts] = useState([]);
@@ -39,7 +39,8 @@ export default function ListProduct() {
         const randomIndexes = [];
         while (randomIndexes.length < 4) {
             const randomIndex = Math.floor(Math.random() * data.length);
-            if (!randomIndexes.includes(randomIndex)) {
+            console.log(data[randomIndex].name !== nomProduit);
+            if (!randomIndexes.includes(randomIndex) && data[randomIndex].name !== nomProduit) {
                 randomIndexes.push(randomIndex);
             }
         }
