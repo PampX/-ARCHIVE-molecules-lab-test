@@ -1,6 +1,6 @@
 import '../utils/css/ficheProduit.css'
 import { useMediaQuery } from 'react-responsive'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import ModalImage from 'react-modal-image';
 
 import gelule from '../images/general/gelule.svg'
@@ -13,12 +13,7 @@ import geluleplante from '../images/general/geluleplante.svg'
 import liposome from '../images/general/liposome.svg'
 import liposome3d from '../images/general/liposome3d.png'
 // import handClick from '../images/general/handClick.png'
-
-
-import imgArticulation from '../images/home/molecules-articulation.png';
-import imgSommeil from '../images/home/molecules-sommeil.png';
-import imgRespiratoires from '../images/home/molecules-voies-respiratoires.png';
-import imgStress from '../images/home/molecules-anti-stress.png';
+import { useLocation } from 'react-router-dom';
 
 import ListeIngredients from '../composants/ListeIngredients'
 import MenuInfos from '../composants/MenuInfos'
@@ -26,7 +21,7 @@ import ListProduct from '../composants/ListProduct';
 
 
 export default function FicheProduit({ data }) {
-
+    const location = useLocation();
     const isPhone = useMediaQuery({ query: '(max-width: 750px)' })
 
     const [openModal, setOpenModal] = useState(false);
@@ -34,12 +29,11 @@ export default function FicheProduit({ data }) {
         console.log(openModal);
         setOpenModal(true);
     }
-    const jsonProduct = [
-        { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
-        { name: "SOMMEIL", description: "Relaxation", url: imgSommeil },
-        { name: "VOIES RESPIRATOIRES", description: "Respiration & système immunitaire", url: imgRespiratoires },
-        { name: "ANTI-STRESS", description: "Résistance physique & mentale", url: imgStress }
-    ];
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+    
 
     return (
         <div>
@@ -94,7 +88,6 @@ export default function FicheProduit({ data }) {
                             <div className='div-fp-bienfait-phone'>
                                 <p className='p-fp-checkmark'>✓</p>
                                 <p className='p-fp-bienfait'>{bienfait} <sup className='sup-fp-exposantbienfait' onClick={() => window.location.href = '#actifs'}>{data.listeBienfaitNum[index]}</sup></p>
-
                             </div>
                         ))}
                         <p className='p-fp-ensavoirplus'><a className='a-fp-ensavoirplus' href='#actifs'>...En savoir plus</a></p>
@@ -141,7 +134,7 @@ export default function FicheProduit({ data }) {
                     <div style={{display:'flex',justifyContent:'center'}}>
                         <MenuInfos isPhone={true} data={data} />
                     </div>
-                        <ListProduct json={jsonProduct}/>
+                        <ListProduct/>
                 </div>
                 :
                 // VERSION PHONE //////////////////////////////////////////
@@ -236,7 +229,7 @@ export default function FicheProduit({ data }) {
                             <img id='composition' className='img-fp-schema' alt='schema' src={data.schema} />
                         </div>
                         <MenuInfos data={data} />
-                        <ListProduct json={jsonProduct}/>
+                        <ListProduct />
                     </div>
                 </div>
             }

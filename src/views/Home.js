@@ -17,7 +17,7 @@ export default function Home() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
     const jsonProduct = [
         { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
