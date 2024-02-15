@@ -2,12 +2,15 @@ body{
     margin:0;
 }
 
+
+
 .header-div-container{
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 /* PHONE */
 .header-div-phone{
@@ -25,6 +28,7 @@ body{
 }
 
 .header-p-phone{
+    font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 12px;
 }
@@ -34,7 +38,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     height: 85px;
-    width: 100%;
+    width: 50%;
 }
 
 .header-p-menu{
@@ -52,12 +56,14 @@ body{
 
 .header-img-menu{
     height: 42px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* version mobile header */
 @media screen and (max-width: 450px) {
     .header-p-menu{
-        display: none;
+        display:flex;
     }
 
     .header-img-menu{
@@ -75,3 +81,4 @@ body{
         margin-bottom: 2px;
     }
 }
+

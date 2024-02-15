@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className='div-footer-menu'>
                     <p className='p-footer-navigation'>Navigation</p>
                     <p className='p-footer-menu' onClick={()=>handleNavigate('/')}>HOME</p>
-                    <p className='p-footer-menu' onClick={()=>handleNavigate('/')}>TECHNOLOGIE LIPOSOME®</p>
+                    {/* <p className='p-footer-menu' onClick={()=>handleNavigate('/')}>TECHNOLOGIE LIPOSOME®</p> */}
                     <p className='p-footer-menu' onClick={()=>handleNavigate('/produits')}>NOS PRODUITS</p>
                 </div>
                 <div className='div-footer-logo'>

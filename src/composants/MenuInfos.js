@@ -84,7 +84,11 @@ export default function MenuInfos({data, isPhone}) {
                         ))}
                     </div>
                     <div>
-                        {dataToDo.map((item, index) => renderContent(item, index,isPhone))}
+                        {dataToDo.map((item, index) => (
+                            <div key={index}>
+                            {renderContent(item, index,isPhone)}
+                            </div>
+                        ))}
                     </div>
                 </div>
             )}
