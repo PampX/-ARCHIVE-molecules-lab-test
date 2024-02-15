@@ -175,6 +175,7 @@
     }
 
     .container-popUp-product {
+        width: 80vw;
         background-position: right 50px top 100px;
         background-repeat: no-repeat;
     }
@@ -261,7 +262,7 @@
     }
 
     .container-popUp-product{
-        height: 400px;
+        height: 350px;
         width: 90vw;
         margin: 0;
         margin-left: 20px;
@@ -272,7 +273,7 @@
     .img-product-popUp{
         width: 175px;
         height: 204px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .title-popUp{
@@ -282,6 +283,10 @@
     .text-popUp{
         font-size: 14px;
         margin-top: 10px;
+    }
+
+    .container-text-popUp{
+        margin-top: 40px
     }
 
 }
@@ -297,8 +302,12 @@
     }
 
     .img-product-popUp{
-        width: 175px;
-        height: 204px;
-        margin-top: 30px;
+        width: 145px;
+        height: 170px;
+        margin-top: 40px;
+    }
+
+    .button-popUp-produit{
+        font-size: 14px;
     }
 }
