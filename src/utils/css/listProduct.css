@@ -10,6 +10,7 @@
     flex-direction: column;
     font-family: Poppins;
     align-items: center;
+    cursor: pointer;
 }
 
 .img-product{

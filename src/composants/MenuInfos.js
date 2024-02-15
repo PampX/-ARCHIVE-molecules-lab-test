@@ -11,7 +11,13 @@ import Conseil from '../composants/Conseil.js'
 import '../utils/css/menuInfos.css'
 import React, { useState } from 'react';
 
+// Animation 
+import styled, { keyframes } from 'styled-components'
+import { fadeIn } from 'react-animations'
+
 export default function MenuInfos({data, isPhone}) {
+    // animation 
+    const FadeIn = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
     const menu = [
         { nom: 'Composition complète', image: composition },
@@ -34,21 +40,23 @@ export default function MenuInfos({data, isPhone}) {
     const renderContent = (item, index,isPhone) => {
         return (
             active === index ?
-                <div key={index} className={isPhone ? 'div-mi-content-phone' : 'div-mi-content'}>
+            <FadeIn>
+            <div key={index} className={isPhone ? 'div-mi-content-phone' : 'div-mi-content'}>
                     {     item === "FAQ" ? <FAQ faq={data.faq} />
                         : item === 'Precaution' ? <Precaution precautions={data.precaution} />
                         : item === 'Composition' ? <Composition ingredients={data.composition} gelules={data.compositionGelule} />
                         : item === 'Conseils' ? <Conseil conseils={data.conseilUtilisation} />
                         : item === 'Ingrédients' ? 
-                            <div>
+                        <div>
                                 <p className='p-mi-ingre'>Ingrédients </p>
                                 {data.listeIngredient.map((ingre,index1)=>(
                                     <p key={index1}>{ingre}</p>
-                                ))}
+                                    ))}
                             </div>
                         : null
                     }
                 </div>
+                </FadeIn>
                 : null
         );
     };
