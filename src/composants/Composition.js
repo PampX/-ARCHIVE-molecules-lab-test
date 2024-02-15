@@ -11,7 +11,7 @@ export default function Composition({ ingredients, gelules }) {
                 <tbody>
                     <tr>
                         <th className='bold ingredient'>Ingrédients</th>
-                        <th className='bold quantite'>{"Pour " + gelules + " gélules"}</th>
+                        <th className='bold quantite'>{"Pour " + gelules + " gélule" + (gelules > 1 ? "s" : "")}</th>
                         {ar ?
                             <th className='bold ar'>AR*</th>
                             : null
@@ -31,7 +31,7 @@ export default function Composition({ ingredients, gelules }) {
                 </tbody>
             </table>
             {ar ? 
-            <p>*Apports de Référence</p>
+            <p className='apportRef'>*Apports de Référence</p>
             : null 
             }
         </div>

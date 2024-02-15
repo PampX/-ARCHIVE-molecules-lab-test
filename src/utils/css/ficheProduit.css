@@ -1,6 +1,10 @@
 body {
     overflow-x: hidden; /* Empêche le défilement vertical */
 }
+html{
+    scroll-behavior: smooth;
+
+}
 .div-fp-container1{
     display: flex;
     justify-content: center;
@@ -32,6 +36,7 @@ body {
     width: 35px;
     height: 35px;
     transform: rotate(90deg);
+    margin-right: 5px ;
 }
 .img-fp-calendrier{
     width: 35px;
@@ -112,6 +117,7 @@ body {
     font-size: 10px;
     margin-left: 2px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .div-fp-container2{
@@ -134,11 +140,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 112px;
 }
+
+.widthIcone1{
+    width: 90px;
+}
+.widthIcone2{
+    width: 125px;
+}
+
 
 .img-fp-icones{
     width: 30px;
+    margin-right: 6px;
 }
 
 .h2-fp-probienfait{
@@ -158,6 +172,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #1B1C3C;
     margin: 0;
+    font-weight: bold;
 }
 
 .div-fp-3p{
@@ -178,7 +193,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     background-color: #F9F9F9;
-    width: 350px;
+    width: 365px;
     border-radius: 15px;
     padding: 30px;
     margin-right: 20px;
@@ -186,9 +201,9 @@ body {
 }
 .h3-fp-listeLiposome{
     font-family: 'Poppins', sans-serif;
-    color: #000000;
+    color:#99CFE2;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
 }
 .p-fp-listeLiposome{
     font-family: 'Poppins', sans-serif;
@@ -204,7 +219,7 @@ body {
 .h3-fp-technologieLiposome{
     color: #000000;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
 
 
 }
@@ -273,9 +288,14 @@ margin-top: 50px;
 
 
 /* CSS FOR THE PHONE VERSION */
+
+.phone{
+    padding-left: 20px;
+}
+
 .div-fp-container1-phone{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 .img-fp-boite-phone{
@@ -290,9 +310,10 @@ margin-top: 50px;
 }
 .img-fp-icones-phone{
     width: 32px;
+    margin-right: 5px;
 }
 .margin-icone {
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .margin-left{
     margin-left: 10px;
@@ -302,7 +323,7 @@ margin-top: 50px;
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 .h2-fp-nom-phone{
     font-family: 'Poppins', sans-serif;
@@ -323,16 +344,14 @@ margin-top: 50px;
     margin-bottom: 10px;
 }
 
-.div-fp-container3-phone,.div-fp-container2-phone{
-    margin-left: 10px;
-}
-
 .div-fp-container3-phone{
     border-bottom: 1px solid #E8E6E5;
 }
 
 .p-fp-description-phone{
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding-right: 20px;
     color: #474748;
     font-size: 16px;
 }
@@ -347,11 +366,12 @@ margin-top: 50px;
 .div-fp-div3icon-phone{
     display: flex;
     border-bottom: 1px solid #E8E6E5;
+    margin-top: 30px;
+
 
 }
 
 .div-fp-technologieLiposome-phone{
-    margin-left: 10px;
     width: 90%;
 }
 .div-fp-liposomeListeIngredient-phone{
@@ -372,6 +392,7 @@ margin-top: 50px;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 .img-fp-schema-phone{

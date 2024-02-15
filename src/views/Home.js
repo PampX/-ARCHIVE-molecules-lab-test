@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ListProduct from '../composants/ListProduct';
 import '../utils/css/home.css';
 import imgArticulation from '../images/home/molecules-articulation.png';
 import imgSommeil from '../images/home/molecules-sommeil.png';
@@ -10,15 +11,14 @@ import imgAvantages from '../images/home/avantage-img.png';
 import imgAvantages2 from '../images/home/avantage-img2.png';
 import imgPhopholipide from '../images/home/phospholipide-img.png';
 import imgPhopholipide2 from '../images/home/phospholipide-img2.png';
-import imgPhopholipide3 from '../images/home/phospholipide-img3.png';
+import videoMolecule from '../videos/vod.mp4'
 import { Link } from 'react-router-dom';
 
 export default function Home() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
-    
+    }, []);
 
     const jsonProduct = [
         { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
@@ -45,7 +45,15 @@ export default function Home() {
                 <div className='container-expert-content'>
                     <div className='container-text-expert-content'>
                         <h2 className='title-expert-content'>L'expert du liposome</h2>
-                        <p className='text-expert-content'>Nos nutraceutiques liposomaux haut de gamme sont garantis par les qualifications académiques de notre équipe et son engagement envers l'excellence scientifique. Notre technologie liposome offre de nombreux avantages pour les compléments alimentaires producteurs, le secteur alimentaire et les consommateurs. Les vitamines liposomales et autres nutraceutiques que nous proposons sont disponibles sous forme de matières premières, gélules, sérum, et autres nombreuses autres solutions sur mesure.</p>
+                        <p className='text-expert-content'>Notre technologie liposomale dernière génération représente une avancée majeure dans le domaine de la nutraceutique faisant l’objet de nombreuses études scientifiques. Cette
+                            technique innovante permet une action plus efficace, ciblée et profonde des principes actifs
+                            dans l’organisme, en les encapsulant dans des liposomes.
+
+                            Molecules développe ses formules grâce à cette nouvelle technologie exclusive pour
+                            encapsuler 100% de ses actifs. Ce procédé garantit une assimilation optimale des nutriments
+                            par l’organisme et la stabilité des actifs pour une action rapide.
+                            Nos formules sont idéales dans un programme en phase d’attaque afin d’agir rapidement et
+                            en profondeur dans les cellules.</p>
                         <Link to='/produits' className='button-expert-content'>
                             Découvrir nos produits
                         </Link>
@@ -56,11 +64,25 @@ export default function Home() {
                     <img className='img-liposome-advantag' src={imgAvantages} />
                     <div className='container-content-liposome-advantag'>
                         <h2 className='title-liposome-advantag'>les avantages du liposome</h2>
-                        <p className='text-liposome-advantage'>Les suppléments liposomaux et les ingrédients alimentaires peuvent avoir un plus grand impact que les suppléments non liposomaux. Les liposomes peuvent être considérés comme des véhicules porteurs qui contiennent et protègent les substances actives. Lorsqu'il est administré oralement, les liposomes peuvent délivrer sélectivement les principes actifs au site intestinal d'absorption conduisant à une meilleure biodisponibilité. L'administration orale liposomale peut aussi indirectement améliorer la distribution corporelle après absorption intestinale. Cela soulève la probabilité qu'une substance active administrée par voie orale puisse mieux atteindre partie du corps où il doit agir.</p>
+                        <p className='text-liposome-advantage'>L’un des principaux avantages des liposomes est leur capacité à améliorer la biodisponibilité
+                            des principes actifs.
+                            L’actif est encapsulé dans un liposome d’origine végétale, ce qui améliore considérablement
+                            son absorption au niveau cellulaire, leur transport ciblé dans l’organisme et renforce donc
+                            ses effets bénéfiques. Cette méthode de micro-encapsulation le protège également contre la
+                            dégradation précoce par les sucs gastriques, augmentant ainsi sa biodisponibilité et sa
+                            concentration dans le plasma sanguin.</p>
                         <img className='img-schema-avantage' src={imgAvantages2} />
                     </div>
                 </div>
-                {/* VIDEO */}
+                <div className='container-shema-Vtab'>
+                    <img className='img-schema-avantage-mobile' src={imgAvantages2} />
+                </div>
+                <div className='container-video'>
+                    <video autoPlay loop muted playsInline>
+                        <source src={videoMolecule} type="video/mp4" />
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
                 <div className='container-process'>
                     <div className='container-liposome-content'>
                         <h2 className='title-liposome-content'>Qu’est-ce qu’un liposome ?</h2>
@@ -86,35 +108,20 @@ export default function Home() {
                     <img className='img-phospholipide' src={imgPhopholipide2} />
                     <div className='container-text-phospholipide'>
                         <h2 className='title-phospholipide'>Qu’est-ce que les phospholipides ?</h2>
-                        <p className='text-phospholipide'>Le liposome, créé à partir de phospholipides, est une minuscule particule composée de
-                            bicouches lipidiques, une partie polaire hydrophile et d’une partie hydrophobe, permettant
-                            d’encapsuler efficacement l’actif et ressemblant à la membrane cellulaire.
+                        <p className='text-phospholipide'>Les phospholipides, un groupe de lipides essentiels, jouent un rôle crucial dans le maintien
+                            de la santé cellulaire et la fonctionnalité des membranes biologiques.
                             <br /><br />
-                            Il est capable d’encapsuler des substances hydrophiles dans son centre aqueux et des
-                            substances hydrophobes dans sa bicouche lipidique, les protégeant ainsi de la dégradation
-                            digestive permettant aux nutriments d’atteindre directement les cellules, maximisant leur
-                            efficacité et leur absorption.
+                            Ce sont les principaux constituants des membranes cellulaires, offrant flexibilité et intégrité
+                            à la cellule. Ils participent à la régulation du passage des substances entre l’intérieur et l’extérieur de la cellule.
                             <br /><br />
-                            Les liposomes sont utilisés pour transporter des ingrédients actifs directement dans les
-                            couches profondes de la peau. Ils améliorent l’absorption des nutriments essentiels tels que
-                            les vitamines, les minéraux et les acides gras oméga.
-                            <br /><br />
-                            Les recherches sur les liposomes se poursuivent pour développer des systèmes
-                            d’assimilation encore plus efficaces et ciblés.</p>
+                            Les phospholipides tels que la lécithine jouent un rôle important dans la biodisponibilité et
+                            l’absorption des nutriments.</p>
                     </div>
                 </div>
                 <div className='container-engagment'>
                     <p className='text-engagment'>Notre équipe s'engage pour l'excellence scientifique</p>
                 </div>
-                <div className='container-products-global'>
-                    {jsonProduct.map((product, index) => (
-                        <div className='container-product' key={index}>
-                            <img className='img-product' src={product.url} alt={product.name} />
-                            <h2 className='title-product'>{product.name}</h2>
-                            <p className='text-product'>{product.description}</p>
-                        </div>
-                    ))}
-                </div>
+                <ListProduct json={jsonProduct} />
                 <div className='button-view-product '>
                     <Link to='/produits' className='button-expert-content-bis'>
                         Voir nos produits

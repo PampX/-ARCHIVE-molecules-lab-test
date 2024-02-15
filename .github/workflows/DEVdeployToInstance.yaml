@@ -1,0 +1,52 @@
+name: DEV build and deploy on EC2 instance
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    name: "Deploy to development"
+    runs-on: ubuntu-latest
+    env:
+      CONTAINER_NAME: ${{ vars.DEV_CONTAINER_NAME }}
+      IMAGE_NAME: ${{ vars.DEV_IMAGE_NAME }}
+      REPO_NAME: ${{ vars.REPO_NAME }}
+      SSH_USER: ${{ secrets.SSH_USER }}
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/development.key
+          chmod 600 ~/.ssh/development.key
+          cat >>~/.ssh/config <<END
+          Host development
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/development.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          
+      - name: Stop the container
+        run: ssh development "sudo docker stop $CONTAINER_NAME || true"
+
+      - name: Remove the container
+        run: ssh development "sudo docker rm $CONTAINER_NAME || true"
+
+      - name: Remove the old image
+        run: ssh development "sudo docker rmi $IMAGE_NAME || true"
+
+      - name: Get the last source
+        run: ssh development "git clone -b dev git@molectest:PharmaNature/-ARCHIVE-molecules-lab-test.git $REPO_NAME"
+
+      - name: Build image
+        run: ssh development "cd $REPO_NAME && sudo docker build -t $IMAGE_NAME ."
+
+      - name: Remove old directory
+        run: ssh development "sudo rm -rf $REPO_NAME || true"
+
+      - name: Start the container as deamon with the input
+        run: ssh development "sudo docker run -d -p 8000:3000 --name $CONTAINER_NAME $IMAGE_NAME"
