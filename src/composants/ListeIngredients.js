@@ -2,7 +2,15 @@ import arrow from '../images/general/arrow.png'
 import '../utils/css/listeIngredient.css'
 import React, { useState } from 'react';
 
+// Animation 
+import styled, { keyframes } from 'styled-components'
+import { fadeIn,shake } from 'react-animations'
+
 export default function ListeIngredients({ ingredients, num, description, isPhone }) {
+    // animation 
+    const FadeIn = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
+
+
     const [actif, setActif] = useState(-1);
     const [ingreOuBF, setIngreOuBF] = useState(true)
 
@@ -36,51 +44,54 @@ export default function ListeIngredients({ ingredients, num, description, isPhon
                             </div>
                         }
                     </div>
-                    {actif === index && (
-                        description[index]['description'] && description[index]['bienfait'] ? (
-                            // Si l'ingrédient a une description ET des bienfaits
-                            ingreOuBF ? (
-                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
-                                    {description[index]['description'].map((desc,index6)=>(
-                                        <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
-                                    ))}
-                                </div>
+                    <FadeIn>
+
+                        {actif === index && (
+                            description[index]['description'] && description[index]['bienfait'] ? (
+                                // Si l'ingrédient a une description ET des bienfaits
+                                ingreOuBF ? (
+                                    <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                        {description[index]['description'].map((desc, index6) => (
+                                            <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                        {description[index]['bienfait'].map((bienfait, index2) => (
+                                            <div key={index2}>
+                                                <p className='bienfait-titre'>{bienfait.titre}</p>
+                                                {/* Ne concerne que Pépin de raisins pour Circulation */}
+                                                <p>{bienfait.before}</p>
+                                                {bienfait.description.map((bfDescription, index3) => (
+                                                    <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )
                             ) : (
-                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
-                                    {description[index]['bienfait'].map((bienfait, index2) => (
-                                        <div key={index2}>
-                                            <p className='bienfait-titre'>{bienfait.titre}</p>
-                                            {/* Ne concerne que Pépin de raisins pour Circulation */}
-                                            <p>{bienfait.before}</p>
-                                            {bienfait.description.map((bfDescription, index3) => (
-                                                <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
+                                // Si l'ingrédient a seulement une description ou des bienfaits
+                                description[index]['description'] ? (
+                                    <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                        {description[index]['description'].map((desc, index6) => (
+                                            <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
+                                        {description[index]['bienfait'].map((bienfait, index2) => (
+                                            <div key={index2}>
+                                                <p className='bienfait-titre'>{bienfait.titre}</p>
+                                                {bienfait.description.map((bfDescription, index3) => (
+                                                    <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )
                             )
-                        ) : (
-                            // Si l'ingrédient a seulement une description ou des bienfaits
-                            description[index]['description'] ? (
-                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
-                                    {description[index]['description'].map((desc,index6)=>(
-                                        <p key={index6} className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>{desc}</p>
-                                    ))}
-                                </div>
-                            ) : (
-                                <div className={(isPhone ? ' p-ingredient-explication-phone' : 'p-ingredient-explication')}>
-                                    {description[index]['bienfait'].map((bienfait, index2) => (
-                                        <div key={index2}>
-                                            <p className='bienfait-titre'>{bienfait.titre}</p>
-                                            {bienfait.description.map((bfDescription, index3) => (
-                                                <p key={index3} className='bienfait-description'>{"• " + bfDescription}</p>
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
-                            )
-                        )
-                    )}
+                        )}
+                    </FadeIn>
                 </div>
             ))}
         </div>
