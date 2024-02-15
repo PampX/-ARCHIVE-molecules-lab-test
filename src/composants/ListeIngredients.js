@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 // Animation 
 import styled, { keyframes } from 'styled-components'
-import { fadeIn,shake } from 'react-animations'
+import { fadeIn } from 'react-animations'
 
 export default function ListeIngredients({ ingredients, num, description, isPhone }) {
     // animation 

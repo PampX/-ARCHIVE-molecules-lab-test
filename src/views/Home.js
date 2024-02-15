@@ -30,7 +30,7 @@ export default function Home() {
     return (
         <div className='container-home'>
             <div className='container-intro-home'>
-                <img src={imgIntro} className='img-intro-home' />
+                <img src={imgIntro} alt='femme' className='img-intro-home' />
                 <div className='container-intro-title-text'>
                     <h1 className='title-intro-home'>la technologie <br />liposomale</h1>
                     <p className='text-intro-home'>La révolution dans <br />le domaine de la nutraceutique</p>
@@ -58,10 +58,10 @@ export default function Home() {
                             Découvrir nos produits
                         </Link>
                     </div>
-                    <img className='img-expert' src={imgExpert} />
+                    <img className='img-expert' alt='expert' src={imgExpert} />
                 </div>
                 <div className='container-liposome-advantage'>
-                    <img className='img-liposome-advantag' src={imgAvantages} />
+                    <img className='img-liposome-advantag' alt='avantages' src={imgAvantages} />
                     <div className='container-content-liposome-advantag'>
                         <h2 className='title-liposome-advantag'>les avantages du liposome</h2>
                         <p className='text-liposome-advantage'>L’un des principaux avantages des liposomes est leur capacité à améliorer la biodisponibilité
@@ -71,11 +71,11 @@ export default function Home() {
                             ses effets bénéfiques. Cette méthode de micro-encapsulation le protège également contre la
                             dégradation précoce par les sucs gastriques, augmentant ainsi sa biodisponibilité et sa
                             concentration dans le plasma sanguin.</p>
-                        <img className='img-schema-avantage' src={imgAvantages2} />
+                        <img className='img-schema-avantage' alt='avantages2' src={imgAvantages2} />
                     </div>
                 </div>
                 <div className='container-shema-Vtab'>
-                    <img className='img-schema-avantage-mobile' src={imgAvantages2} />
+                    <img className='img-schema-avantage-mobile' alt='avantages2' src={imgAvantages2} />
                 </div>
                 <div className='container-video'>
                     <video autoPlay loop muted playsInline>
@@ -102,10 +102,10 @@ export default function Home() {
                             Les recherches sur les liposomes se poursuivent pour développer des systèmes
                             d’assimilation encore plus efficaces et ciblés.</p>
                     </div>
-                    <img className='img-liposome-content' src={imgPhopholipide} />
+                    <img className='img-liposome-content' alt='phospholipide' src={imgPhopholipide} />
                 </div>
                 <div className='container-phospholipide'>
-                    <img className='img-phospholipide' src={imgPhopholipide2} />
+                    <img className='img-phospholipide' alt='phospholipide2' src={imgPhopholipide2} />
                     <div className='container-text-phospholipide'>
                         <h2 className='title-phospholipide'>Qu’est-ce que les phospholipides ?</h2>
                         <p className='text-phospholipide'>Les phospholipides, un groupe de lipides essentiels, jouent un rôle crucial dans le maintien
