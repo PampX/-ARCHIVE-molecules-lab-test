@@ -38,7 +38,7 @@ export default function FicheProduit({ data }) {
     return (
         <div>
             {isPhone ?
-                <div>
+                <div className='phone'>
                     <div className='div-fp-container1-phone'>
                         <img className='img-fp-boite-phone' src={data.image} alt={"image du produit " + data.nom} />
                         <div className='div-3icones-phone'>
@@ -69,7 +69,7 @@ export default function FicheProduit({ data }) {
                     <div className='div-fp-container3-phone'>
                         <p className='p-fp-motcle-phone'>{data.motCle}</p>
                     </div>
-                    <div className='div-fp-geluleCalendrier margin-left'>
+                    <div className='div-fp-geluleCalendrier '>
                         <img className='img-fp-gelule' src={gelule} alt="Icone d'une gélule" />
                         <p className='p-fp-infos1 bold'>{data.nbGelule[0]}</p>
                         <p className='p-fp-infos1'>{data.nbGelule[1]}</p>
@@ -79,7 +79,7 @@ export default function FicheProduit({ data }) {
                         <p className='p-fp-infos1 bold'>{data.nbJour[2]}</p>
                         <p className='p-fp-infos1'>{data.nbJour[3]}</p>
                     </div>
-                    <div className='margin-left'>
+                    <div>
                         <p className='p-fp-description-phone'>{data.description}</p>
                     </div>
                     <div style={{display:'flex',justifyContent:'center'}}>
@@ -93,9 +93,9 @@ export default function FicheProduit({ data }) {
                         <p className='p-fp-ensavoirplus'><a className='a-fp-ensavoirplus' href='#actifs'>...En savoir plus</a></p>
                     </div>
                     </div>
-                    <div className='div-fp-div3icon-phone margin-left'>
+                    <div className='div-fp-div3icon-phone'>
                         <img className='img-fp-icones' src={pharmacie} alt="Icone d'une croix de pharmacie" />
-                        <h2 className='h2-fp-probienfait margin-left'>PROPRIETÉS ET BIENFAITS</h2>
+                        <h2 className='h2-fp-probienfait '>PROPRIETÉS ET BIENFAITS</h2>
                     </div>
                     <div className='div-fp-technologieLiposome-phone'>
                         <h3 className='h3-fp-technologieLiposome'>TECHNOLOGIE LIPOSOMALE®</h3>
