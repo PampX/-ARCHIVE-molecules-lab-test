@@ -15,7 +15,7 @@ export default function Header(){
         <div className='header-div-container'>
             <div className='header-div-phone'>
                 <img className='header-img-phone' src={phone} alt='icone de téléphone'/>
-                <p className='header-p-phone'>+33 (0)XX XX XX XX</p>
+                <p className='header-p-phone'>+33 (0)4 99 78 08 11</p>
             </div>
             <div className='header-div-menu'>
                 <Link to='/' className='header-p-menu'>HOME</Link>

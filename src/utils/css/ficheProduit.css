@@ -241,6 +241,7 @@ html{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .a-fp-moreLiposome{
@@ -291,12 +292,14 @@ margin-top: 50px;
 
 .phone{
     padding-left: 20px;
+    width: 95%;
 }
 
 .div-fp-container1-phone{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -40px;
 }
 .img-fp-boite-phone{
     width: 280px;
