@@ -1,8 +1,10 @@
 name: Build and Publish to ECR instance
 
+
 on:
-    push:
-      branches: [ ecrWorflow ]
+  push:
+    branches:
+      - ecrWorkflow
 
 jobs:
   deploy:
