@@ -22,7 +22,7 @@ export default function Header(){
                 <Link to='/'>
                     <img className='header-img-menu' src={logo}/>
                 </Link>
-                <Link to='/produits' className='header-p-menu'>NOS PRODUITS</Link>
+                <Link to='/produits' className='header-p-menu quandMeme'>NOS PRODUITS</Link>
             </div>
         </div>
     );

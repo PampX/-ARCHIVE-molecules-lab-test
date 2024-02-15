@@ -63,7 +63,7 @@ body{
 /* version mobile header */
 @media screen and (max-width: 450px) {
     .header-p-menu{
-        display: none;
+        display:flex;
     }
 
     .header-img-menu{
@@ -81,3 +81,4 @@ body{
         margin-bottom: 2px;
     }
 }
+
