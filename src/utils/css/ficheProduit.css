@@ -288,6 +288,11 @@ margin-top: 50px;
 
 
 /* CSS FOR THE PHONE VERSION */
+
+.phone{
+    padding-left: 20px;
+}
+
 .div-fp-container1-phone{
     display: flex;
     justify-content: center;
@@ -339,10 +344,6 @@ margin-top: 50px;
     margin-bottom: 10px;
 }
 
-.div-fp-container3-phone,.div-fp-container2-phone{
-    margin-left: 10px;
-}
-
 .div-fp-container3-phone{
     border-bottom: 1px solid #E8E6E5;
 }
@@ -371,7 +372,6 @@ margin-top: 50px;
 }
 
 .div-fp-technologieLiposome-phone{
-    margin-left: 10px;
     width: 90%;
 }
 .div-fp-liposomeListeIngredient-phone{
