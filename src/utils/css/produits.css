@@ -43,10 +43,6 @@
     margin: 0;
 }
 
-.container-one-product .extra-text {
-    display: none;
-}
-
 /* .container-one-product:hover .extra-text {
     display: block;
 } */
@@ -60,7 +56,6 @@
 } */
 
 .underline {
-    display: none;
     height: 5px;
     background-color: rgb(152, 207, 226);
     margin-top: 10px;
@@ -158,6 +153,7 @@
     text-transform: uppercase;
     color: #121628;
     text-decoration: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1366px) {
