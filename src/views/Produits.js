@@ -23,6 +23,7 @@ const images = {
 };
 
 const productInfo = [
+
     { name: "articulation", key: "articulation", desc: "Améliore la mobilité", desc2: "Confort articulaire · Flexibilité", path: "/articulation" },
     { name: "sommeil", key: "sommeil", desc: "Réduit le temps d'endormissement", desc2: "Sommeil réparateur · Relaxation · Endormissement", path: "/sommeil" },
     { name: "voies respiratoires", key: "respiratoires", desc: "Respiration facilitée", desc2: "Système immunitaire & respiratoire · Vitalité", path: "/voies-respiratoires" },
@@ -72,6 +73,11 @@ export default function Produits() {
     const ClickClosed = () => {
         setOpenProduct(null);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    const numberOfProductsPerRow = 4;
 
     return (
         <div className='container-all'>

@@ -42,10 +42,11 @@ jobs:
       run: |
         echo "${{ env.AWS_PRIVATE_KEY }}" > key.pem
         chmod 600 key.pem
-    - name: Stop running container
+    - name: Stop and delete running container
       run: |
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@15.188.228.128 'sudo docker stop dockermt || true'
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@15.188.228.128 'sudo docker rm dockermt || true'
+        ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@15.188.228.128 'sudo docker rmi devpharmanature/molecule-lab:latest || true'
     - name: Pull Docker image
       run: |
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@15.188.228.128 'sudo docker pull devpharmanature/molecule-lab:latest'
