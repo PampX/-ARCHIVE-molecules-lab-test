@@ -54,12 +54,11 @@ export default function Produits() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [activeProductIndex]);
+    }, []);
 
     const numberOfProductsPerRow = windowWidth < 1006 ? 2 : 4;
 
     const handleClick = (index, product) => {
-        console.log(openProduct)
         setActiveProductIndex(index === activeProductIndex ? null : index);
         if (openProduct === null) {
             setOpenProduct([product.name, product.key, product.desc2, product.path]);

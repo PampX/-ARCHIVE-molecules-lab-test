@@ -2,14 +2,8 @@ import '../utils/css/header.css'
 import phone from '../images/header/phone.png'
 import logo from '../images/header/logo.png'
 import { Link } from 'react-router-dom';
-import molecule from '../images/general/Logo.png'
-import { useNavigate } from 'react-router-dom';
 
 export default function Header(){
-    const navigate = useNavigate();
-    const handleNavigate = (where) => {
-        navigate(where)
-    }
 
     return (
         <div className='header-div-container'>
@@ -20,7 +14,7 @@ export default function Header(){
             <div className='header-div-menu'>
                 <Link to='/' className='header-p-menu'>HOME</Link>
                 <Link to='/'>
-                    <img className='header-img-menu' src={logo}/>
+                    <img className='header-img-menu' alt='logo' src={logo}/>
                 </Link>
                 <Link to='/produits' className='header-p-menu quandMeme'>NOS PRODUITS</Link>
             </div>

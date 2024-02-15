@@ -1,6 +1,6 @@
 import '../utils/css/ficheProduit.css'
 import { useMediaQuery } from 'react-responsive'
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 // import ModalImage from 'react-modal-image';
 
 import gelule from '../images/general/gelule.svg'
@@ -24,11 +24,6 @@ export default function FicheProduit({ data }) {
     const location = useLocation();
     const isPhone = useMediaQuery({ query: '(max-width: 750px)' })
 
-    const [openModal, setOpenModal] = useState(false);
-    const handleSchemaPhone = () => {
-        console.log(openModal);
-        setOpenModal(true);
-    }
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -85,7 +80,7 @@ export default function FicheProduit({ data }) {
                     <div style={{display:'flex',justifyContent:'center'}}>
                     <div className='div-fp-allbienfait'>
                         {data.listeBienfait.map((bienfait, index) => (
-                            <div className='div-fp-bienfait-phone'>
+                            <div className='div-fp-bienfait-phone' key={index}>
                                 <p className='p-fp-checkmark'>✓</p>
                                 <p className='p-fp-bienfait'>{bienfait} <sup className='sup-fp-exposantbienfait' onClick={() => window.location.href = '#actifs'}>{data.listeBienfaitNum[index]}</sup></p>
                             </div>
@@ -123,7 +118,7 @@ export default function FicheProduit({ data }) {
                         <img className='img-fp-liposome3d-phone' src={liposome3d} alt="un liposome" />
                         <ListeIngredients isPhone={true} ingredients={data.listeActif} num={data.listeActifNum} description={data.listeActifDescription} />
                     </div>
-                    <div className='div-fp-schema-phone' onClick={handleSchemaPhone}>
+                    <div className='div-fp-schema-phone'>
                         {/* <img id='composition' className='img-fp-schema-phone' alt='schema' src={data.schemaPhone}/> */}
                         <img id='composition' className='img-fp-schema-phone' alt='schema' src={data.schema} />
                         <div className='div-fp-clickDetail-phone'>
