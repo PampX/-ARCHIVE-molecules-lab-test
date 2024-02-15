@@ -17,18 +17,18 @@ const images = {
 };
 
 const productInfo = [
-    { name: "articulation", key: "articulation", desc: "Améliore la mobilité" },
-    { name: "sommeil", key: "sommeil", desc: "Réduit le temps d'endormissement" },
-    { name: "voies respiratoires", key: "respiratoires", desc: "Respiration facilitée" },
-    { name: "anti-stress", key: "stress", desc: "Résistance physique & mentale" },
-    { name: "multivitamines", key: "multi", desc: "Réduit la fatigue" },
-    { name: "circulation", key: "circulation", desc: "Jambe légère" },
-    { name: "détox", key: "detox", desc: "Favorise la digestion" },
-    { name: "capillaire", key: "capillaire", desc: "Croissance & force" },
-    { name: "jet lag", key: "jetLag", desc: "Décalage horaire" },
-    { name: "minceur", key: "minceur", desc: "Aide à augmenter la dépense énergétique" },
-    { name: "énergie", key: "energie", desc: "Résistance à la fatigue mentale & physique" },
-    { name: "immunité", key: "immunite", desc: "Système immunitaire préservé" },
+    { name: "articulation", key: "articulation", desc: "Améliore la mobilité", link: "/produits/articulation" },
+    { name: "sommeil", key: "sommeil", desc: "Réduit le temps d'endormissement" , link: "/produits/sommeil" },
+    { name: "voies respiratoires", key: "respiratoires", desc: "Respiration facilitée" , link: "/produits/voies-respiratoires" },
+    { name: "anti-stress", key: "stress", desc: "Résistance physique & mentale" , link: "/produits/anti-stress" },
+    { name: "multivitamines", key: "multi", desc: "Réduit la fatigue", link: "/produits/multivitamines-et-mineraux" },
+    { name: "circulation", key: "circulation", desc: "Jambe légère", link: "/produits/circulation" },
+    { name: "détox", key: "detox", desc: "Favorise la digestion", link: "/produits/detox" },
+    { name: "capillaire", key: "capillaire", desc: "Croissance & force", link: "/produits/capillaire" },
+    { name: "jet lag", key: "jetLag", desc: "Décalage horaire", link: "/produits/jet-lag" },
+    { name: "minceur", key: "minceur", desc: "Aide à augmenter la dépense énergétique", link: "/produits/minceur" },
+    { name: "énergie", key: "energie", desc: "Résistance à la fatigue mentale & physique", link: "/produits/energie" },
+    { name: "immunité", key: "immunite", desc: "Système immunitaire préservé", link: "/produits/immunite" },
 ];
 
 export default function Produits() {
@@ -40,7 +40,7 @@ export default function Produits() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
     return (
         <div className='container-all'>

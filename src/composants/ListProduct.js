@@ -39,7 +39,6 @@ export default function ListProduct({nomProduit}) {
         const randomIndexes = [];
         while (randomIndexes.length < 4) {
             const randomIndex = Math.floor(Math.random() * data.length);
-            console.log(data[randomIndex].name !== nomProduit);
             if (!randomIndexes.includes(randomIndex) && data[randomIndex].name !== nomProduit) {
                 randomIndexes.push(randomIndex);
             }
