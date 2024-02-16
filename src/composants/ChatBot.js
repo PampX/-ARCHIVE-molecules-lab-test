@@ -44,7 +44,7 @@ const ChatBot = ({ onNewMessage }) => {
 
     try {
       const response = await sendApiRequest(userMessage);
-      console.log(response);
+      // console.log(response);
       if (response && response.text) {
         const newMessageAssistant = { role: 'assistant', content: response.text };
         setHistoricalMessage(historicalMessage => [...historicalMessage, newMessageAssistant]);
