@@ -4,6 +4,8 @@ import closePopUp from '../images/home/close-popUp.png';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components'
 import { fadeIn } from 'react-animations'
+import NotificationBar from '../composants/NotificationBar'
+import ChatBot from '../composants/ChatBot'
 
 const FadeIn = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
@@ -29,7 +31,7 @@ const productInfo = [
     { name: "voies respiratoires", key: "respiratoires", desc: "Respiration facilitée", desc2: "Système immunitaire & respiratoire · Vitalité", path: "/voies-respiratoires" },
     { name: "anti-stress", key: "stress", desc: "Résistance physique & mentale", desc2: "Sérénité · Détente · Energie · Performance", path: "/anti-stress" },
     { name: "multivitamines", key: "multi", desc: "Réduit la fatigue", desc2: "Système immunitaire · Equilibre hormonal & nerveux · Performance", path: "/multivitamines-et-mineraux" },
-    { name: "circulation", key: "circulation", desc: "Jambe légère", desc2: "Circulation veineuse · Lymphatique · Antioxydant · Vasoprotecteur", path: "/circulation" },
+    { name: "circulation", key: "circulation", desc: "Jambes légères", desc2: "Circulation veineuse · Lymphatique · Antioxydant · Vasoprotecteur", path: "/circulation" },
     { name: "détox", key: "detox", desc: "Favorise la digestion", desc2: "Détox du foie · Digestion · Purification", path: "/detox" },
     { name: "capillaire", key: "capillaire", desc: "Croissance & force", desc2: "Beauté & croissance des cheveux · Anti-chute · Pigmentation", path: "/capillaire" },
     { name: "jet lag", key: "jetLag", desc: "Décalage horaire", desc2: "Décalage horaire · Rapidité endormissement · Régulation du cycle circadien", path: "jet-lag" },
@@ -42,6 +44,27 @@ export default function Produits() {
     const [activeProductIndex, setActiveProductIndex] = useState(null);
     const [openProduct, setOpenProduct] = useState(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    const [showChat, setShowChat] = useState(false);
+    const [hasNotification, setHasNotification] = useState(true);
+
+    const handleNotificationClick = () => {
+        setShowChat(true);
+    };
+
+    const handleCloseChat = () => {
+        setShowChat(false);
+        setHasNotification(false)
+    };
+
+    const handleNewMessage = () => {
+        setHasNotification(true);
+    };
+
+    const notificationBarStyle = {
+        bottom: showChat ? '722px' : '20px',
+        cursor: showChat ? 'default' : 'pointer',
+    };
 
     useEffect(() => {
         function handleResize() {
@@ -108,6 +131,12 @@ export default function Produits() {
                         )}
                     </React.Fragment>
                 ))}
+            </div>
+            <div className="app">
+                <div>
+                    <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat} onClick={handleNotificationClick} style={notificationBarStyle} />
+                    {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage} />}
+                </div>
             </div>
         </div>
     );

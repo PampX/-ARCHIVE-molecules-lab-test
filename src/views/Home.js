@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import ListProduct from '../composants/ListProduct';
 import '../utils/css/home.css';
 import imgArticulation from '../images/home/molecules-articulation.png';
@@ -12,6 +12,8 @@ import imgAvantages2 from '../images/home/avantage-img2.png';
 import imgPhopholipide from '../images/home/phospholipide-img.png';
 import imgPhopholipide2 from '../images/home/phospholipide-img2.png';
 import videoMolecule from '../videos/vod.mp4'
+import NotificationBar from '../composants/NotificationBar'
+import ChatBot from '../composants/ChatBot'
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -19,6 +21,27 @@ export default function Home() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const [showChat, setShowChat] = useState(false);
+    const [hasNotification, setHasNotification] = useState(true);
+
+    const handleNotificationClick = () => {
+        setShowChat(true);
+    };
+
+    const handleCloseChat = () => {
+        setShowChat(false);
+        setHasNotification(false)
+    };
+
+    const handleNewMessage = () => {
+        setHasNotification(true);
+    };
+
+    const notificationBarStyle = {
+        bottom: showChat ? '722px' : '20px',
+        cursor: showChat ? 'default' : 'pointer',
+    };
 
     const jsonProduct = [
         { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
@@ -126,6 +149,12 @@ export default function Home() {
                     <Link to='/produits' className='button-expert-content-bis'>
                         Voir nos produits
                     </Link>
+                </div>
+            </div>
+            <div className="app">
+                <div>
+                    <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat} onClick={handleNotificationClick} style={notificationBarStyle} />
+                    {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage} />}
                 </div>
             </div>
         </div>
