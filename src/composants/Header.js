@@ -52,7 +52,7 @@ export default function Header() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="1" viewBox="0 0 30 1">
                             <rect width="30" height="1" fill="black" />
                         </svg>
-                        <Link className='item-menu' to='/point_de_vente' onClick={toggleMenu}>LES POINTS DE VENTES</Link>
+                        <Link className='item-menu' to='/point-de-vente' onClick={toggleMenu}>LES POINTS DE VENTES</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="1" viewBox="0 0 30 1">
                             <rect width="30" height="1" fill="black" />
                         </svg>

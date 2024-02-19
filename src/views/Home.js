@@ -17,13 +17,29 @@ import ChatBot from '../composants/ChatBot'
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     const [showChat, setShowChat] = useState(false);
     const [hasNotification, setHasNotification] = useState(true);
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+    const [notificationBarStyle, setNotificationBarStyle] = useState({});
+
+  useEffect(() => {
+    setWindowSize({width: window.innerWidth, height: window.innerHeight,})
+    if (windowSize.height < 700) {
+      setNotificationBarStyle({
+        bottom: showChat ? '560px' : '20px',
+        cursor: showChat ? 'default' : 'pointer',
+      });
+    } else {
+      setNotificationBarStyle({
+        bottom: showChat ? '722px' : '20px',
+        cursor: showChat ? 'default' : 'pointer',
+      });
+    }
+  }, [windowSize.height, showChat]);
+
 
     const handleNotificationClick = () => {
         setShowChat(true);
@@ -36,11 +52,6 @@ export default function Home() {
 
     const handleNewMessage = () => {
         setHasNotification(true);
-    };
-
-    const notificationBarStyle = {
-        bottom: showChat ? '722px' : '20px',
-        cursor: showChat ? 'default' : 'pointer',
     };
 
     const jsonProduct = [
