@@ -47,6 +47,27 @@ export default function Produits() {
 
     const [showChat, setShowChat] = useState(false);
     const [hasNotification, setHasNotification] = useState(true);
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+    const [notificationBarStyle, setNotificationBarStyle] = useState({});
+
+  useEffect(() => {
+    setWindowSize({width: window.innerWidth, height: window.innerHeight,})
+    if (windowSize.height < 700) {
+      setNotificationBarStyle({
+        bottom: showChat ? '560px' : '20px',
+        cursor: showChat ? 'default' : 'pointer',
+      });
+    } else {
+      setNotificationBarStyle({
+        bottom: showChat ? '722px' : '20px',
+        cursor: showChat ? 'default' : 'pointer',
+      });
+    }
+  }, [windowSize.height, showChat]);
+
 
     const handleNotificationClick = () => {
         setShowChat(true);
@@ -61,11 +82,6 @@ export default function Produits() {
         setHasNotification(true);
     };
 
-    const notificationBarStyle = {
-        bottom: showChat ? '722px' : '20px',
-        cursor: showChat ? 'default' : 'pointer',
-    };
-
     useEffect(() => {
         function handleResize() {
             setWindowWidth(window.innerWidth);
@@ -73,10 +89,6 @@ export default function Produits() {
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
     }, []);
 
     const numberOfProductsPerRow = windowWidth < 1006 ? 2 : 4;
@@ -118,9 +130,9 @@ export default function Produits() {
                             <FadeIn className='container-popUp-product'>
                                 <img onClick={ClickClosed} src={closePopUp} className='img-popUp' alt="Close" />
                                 <div className='container-content-popUp'>
-                                    <Link to={"/produits"+openProduct[3]}>
+
                                     <img src={images[openProduct[1]]} className='img-product-popUp' alt={openProduct[0]} />
-                                    </Link>
+
                                     <div className='container-text-popUp'>
                                         <h1 className='title-popUp'>{openProduct[0]}</h1>
                                         <p className='text-popUp'>{openProduct[2]}</p>
