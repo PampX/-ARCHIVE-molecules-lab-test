@@ -1,22 +1,36 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga4'; // Assurez-vous d'utiliser react-ga4 si vous utilisez GA4
 import Home from './views/Home';
 import Produits from './views/Produits';
 import FicheProduit from './views/FicheProduit';
 import Header from './composants/Header';
 import Footer from './composants/Footer';
+import { getInfosProduit } from './utils/produits/infosProduits';
 
-// import des produits
-import {getInfosProduit} from './utils/produits/infosProduits'; 
+// Initialisez votre ID de mesure GA4
+ReactGA.initialize('G-F61DD3NBNP');
 
+// Component pour le suivi des vues de page
+function RouteChangeTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
+
+  return null;
+}
 export default function App() {
 
   const infosProduits = getInfosProduit()
   return (
     <Router>
-        <Header/>
+      <RouteChangeTracker />
+      <Header />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='produits' element={<Produits/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='produits' element={<Produits />} />
         <Route path="produits/articulation" element={<FicheProduit data={infosProduits['articulation']} />} />
         <Route path="produits/anti-stress" element={<FicheProduit data={infosProduits['anti-stress']} />} />
         <Route path="produits/capillaire" element={<FicheProduit data={infosProduits['capillaire']} />} />
@@ -30,7 +44,7 @@ export default function App() {
         <Route path="produits/voies-respiratoires" element={<FicheProduit data={infosProduits['voies-respiratoires']} />} />
         <Route path="produits/sommeil" element={<FicheProduit data={infosProduits['sommeil']} />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
