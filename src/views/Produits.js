@@ -6,6 +6,7 @@ import styled, { keyframes } from 'styled-components'
 import { fadeIn } from 'react-animations'
 import NotificationBar from '../composants/NotificationBar'
 import ChatBot from '../composants/ChatBot'
+import { useNavigate } from 'react-router-dom';
 
 const FadeIn = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
@@ -34,13 +35,15 @@ const productInfo = [
     { name: "circulation", key: "circulation", desc: "Jambes légères", desc2: "Circulation veineuse · Lymphatique · Antioxydant · Vasoprotecteur", path: "/circulation" },
     { name: "détox", key: "detox", desc: "Favorise la digestion", desc2: "Détox du foie · Digestion · Purification", path: "/detox" },
     { name: "capillaire", key: "capillaire", desc: "Croissance & force", desc2: "Beauté & croissance des cheveux · Anti-chute · Pigmentation", path: "/capillaire" },
-    { name: "jet lag", key: "jetLag", desc: "Décalage horaire", desc2: "Décalage horaire · Rapidité endormissement · Régulation du cycle circadien", path: "jet-lag" },
+    { name: "jet lag", key: "jetLag", desc: "Décalage horaire", desc2: "Décalage horaire · Rapidité endormissement · Régulation du cycle circadien", path: "/jet-lag" },
     { name: "minceur", key: "minceur", desc: "Aide à augmenter la dépense énergétique", desc2: "Brûle-graisses · Perte de poids · Digestion", path: "/minceur" },
     { name: "énergie", key: "energie", desc: "Résistance à la fatigue mentale & physique", desc2: "Dynamisant · Equilibre énergétique · Système nerveux", path: "/energie" },
     { name: "immunité", key: "immunite", desc: "Système immunitaire préservé", desc2: "Système immunitaire · Protection stress oxydatif · Métabolisme · Vitalité", path: "/immunite" },
 ];
 
 export default function Produits() {
+    const navigate = useNavigate();
+
     const [activeProductIndex, setActiveProductIndex] = useState(null);
     const [openProduct, setOpenProduct] = useState(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -108,6 +111,10 @@ export default function Produits() {
         setOpenProduct(null);
     };
 
+    const handleClickNavigate = (path) => {
+        navigate(path);
+      };
+
     return (
         <div className='container-all'>
             <div className='container-product-all'>
@@ -130,8 +137,7 @@ export default function Produits() {
                             <FadeIn className='container-popUp-product'>
                                 <img onClick={ClickClosed} src={closePopUp} className='img-popUp' alt="Close" />
                                 <div className='container-content-popUp'>
-                                    <img src={images[openProduct[1]]} className='img-product-popUp' alt={openProduct[0]} />
-
+                                    <img onClick={() => handleClickNavigate("/produits"+openProduct[3])} src={images[openProduct[1]]} className='img-product-popUp' alt={openProduct[0]} />
                                     <div className='container-text-popUp'>
                                         <h1 className='title-popUp'>{openProduct[0]}</h1>
                                         <p className='text-popUp'>{openProduct[2]}</p>

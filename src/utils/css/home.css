@@ -275,7 +275,7 @@ Link {
 .img-phospholipide{
     width: 38vw;
     height: auto;
-    margin-right: 80px;
+    margin-right: 60px;
 }
 
 .container-text-phospholipide{
@@ -613,6 +613,7 @@ video{
         height: auto;
         display: block;
         width: 65vw;
+        margin-bottom: 30px;
     }
 
     .img-expert{
@@ -663,6 +664,8 @@ video{
         height: auto;
         width: 65vw;
         margin-left: 0;
+        margin-bottom: 30px;
+        margin-top: 30px
     }
 
     .img-liposome-content{

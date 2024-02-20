@@ -101,7 +101,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh
+    margin-top: 2vh
 }
 
 .header-menu-bottom{
@@ -168,9 +168,5 @@ body{
     .img-menu-liposome{
         width: 180px;
         height: auto;
-    }
-
-    .container-menu-link{
-        margin-top: 30px;
     }
 }

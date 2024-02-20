@@ -6,6 +6,7 @@ import Produits from './views/Produits';
 import FicheProduit from './views/FicheProduit';
 import Header from './composants/Header';
 import Footer from './composants/Footer';
+import Ventes from './views/Ventes'
 import { getInfosProduit } from './utils/produits/infosProduits';
 
 // Initialisez votre ID de mesure GA4
@@ -31,6 +32,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='produits' element={<Produits />} />
+        <Route path='point_de_vente' element={<Ventes />} />
         <Route path="produits/articulation" element={<FicheProduit data={infosProduits['articulation']} />} />
         <Route path="produits/anti-stress" element={<FicheProduit data={infosProduits['anti-stress']} />} />
         <Route path="produits/capillaire" element={<FicheProduit data={infosProduits['capillaire']} />} />

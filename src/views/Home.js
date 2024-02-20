@@ -11,6 +11,7 @@ import imgAvantages from '../images/home/avantage-img.png';
 import imgAvantages2 from '../images/home/avantage-img2.png';
 import imgPhopholipide from '../images/home/phospholipide-img.png';
 import imgPhopholipide2 from '../images/home/phospholipide-img2.png';
+import imgPhopholipide3 from '../images/home/eff-max.png'
 import videoMolecule from '../videos/vod.mp4'
 import NotificationBar from '../composants/NotificationBar'
 import ChatBot from '../composants/ChatBot'
@@ -136,10 +137,11 @@ export default function Home() {
                             Les recherches sur les liposomes se poursuivent pour développer des systèmes
                             d’assimilation encore plus efficaces et ciblés.</p>
                     </div>
-                    <img className='img-liposome-content' alt='phospholipide' src={imgPhopholipide} />
+                    <img className='img-liposome-content' alt='liposome content' src={imgPhopholipide} />
                 </div>
                 <div className='container-phospholipide'>
-                    <img className='img-phospholipide' alt='phospholipide2' src={imgPhopholipide2} />
+                    <img className='img-phospholipide' alt='phospholipide' src={imgPhopholipide2} />
+                    {/* <img className='img-eff-max' src={imgPhopholipide3}/> */}
                     <div className='container-text-phospholipide'>
                         <h2 className='title-phospholipide'>Qu’est-ce que les phospholipides ?</h2>
                         <p className='text-phospholipide'>Les phospholipides, un groupe de lipides essentiels, jouent un rôle crucial dans le maintien

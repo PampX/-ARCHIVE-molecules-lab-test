@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Montserrat:wght@200&family=Poppins&display=swap');
+
+.title-maps{
+    margin: 40px;
+    font-family: 'poppins';
+    color: #111426;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
