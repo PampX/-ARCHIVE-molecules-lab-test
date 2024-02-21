@@ -93,6 +93,7 @@ Link {
 .text-intro-background{
     font-family: 'poppins';
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .title-intro-background{
