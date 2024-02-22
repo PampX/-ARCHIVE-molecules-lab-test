@@ -43,7 +43,11 @@ export default function PDVsoon() {
             <div className='pdv-container'>
                 <img className='pdv-liposome' src={liposome} />
                 <div className="pdv-bleu">
-                    <h2 className='pdv-title'>LA LISTE DES POINTS DE VENTE ARRIVE</h2>
+                    <div>
+                    <h2 className='pdv-title'>LA LISTE</h2>
+                    <h2 className='pdv-title'>DES POINTS </h2>
+                    <h2 className='pdv-title'>DE VENTE ARRIVE</h2>
+                    </div>
                 </div>
                 <div className="pdv-map">
                     <div className='filter'></div>

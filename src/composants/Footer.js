@@ -23,9 +23,10 @@ export default function Footer() {
                     <p className='p-footer-logo'>Technologie liposome</p>
                 </div>
             </div>
-            <p className='p-footer-legal'>Ce site Web contient des informations sur les produits qui s’adressent à un large éventail de publics et pourrait contenir des détails sur les produits ou des informations sur d’autres manières.
+            {/* <p className='p-footer-legal'>Ce site Web contient des informations sur les produits qui s’adressent à un large éventail de publics et pourrait contenir des détails sur les produits ou des informations sur d’autres manières.
                 Non accessible ou valide dans votre pays. Veuillez noter que nous n’assumons aucune responsabilité quant à l’accès à ces informations qui pourraient ne pas être conformes à la
-                toute procédure légale, réglementation, enregistrement ou utilisation dans votre pays d’origine.</p>
+                toute procédure légale, réglementation, enregistrement ou utilisation dans votre pays d’origine.
+            </p> */}
         </div>
     )
 }
