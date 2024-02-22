@@ -5,6 +5,7 @@ html{
     scroll-behavior: smooth;
 
 }
+
 .div-fp-container1{
     display: flex;
     justify-content: center;
@@ -419,4 +420,12 @@ margin-top: 50px;
     font-weight: 400;
     font-size: 16px;
     color: #121628;
+}
+
+.notsomuch{
+    margin-left: 20px;
+}
+
+.pointer{
+    cursor: pointer;
 }
