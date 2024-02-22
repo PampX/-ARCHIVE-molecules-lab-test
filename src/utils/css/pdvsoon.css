@@ -103,7 +103,7 @@
         position: absolute;
         z-index: -1;
         height: 50%;
-        width: 100%;
+        width: 110%;
         background-color: rgba(0, 0, 0, 0.5);
     }
 }
