@@ -21,7 +21,7 @@
 
 
 .pdv-map{
-    background-image: url('../../images//general/map.png');
+    background-image: url('../../images//general/map2.png');
     z-index: -5;
     background-size: cover;
     width: 100%;
@@ -36,7 +36,7 @@
     z-index: -1;
     height: 100%;
     width: 55%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .pdv-title{
@@ -101,9 +101,7 @@
 
     .filter {
         position: absolute;
-        z-index: -1;
         height: 50%;
         width: 110%;
-        background-color: rgba(0, 0, 0, 0.5);
     }
 }
