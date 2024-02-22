@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../utils/css/header.css';
 import phone from '../images/header/phone.png';
 import logo from '../images/header/logo.png';
-import mail from '../images/header/mail.svg';
 import { Link } from 'react-router-dom';
 import imgLiposome from '../images/home/expert-img.png'
 import logoBlanc from '../images/general/Logo-blanc.png'
@@ -29,11 +28,12 @@ export default function Header() {
                 </a>
             </div>
             <div className='header-div-menu'>
-                <Link to='/' className='header-p-menu'>HOME</Link>
                 <Link to='/'>
                     <img className='header-img-menu' alt='logo' src={logo} />
                 </Link>
+                <Link to='/' className='header-p-menu'>ACCUEIL</Link>
                 <Link to='/produits' className='header-p-menu quandMeme'>NOS PRODUITS</Link>
+                <Link to='/points-de-vente' className='header-p-menu quandMeme'>LES POINTS DE VENTE</Link>
                 {!isMenuOpen && (
                     <svg className='svg-header-menu' onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30">
                         <g fill="currentColor">
@@ -61,7 +61,7 @@ export default function Header() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="1" viewBox="0 0 30 1">
                             <rect width="30" height="1" fill="black" />
                         </svg>
-                        <Link className='item-menu' to='/point-de-vente' onClick={toggleMenu}>LES POINTS DE VENTES</Link>
+                        <Link className='item-menu' to='/points-de-vente' onClick={toggleMenu}>LES POINTS DE VENTES</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="1" viewBox="0 0 30 1">
                             <rect width="30" height="1" fill="black" />
                         </svg>
