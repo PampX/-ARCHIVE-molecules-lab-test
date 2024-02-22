@@ -131,7 +131,9 @@ export default function Produits() {
                             <FadeIn className='container-popUp-product'>
                                 <img onClick={ClickClosed} src={closePopUp} className='img-popUp' alt="Close" />
                                 <div className='container-content-popUp'>
+
                                     <img onClick={()=>navigate("/produits"+openProduct[3])} src={images[openProduct[1]]} className='img-product-popUp'  alt={openProduct[0]} />
+
                                     <div className='container-text-popUp'>
                                         <h1 className='title-popUp'>{openProduct[0]}</h1>
                                         <p className='text-popUp'>{openProduct[2]}</p>

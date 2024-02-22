@@ -170,9 +170,13 @@ body{
     }
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 730px){
     .img-menu-liposome{
         width: 180px;
         height: auto;
+    }
+
+    .container-menu-link{
+        margin-top: 30px;
     }
 }
