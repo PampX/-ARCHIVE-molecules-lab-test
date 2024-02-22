@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../utils/css/pdvsoon.css'
 import liposome from '../images/general/liposome-transparent.png'
 
 export default function PDVsoon() {
+    const location = useLocation();
     const targetDate = new Date("march 14, 2024").getTime();
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     const isSmallScreen = window.innerWidth <= 900;
@@ -26,7 +28,9 @@ export default function PDVsoon() {
             seconds
         };
     }
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
     useEffect(() => {
         const timer = setTimeout(() => {
             setTimeLeft(calculateTimeLeft());
