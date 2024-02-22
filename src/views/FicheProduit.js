@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import gelule from '../images/general/gelule.svg'
 import calendrier from '../images/general/calendrier.png'
 import partage from '../images/general/partage.png'
+import panier from '../images/general/panier.png'
 
 import pharmacie from '../images/general/pharmacie.svg'
 import france from '../images/general/france.svg'
@@ -13,7 +14,7 @@ import geluleplante from '../images/general/geluleplante.svg'
 import liposome from '../images/general/liposome.svg'
 import liposome3d from '../images/general/liposome3d.png'
 // import handClick from '../images/general/handClick.png'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import NotificationBar from '../composants/NotificationBar'
 import ChatBot from '../composants/ChatBot'
 
@@ -23,6 +24,7 @@ import ListProduct from '../composants/ListProduct';
 
 
 export default function FicheProduit({ data }) {
+    const navigate = useNavigate()
     const location = useLocation();
     const isPhone = useMediaQuery({ query: '(max-width: 750px)' })
 
@@ -81,6 +83,7 @@ export default function FicheProduit({ data }) {
                     </div>
                     <div className='div-fp-container2-phone'>
                         <h2 className='h2-fp-nom-phone'>{data.nom}</h2>
+                        <img className='img-fp-partage-phone pointer' onClick={()=>navigate('/points-de-vente')} src={panier} alt='Icone de panier' />
                         <img className='img-fp-partage-phone' src={partage} alt='Icone de partage' />
                     </div>
                     <div className='div-fp-container3-phone'>
@@ -172,7 +175,10 @@ export default function FicheProduit({ data }) {
                                     <p className='p-fp-infos1 bold'>{data.nbJour[2]}</p>
                                     <p className='p-fp-infos1'>{data.nbJour[3]}</p>
                                 </div>
-                                <img className='img-fp-partage' src={partage} alt='Icone de partage' />
+                                <div>
+                                <img className='img-fp-partage pointer' onClick={()=>navigate('/points-de-vente')} src={panier} alt='Icone de panier' />
+                                <img className='img-fp-partage notsomuch' src={partage} alt='Icone de partage' />
+                                </div>
                             </div>
                             <p className='p-fp-description'>{data.description}</p>
                             <div className='div-fp-allbienfait'>
