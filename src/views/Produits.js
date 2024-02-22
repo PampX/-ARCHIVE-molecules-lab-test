@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../utils/css/produits.css';
 import closePopUp from '../images/home/close-popUp.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components'
 import { fadeIn } from 'react-animations'
 import NotificationBar from '../composants/NotificationBar'
@@ -41,6 +41,7 @@ const productInfo = [
 ];
 
 export default function Produits() {
+    const navigate = useNavigate();
     const [activeProductIndex, setActiveProductIndex] = useState(null);
     const [openProduct, setOpenProduct] = useState(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -53,20 +54,20 @@ export default function Produits() {
     });
     const [notificationBarStyle, setNotificationBarStyle] = useState({});
 
-  useEffect(() => {
-    setWindowSize({width: window.innerWidth, height: window.innerHeight,})
-    if (windowSize.height < 700) {
-      setNotificationBarStyle({
-        bottom: showChat ? '560px' : '20px',
-        cursor: showChat ? 'default' : 'pointer',
-      });
-    } else {
-      setNotificationBarStyle({
-        bottom: showChat ? '722px' : '20px',
-        cursor: showChat ? 'default' : 'pointer',
-      });
-    }
-  }, [windowSize.height, showChat]);
+    useEffect(() => {
+        setWindowSize({ width: window.innerWidth, height: window.innerHeight, })
+        if (windowSize.height < 700) {
+            setNotificationBarStyle({
+                bottom: showChat ? '560px' : '20px',
+                cursor: showChat ? 'default' : 'pointer',
+            });
+        } else {
+            setNotificationBarStyle({
+                bottom: showChat ? '722px' : '20px',
+                cursor: showChat ? 'default' : 'pointer',
+            });
+        }
+    }, [windowSize.height, showChat]);
 
 
     const handleNotificationClick = () => {
@@ -130,12 +131,13 @@ export default function Produits() {
                             <FadeIn className='container-popUp-product'>
                                 <img onClick={ClickClosed} src={closePopUp} className='img-popUp' alt="Close" />
                                 <div className='container-content-popUp'>
-                                    <img src={images[openProduct[1]]} className='img-product-popUp' alt={openProduct[0]} />
+
+                                    <img onClick={()=>navigate("/produits"+openProduct[3])} src={images[openProduct[1]]} className='img-product-popUp'  alt={openProduct[0]} />
 
                                     <div className='container-text-popUp'>
                                         <h1 className='title-popUp'>{openProduct[0]}</h1>
                                         <p className='text-popUp'>{openProduct[2]}</p>
-                                        <Link to={"/produits"+openProduct[3]} className='button-popUp-produit'>En savoir plus</Link>
+                                        <Link to={"/produits"+openProduct[3]} className='button-popUp-produit'>En savoir +</Link>
                                     </div>
                                 </div>
                             </FadeIn>

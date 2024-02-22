@@ -108,6 +108,7 @@
 }
 
 .img-product-popUp {
+    cursor: pointer;
     width: 45%;
     object-fit:contain;
     margin-left: 70px;
@@ -152,7 +153,8 @@
 .button-popUp-produit{
     margin-top: 40px;
     text-transform: uppercase;
-    color: #121628;
+    font-weight: bold;
+    color: rgb(152, 207, 226);
     text-decoration: none;
     cursor: pointer;
 }
@@ -190,6 +192,7 @@
     }
 
     .img-product-popUp{
+        cursor: pointer;
         margin-left: 0;
     }
 
@@ -215,6 +218,7 @@
     }
 
     .img-product-popUp{
+        cursor: pointer;
         margin-bottom: 25%;
     }
 }
