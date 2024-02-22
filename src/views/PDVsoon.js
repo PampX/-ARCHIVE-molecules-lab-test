@@ -3,7 +3,7 @@ import '../utils/css/pdvsoon.css'
 import liposome from '../images/general/liposome-transparent.png'
 
 export default function PDVsoon() {
-    const targetDate = new Date("May 10, 2024").getTime();
+    const targetDate = new Date("march 14, 2024").getTime();
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     const isSmallScreen = window.innerWidth <= 900;
     function calculateTimeLeft() {
