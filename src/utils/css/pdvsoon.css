@@ -15,7 +15,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.pdv-liposome{
+    position: absolute;
+}
 .pdv-map{
     background-color: #636263;
     width: 100%;
@@ -29,12 +31,36 @@
     font-family: 'poppins';
     color: white;
     font-size: 50px;
-    width: 70%;
+    width: 360px;
     font-weight: bold;
     text-align: start;
 }
 
-.pdv-countdown{
+.pdv-countdown-h2{
+    font-family: 'poppins';
+    margin: 0;
+    color: white;
+    font-size: 50px;
+}
+
+.pdv-countdown-h3{
+    margin: 0;
     font-family: 'poppins';
     color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.countdown{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.countdown-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
 }
