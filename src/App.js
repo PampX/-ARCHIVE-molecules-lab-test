@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import ReactGA from 'react-ga4'; // Assurez-vous d'utiliser react-ga4 si vous utilisez GA4
 import Home from './views/Home';
 import Produits from './views/Produits';
@@ -45,6 +45,7 @@ export default function App() {
         <Route path="produits/circulation" element={<FicheProduit data={infosProduits['circulation']} />} />
         <Route path="produits/voies-respiratoires" element={<FicheProduit data={infosProduits['voies-respiratoires']} />} />
         <Route path="produits/sommeil" element={<FicheProduit data={infosProduits['sommeil']} />} />
+        <Route path='*' element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </Router>
