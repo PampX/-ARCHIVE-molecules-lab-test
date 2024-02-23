@@ -1,8 +1,14 @@
 body{
     margin:0;
 }
-
-
+.mailto, .telto{
+    text-decoration: none;
+}
+.header-svg-mail svg {
+    margin-left: 20px;
+    margin-right: 5px;
+    fill: rgb(255, 255, 255);
+}
 
 .header-div-container{
     margin: 0;

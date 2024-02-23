@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import ReactGA from 'react-ga4'; // Assurez-vous d'utiliser react-ga4 si vous utilisez GA4
 import Home from './views/Home';
 import Produits from './views/Produits';
+import PDVsoon from './views/PDVsoon';
 import FicheProduit from './views/FicheProduit';
 import Header from './composants/Header';
 import Footer from './composants/Footer';
@@ -30,6 +31,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/points-de-vente' element={<PDVsoon />} />
         <Route path='produits' element={<Produits />} />
         <Route path="produits/articulation" element={<FicheProduit data={infosProduits['articulation']} />} />
         <Route path="produits/anti-stress" element={<FicheProduit data={infosProduits['anti-stress']} />} />
