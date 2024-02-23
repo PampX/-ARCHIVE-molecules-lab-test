@@ -429,3 +429,33 @@ margin-top: 50px;
 .pointer{
     cursor: pointer;
 }
+.relative{
+    position: relative;
+}
+.div-fp-infobulle{
+    position: absolute;
+    top: -40px;
+    right: -130px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    background-color: white;
+    border-radius: 15px 15px 15px 0;
+    box-shadow: 1px 1px 4px 0px #00000040;
+    transition: opacity ease 0.5s;
+}
+.p-fp-infobulle{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+
+}
+
+.img-fp-partage:hover + .div-fp-infobulle{
+    opacity: 1;
+}

@@ -83,8 +83,8 @@ export default function FicheProduit({ data }) {
                     </div>
                     <div className='div-fp-container2-phone'>
                         <h2 className='h2-fp-nom-phone'>{data.nom}</h2>
-                        <img className='img-fp-partage-phone pointer' onClick={()=>navigate('/points-de-vente')} src={panier} alt='Icone de panier' />
-                        <img className='img-fp-partage-phone' src={partage} alt='Icone de partage' />
+                        <img className='img-fp-partage-phone pointer' title='trouver un point de vente' onClick={() => navigate('/points-de-vente')} src={panier} alt='Icone de panier' />
+                        {/* <img className='img-fp-partage-phone' src={partage} alt='Icone de partage' /> */}
                     </div>
                     <div className='div-fp-container3-phone'>
                         <p className='p-fp-motcle-phone'>{data.motCle}</p>
@@ -175,9 +175,12 @@ export default function FicheProduit({ data }) {
                                     <p className='p-fp-infos1 bold'>{data.nbJour[2]}</p>
                                     <p className='p-fp-infos1'>{data.nbJour[3]}</p>
                                 </div>
-                                <div>
-                                <img className='img-fp-partage pointer' onClick={()=>navigate('/points-de-vente')} src={panier} alt='Icone de panier' />
-                                <img className='img-fp-partage notsomuch' src={partage} alt='Icone de partage' />
+                                <div className='relative'>
+                                    <img className='img-fp-partage pointer' onClick={() => navigate('/points-de-vente')} src={panier} alt='Icone de panier' />
+                                    <div className='div-fp-infobulle'>
+                                        <p className='p-fp-infobulle'>Trouver mon point de vente</p>
+                                    </div>
+                                    {/* <img className='img-fp-partage notsomuch' src={partage} alt='Icone de partage' /> */}
                                 </div>
                             </div>
                             <p className='p-fp-description'>{data.description}</p>
