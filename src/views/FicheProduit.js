@@ -1,6 +1,10 @@
 import '../utils/css/ficheProduit.css'
 import { useMediaQuery } from 'react-responsive'
+<<<<<<< HEAD
 import React, { useEffect } from 'react';
+=======
+import React, { useEffect, useState } from 'react';
+>>>>>>> 4b63f5c077133dbb25c2d75b74775669c3e45cf5
 // import ModalImage from 'react-modal-image';
 
 import gelule from '../images/general/gelule.svg'
@@ -14,6 +18,8 @@ import liposome from '../images/general/liposome.svg'
 import liposome3d from '../images/general/liposome3d.png'
 // import handClick from '../images/general/handClick.png'
 import { useLocation } from 'react-router-dom';
+import NotificationBar from '../composants/NotificationBar'
+import ChatBot from '../composants/ChatBot'
 
 import ListeIngredients from '../composants/ListeIngredients'
 import MenuInfos from '../composants/MenuInfos'
@@ -24,11 +30,34 @@ export default function FicheProduit({ data }) {
     const location = useLocation();
     const isPhone = useMediaQuery({ query: '(max-width: 750px)' })
 
+<<<<<<< HEAD
+=======
+    const [showChat, setShowChat] = useState(false);
+    const [hasNotification, setHasNotification] = useState(true);
+
+    const handleNotificationClick = () => {
+        setShowChat(true);
+    };
+
+    const handleCloseChat = () => {
+        setShowChat(false);
+        setHasNotification(false)
+    };
+
+    const handleNewMessage = () => {
+        setHasNotification(true);
+    };
+
+    const notificationBarStyle = {
+        bottom: showChat ? '722px' : '20px',
+        cursor: showChat ? 'default' : 'pointer',
+    };
+>>>>>>> 4b63f5c077133dbb25c2d75b74775669c3e45cf5
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
-    
+
 
     return (
         <div>
@@ -77,6 +106,7 @@ export default function FicheProduit({ data }) {
                     <div>
                         <p className='p-fp-description-phone'>{data.description}</p>
                     </div>
+<<<<<<< HEAD
                     <div style={{display:'flex',justifyContent:'center'}}>
                     <div className='div-fp-allbienfait'>
                         {data.listeBienfait.map((bienfait, index) => (
@@ -87,6 +117,18 @@ export default function FicheProduit({ data }) {
                         ))}
                         <p className='p-fp-ensavoirplus'><a className='a-fp-ensavoirplus' href='#actifs'>...En savoir plus</a></p>
                     </div>
+=======
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <div className='div-fp-allbienfait'>
+                            {data.listeBienfait.map((bienfait, index) => (
+                                <div className='div-fp-bienfait-phone' key={index}>
+                                    <p className='p-fp-checkmark'>✓</p>
+                                    <p className='p-fp-bienfait'>{bienfait} <sup className='sup-fp-exposantbienfait' onClick={() => window.location.href = '#actifs'}>{data.listeBienfaitNum[index]}</sup></p>
+                                </div>
+                            ))}
+                            <p className='p-fp-ensavoirplus'><a className='a-fp-ensavoirplus' href='#actifs'>...En savoir plus</a></p>
+                        </div>
+>>>>>>> 4b63f5c077133dbb25c2d75b74775669c3e45cf5
                     </div>
                     <div className='div-fp-div3icon-phone'>
                         <img className='img-fp-icones' src={pharmacie} alt="Icone d'une croix de pharmacie" />
@@ -95,19 +137,19 @@ export default function FicheProduit({ data }) {
                     <div className='div-fp-technologieLiposome-phone'>
                         <h3 className='h3-fp-technologieLiposome'>TECHNOLOGIE LIPOSOMALE®</h3>
                         <p className='p-fp-technologieLiposome'>Molecules développe ses formules grâce à la nouvelle technologie exclusive de liposomes pour encapsuler 100% de ses actifs. Ce procédé innovant garantit une assimilation optimale des nutriments par l’organisme et la stabilité des actifs pour une action rapide.</p>
-                        <div style={{display:'flex',justifyContent:'center'}}>
-                        <div className='div-fp-listeLiposome'>
-                            <div>
-                                <h3 className='h3-fp-listeLiposome'>FORMULE LIPOSOMÉ UNIQUE PREMIUM</h3>
-                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Haute concentration & assimilation</p>
-                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Efficacité rapide</p>
+                        <div style={{ display: 'flex', justifyContent: 'center' }}>
+                            <div className='div-fp-listeLiposome'>
+                                <div>
+                                    <h3 className='h3-fp-listeLiposome'>FORMULE LIPOSOMÉ UNIQUE PREMIUM</h3>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Haute concentration & assimilation</p>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Efficacité rapide</p>
+                                </div>
+                                <div>
+                                    <h3 className='h3-fp-listeLiposome'>100% PURE & CLEAN</h3>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> SANS : allergènes • gluten • OGM • excipients • nanoparticules</p>
+                                    <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Non testé sur les animaux • Non irradié</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className='h3-fp-listeLiposome'>100% PURE & CLEAN</h3>
-                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> SANS : allergènes • gluten • OGM • excipients • nanoparticules</p>
-                                <p className='p-fp-listeLiposome'><span className='p-fp-checkmark'>✓</span> Non testé sur les animaux • Non irradié</p>
-                            </div>
-                        </div>
                         </div>
                         <div className='div-fp-moreLiposome'>
                             <h3 id='actifs' className='h3-fp-moreLiposome' ><a className='a-fp-moreLiposome' href='#composition'>DÉCOUVREZ LA COMPOSITION COMPLÈTE</a></h3>
@@ -126,10 +168,10 @@ export default function FicheProduit({ data }) {
                             {/* <h2 className='h2-fp-schema-phone'>APPUYEZ POUR VOIR LES DÉTAILS</h2> */}
                         </div>
                     </div>
-                    <div style={{display:'flex',justifyContent:'center'}}>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
                         <MenuInfos isPhone={true} data={data} />
                     </div>
-                        <ListProduct/>
+                    <ListProduct />
                 </div>
                 :
                 // VERSION PHONE //////////////////////////////////////////
@@ -228,6 +270,12 @@ export default function FicheProduit({ data }) {
                     </div>
                 </div>
             }
+            <div className="app">
+                <div>
+                    <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat} onClick={handleNotificationClick} style={notificationBarStyle} />
+                    {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage} />}
+                </div>
+            </div>
         </div>
     )
 }

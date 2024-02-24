@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 370px;
+    height: 703px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 10;
+}
+
+.container-messages{
+  height: 85%;
+  overflow-y: auto;
+}
+
+.container-input{
+  width: 100%;
+  border-top: 1px solid rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 88%);
+  justify-content: space-between;
+}
+
+.input-chat-box{
+  width: 100%;
+  border: none;
+  max-width: 312px;
+  padding: 12px;
+  font-size: 18px;
+}
+
+.text-mention-chat-box{
+  text-align: center;
+  margin: 0
+}
+
+.input-chat-box::placeholder {
+  font-size: 18px;
+}
+
+.input-chat-box:focus{
+  outline: none;
+}
+
+.container-input-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-send{
+  height: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.assistant{
+  margin: 15px;
+  margin-right: auto;
+  background-color: #4D6871;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 70%;
+}
+
+.user{
+  margin: 15px;
+  margin-left: auto;
+  background-color: #79A4B3;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 70%;
+}
+
+.waiting-message{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.text-chatbot-intro{
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 450px){
+  .chatbot{
+    width: 90vw;
+    right: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (max-height: 700px){
+  .chatbot{
+    height: 540px;
+  }
+}
